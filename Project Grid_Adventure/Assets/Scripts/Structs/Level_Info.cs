@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[Serializable]
-public struct Level_Info{
+[System.Serializable]
+public struct Level_Info
+{
     public bool hasKey { get; set; }
     public bool isLevelDone { get; set; }
     public string levelName { get; set; }
     public int playerLives { get; set; }
-    public Transform startPos { get; set; }
+    public Vector3 startPos { get; set; }
 
-    public Level_Info(bool hasKey_, bool isLevelDone_, string levelName_, int playerLives_,Transform startPos_)
+    public Level_Info(bool hasKey_, bool isLevelDone_, string levelName_, int playerLives_, Vector3 startPos_)
     {
         hasKey = hasKey_;
         isLevelDone = isLevelDone_;

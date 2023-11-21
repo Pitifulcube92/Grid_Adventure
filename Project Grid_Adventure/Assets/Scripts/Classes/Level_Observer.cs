@@ -25,6 +25,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             Debug.LogWarning("subject not found!");
         }
         OnObsEnable();
+        //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
 
     private void OnObsEnable()
@@ -70,10 +71,15 @@ public class Level_Observer : MonoBehaviour, IObserver
                 //GameObject.Destroy(GameObject.FindGameObjectWithTag("Player"));
             }
             //level restarts then take player life!
+
             Debug.Log("Player is hurt back to from start");
             ResetLevelObjects();
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
+              
+            currentLevlInfo.isLevelDone = false;
+            currentLevlInfo.hasKey = false;
             currentLevlInfo.playerLives -= 1;
+
         }
     }
     public void GetObjectItems()
@@ -92,8 +98,9 @@ public class Level_Observer : MonoBehaviour, IObserver
             tmp.hasKey = false;
         if (GameObject.FindGameObjectWithTag("Door"))
             tmp.isLevelDone = false;
-        if (GameObject.Find("PlayerPos"))
-            tmp.startPos = GameObject.Find("PlayerPos").transform;
+        if (GameObject.Find("Start Position"))
+            tmp.startPos = GameObject.Find("Start Position").transform.position;
+       
         return tmp;
     }
 

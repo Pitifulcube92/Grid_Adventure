@@ -5,9 +5,3 @@ public enum PlayerState
     Interact_Key,
     Interact_Door
 }
-
-public enum TileState
-{
-    InitialState,
-    ChangedState
-}

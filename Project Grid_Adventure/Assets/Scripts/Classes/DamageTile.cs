@@ -12,6 +12,7 @@ public class DamageTile : BaseInteractionTile
         if (base.baseSpriteRender == null)
             base.baseSpriteRender = gameObject.GetComponent<SpriteRenderer>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision.name);
@@ -23,6 +24,6 @@ public class DamageTile : BaseInteractionTile
 
     override public void RevertToInitialState()
     {
-        throw new System.NotImplementedException();
+        return;
     }
 }

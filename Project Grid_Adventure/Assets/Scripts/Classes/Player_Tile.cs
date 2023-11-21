@@ -58,9 +58,11 @@ public class Player_Tile : ISubject
             }
         }
     }
-    public void ChangePosition(Transform tmp_)
+    public void ChangePosition(Vector3 tmp_)
     {
-        gameObject.transform.position = tmp_.position;
-        movePoint.position = tmp_.position;
+        //Debug.Log(tmp_);
+        gameObject.transform.SetLocalPositionAndRotation(tmp_, gameObject.transform.rotation);
+        movePoint.transform.SetLocalPositionAndRotation(tmp_, gameObject.transform.rotation);
     }
 }
+    

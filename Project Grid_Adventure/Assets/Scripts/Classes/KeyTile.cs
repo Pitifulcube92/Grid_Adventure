@@ -24,6 +24,9 @@ public class KeyTile : BaseInteractionTile
 
     override public void RevertToInitialState()
     {
-        throw new System.NotImplementedException();
+        if(gameObject.activeSelf == false)
+        {
+            gameObject.SetActive(true);
+        }
     }
 }
