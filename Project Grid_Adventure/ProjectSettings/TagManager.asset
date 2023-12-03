@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Key
   - Door
+  - Game Manager
   layers:
   - Default
   - TransparentFX

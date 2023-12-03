@@ -47,4 +47,8 @@ public class GameManager : MonoBehaviour
             
         return true;
     }
+
+    public UIManager GetUIManager() { return uiSys; }
+    public SoundManager GetSoundManager() { return audioSys; }
+    public LevelManager GetLevelManager() { return lvlSys; }
 }

@@ -10,8 +10,13 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         if (scManager == null)
+        {
             scManager = new SceneManager();
+        }
+        Debug.Log("Scenes: " + SceneManager.sceneCount);
+        ListLevelName();
     }
+       
 
     public void LoadScene(string name_)
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private Dictionary<string, Canvas> uiCanvas;
+    [SerializeField] private List<Canvas> uiCanvas;
     [SerializeField] private Canvas currentCanvas { get; set;}
     // Start is called before the first frame update
     void Start()
@@ -30,12 +30,13 @@ public class UIManager : MonoBehaviour
 
     public void ChangeUI(string name_)
     {
-        if (!uiCanvas.ContainsKey(name_))
+        foreach(Canvas x in uiCanvas)
         {
-            Debug.LogError("Canvas was not found!");
+            if(x.gameObject.name == name_)
+            {
+                currentCanvas = x;
+                return;
+            }
         }
-        currentCanvas = uiCanvas[name_];
-
-        GameObject.Instantiate(currentCanvas);
     }
 }

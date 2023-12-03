@@ -7,8 +7,8 @@ public class SoundManager : MonoBehaviour
 {
     [Range(0.0f, 1f), SerializeField] private float volume;
     [SerializeField] private int maxVolume;
-    [SerializeField] private Dictionary<string, AudioClip> sfxClips;
-    [SerializeField] private Dictionary<string, AudioClip> musicClips;
+    [SerializeField] private List<AudioClip> sfxClips;
+    [SerializeField] private List<AudioClip> musicClips;
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource musicSource;
 
@@ -40,23 +40,35 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySFXClip(string name_)
     {
-        if (sfxClips[name_].loadState == AudioDataLoadState.Failed)
+        foreach(AudioClip x in sfxClips)
         {
-            Debug.LogWarning("Error has occured in SFX audio clip!");
-            return;
-        }
-        sfxSource.clip = sfxClips[name_];
-        sfxSource.Play();
+            if(x.name == name_)
+            {
+                if (x.loadState == AudioDataLoadState.Failed)
+                {
+                    Debug.LogWarning("Error has occured in SFX audio clip!");
+                    return;
+                }
+                sfxSource.clip = x;
+                sfxSource.Play();
+            }
+        }      
     }
 
     public void PlayMusicClip(string name_)
     {
-        if(musicClips[name_].loadState == AudioDataLoadState.Failed)
+        foreach (AudioClip x in musicClips)
         {
-            Debug.LogWarning("Error has occured in music audio clip!");
-            return;
+            if (x.name == name_)
+            {
+                if (x.loadState == AudioDataLoadState.Failed)
+                {
+                    Debug.LogWarning("Error has occured in SFX audio clip!");
+                    return;
+                }
+                musicSource.clip = x;
+                musicSource.Play();
+            }
         }
-        musicSource.clip = musicClips[name_];
-        musicSource.Play();
     }
 }

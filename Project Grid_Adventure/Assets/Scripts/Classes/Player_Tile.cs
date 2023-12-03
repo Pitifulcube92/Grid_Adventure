@@ -58,6 +58,29 @@ public class Player_Tile : ISubject
             }
         }
     }
+    public void MovePlayerButton(string dir_)
+    {
+        switch (dir_)
+        {
+            case "up":
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
+                    movePoint.position += new Vector3(0f, movePointDistance, 0f);
+                break;
+            case "down":
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
+                    movePoint.position += new Vector3(0f, -movePointDistance, 0f);
+                break;
+            case "right":
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                    movePoint.position += new Vector3(movePointDistance, 0f, 0f);
+                break;
+            case "left":
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                    movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
+                break;
+        }
+    }
+
     public void ChangePosition(Vector3 tmp_)
     {
         //Debug.Log(tmp_);
