@@ -47,6 +47,9 @@ public class UI_Gameplay : BaseUIScript
                 case "Button Right":
                     x.onClick.AddListener(delegate { target_player.MovePlayerButton("right"); });
                     break;
+                case "Button Reset":
+                    x.onClick.AddListener(delegate { return; });
+                    break;
             }
         }
     }
