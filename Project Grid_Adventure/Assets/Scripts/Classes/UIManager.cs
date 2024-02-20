@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private List<Canvas> uiCanvas;
-    [SerializeField] private Canvas currentCanvas { get; set;}
+    [SerializeField] private Canvas currentCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +32,15 @@ public class UIManager : MonoBehaviour
     {
         foreach(Canvas x in uiCanvas)
         {
+            Debug.Log(x.name);
             if(x.gameObject.name == name_)
             {
+                if(currentCanvas != null)
+                {
+                    currentCanvas = null;
+                }               
                 currentCanvas = x;
+                Instantiate(currentCanvas);
                 return;
             }
         }

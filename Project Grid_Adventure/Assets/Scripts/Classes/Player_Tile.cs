@@ -20,7 +20,7 @@ public class Player_Tile : ISubject
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //Debug.Log(transform.position == movePoint.position);
         PlayerMove();

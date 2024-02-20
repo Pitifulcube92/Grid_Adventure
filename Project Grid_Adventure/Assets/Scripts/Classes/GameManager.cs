@@ -29,8 +29,13 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GameManager has hit a critical error!");
             Application.Quit();
         }
+        IntializeApplication();
     }
-
+    private void IntializeApplication()
+    {
+        //Run MainMenu, Play music;
+        uiSys.ChangeUI("Canvas_Template");
+    }
     private bool SetUpManagers()
     {
         if(!audioSys)

@@ -6,6 +6,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private SceneManager scManager;
+    [SerializeField] private List<string> testSceneNames;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +14,14 @@ public class LevelManager : MonoBehaviour
         {
             scManager = new SceneManager();
         }
-        Debug.Log("Scenes: " + SceneManager.sceneCount);
+        //Debug.Log("Scenes: " + SceneManager.sceneCount);
         ListLevelName();
     }
-       
+    
+    void GetInitialSceneNames()
+    {
+
+    }
 
     public void LoadScene(string name_)
     {
@@ -28,7 +33,7 @@ public class LevelManager : MonoBehaviour
 
         for (int i = 0; i <= SceneManager.sceneCount; i++)
         {
-            Debug.Log(SceneManager.GetSceneAt(i).name);
+            //Debug.Log(SceneManager.GetSceneAt(i).name);
         }
     }
 }

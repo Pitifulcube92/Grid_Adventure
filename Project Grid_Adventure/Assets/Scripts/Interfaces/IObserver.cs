@@ -1,3 +1,3 @@
 public interface IObserver {
-    public void OnNotify(PlayerState action_);
+    public abstract void OnNotify(PlayerState action_);
 }

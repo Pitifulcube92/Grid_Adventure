@@ -19,7 +19,7 @@ public class UI_MainMenu : BaseUIScript
         {
             Debug.LogError("No UI buttons where found!");
         }
-        //SetUIConfigure();
+        SetUIConfigure();
     }
 
     public override void SetUIConfigure()
@@ -28,10 +28,12 @@ public class UI_MainMenu : BaseUIScript
         {
             switch (x.gameObject.name)
             {
-                case "Start":
-                    x.onClick.AddListener(delegate { GM.GetComponent<GameManager>().GetLevelManager().LoadScene("Test Level 1");});
+                case "Start btn":
+                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene("Test_Level_1");});
                     break;
-
+                case "Level Select btn":
+                    x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("Canvas_Template(Level select)");});
+                    break;
                 case "Options":
                     break;
             }
