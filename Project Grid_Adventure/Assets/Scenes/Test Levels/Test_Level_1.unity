@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 1094277648}
   - component: {fileID: 1094277651}
   - component: {fileID: 1094277652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Test_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094277647}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1459,7 +1459,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1489,20 +1489,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   movePointDistance: 1
-  movePoint: {fileID: 2064403735}
+  enemyMovePoint: {fileID: 2064403735}
   CommandPath:
   - index: 0
-    Direction: 0
+    Direction: 3
   - index: 1
     Direction: 1
   - index: 2
-    Direction: 2
+    Direction: 1
   - index: 3
+    Direction: 2
+  - index: 4
+    Direction: 2
+  - index: 5
+    Direction: 0
+  - index: 6
+    Direction: 0
+  - index: 7
+    Direction: 3
+  - index: 8
     Direction: 3
   unWalkable:
     serializedVersion: 2
     m_Bits: 64
-  maxTimer: 5
+  currentDirection: 0
+  maxTimer: 2
   tmpTimer: 0
   currentMove: 0
 --- !u!1001 &1327116738
@@ -1651,7 +1662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064403734}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

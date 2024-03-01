@@ -26,6 +26,10 @@ public class Player_Tile : ISubject
         PlayerMove();
         
     }
+    private void FixedUpdate()
+    {
+        
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(movePoint.position, 0.1f);

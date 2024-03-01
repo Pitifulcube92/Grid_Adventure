@@ -9,7 +9,10 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     // Start is called before the first frame update
     void Start()
     {
-        currentMove = 0;    
+        currentMove = 0;
+
+        Debug.Log(CommandPath.Count);
+        base.baseStart();
     }
 
     // Update is called once per frame
@@ -20,22 +23,29 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     public override void Invokebehavior()
     {
         Debug.Log("Invoked Behavior!");
-        //Check is current ID is valid
-        if (CommandPath.Find(x => x.index == currentMove).index == currentMove) 
-        {
-            Debug.Log(CommandPath.Find(x => x.index == currentMove).Direction);
-            
-            MoveEnemy(CommandPath.Find(x => x.index == currentMove).Direction);
-           
-        }
         //Check if ID is last of the List
-        int tmpLast = CommandPath.FindIndex(CommandPath.Count, x => x.index == currentMove);
-        if (CommandPath.FindLast(x => x.index == currentMove).index == currentMove)
+        //int tmpLast = CommandPath.FindIndex(CommandPath.Count, x => x.index == currentMove);
+        int tmpIndex = CommandPath.Find(x => x.index == currentMove).index;
+        int tmpLastIndex = CommandPath.Find(x => x.index == CommandPath.Count - 1).index;
+        Debug.Log("Current Move:" + currentMove + "Path index:" + tmpIndex + "Last index:" +tmpLastIndex);
+        Debug.Log(currentMove == tmpLastIndex);
+        if (currentMove == tmpLastIndex)
         {
             currentMove = 0;
-            CommandPath
+            return;
         }
-        currentMove++;
+        Debug.Log(currentMove == tmpIndex);
+        //Check is current ID is valid
+        if (currentMove == tmpIndex) 
+        {
+            //Debug.Log(CommandPath.Find(x => x.index == currentMove).Direction);       
+            MoveEnemy(CommandPath.Find(x => x.index == currentMove).Direction);
+            //currentDirection = CommandPath.Find(x => x.index == currentMove).Direction;
+
+            currentMove++;
+        }
+
+       
     }
 
 }

@@ -14,7 +14,8 @@ public enum EnemyDirection
     ED_UP,
     ED_DOWN,
     ED_LEFT,
-    ED_RIGHT
+    ED_RIGHT,
+    ED_NONE
 }
 
 public abstract class BaseEnemy_Tile : MonoBehaviour
@@ -24,6 +25,7 @@ public abstract class BaseEnemy_Tile : MonoBehaviour
     [SerializeField] Transform enemyMovePoint;
     [SerializeField] protected List<EnemyMoveCommand> CommandPath;
     [SerializeField] protected LayerMask unWalkable;
+    [SerializeField] protected EnemyDirection currentDirection;
     [SerializeField] protected float maxTimer;
     [SerializeField] protected float tmpTimer;
     // Start is called before the first frame update
@@ -34,6 +36,11 @@ public abstract class BaseEnemy_Tile : MonoBehaviour
     void Start()
     {
         enemyMovePoint.parent = null;
+        currentDirection = EnemyDirection.ED_NONE;
+    }
+    public void baseStart()
+    {
+        Start();
     }
     // Update is called once per frame
     void Update()
@@ -45,57 +52,70 @@ public abstract class BaseEnemy_Tile : MonoBehaviour
     {
         Update();
     }
+    private void FixedUpdate()
+    {
+        EnemyTimer();
+        //MoveEnemy(currentDirection);
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(enemyMovePoint.position, 0.1f);
     }
     public void MoveEnemy(EnemyDirection tmp_)
     {
-       
-
         if(Vector3.Distance(transform.position, enemyMovePoint.position) <= 0.5f && transform.position == enemyMovePoint.position)
         {
             if (tmp_ == EnemyDirection.ED_RIGHT)
             {
                 if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
                 {
-                    enemyMovePoint.position += new Vector3(movePointDistance, 0f, 0f);
+                    //enemyMovePoint.position += new Vector3(movePointDistance, 0f, 0f);
+                    ChangePosition(enemyMovePoint.position + new Vector3(movePointDistance, 0f, 0f));
                 }
 
-                transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
+                //transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
             }
             else if (tmp_ == EnemyDirection.ED_LEFT)
             {
                 if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
                 {
-                    enemyMovePoint.position += new Vector3(-movePointDistance, 0f, 0f);
+                    //enemyMovePoint.position += new Vector3(-movePointDistance, 0f, 0f);
+                    ChangePosition(enemyMovePoint.position + new Vector3(-movePointDistance, 0f, 0f));
                 }
 
-                transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
+               //transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
             }
             else if (tmp_ == EnemyDirection.ED_UP)
             {
                 if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
                 {
-                    enemyMovePoint.position += new Vector3(0f, movePointDistance, 0f);
+                    //enemyMovePoint.position += new Vector3(0f, movePointDistance, 0f);
+                    ChangePosition(enemyMovePoint.position + new Vector3(0f, movePointDistance, 0f));
                 }
 
-                transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
+                //transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
             }
             else if(tmp_ == EnemyDirection.ED_DOWN)
             {
                 if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
                 {
-                    enemyMovePoint.position += new Vector3(0f, -movePointDistance, 0f);
+                    //enemyMovePoint.position += new Vector3(0f, -movePointDistance, 0f);
+                    ChangePosition(enemyMovePoint.position + new Vector3(0f, -movePointDistance, 0f));
                 }
 
-                transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
+                //transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
             }
 
             
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Taken_Damage);
+        }
+    }
     public void ChangePosition(Vector3 tmp_)
     {
         //Debug.Log(tmp_);
