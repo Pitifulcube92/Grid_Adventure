@@ -11,20 +11,18 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private ISubject watchedSubject; 
     [SerializeField] private List<BaseInteractionTile> lvlObjects = new List<BaseInteractionTile>();
     [SerializeField] private Level_Info currentLevlInfo;
+    [SerializeField] private FadeScript fadeCanvas;
 
     private void Start()
     {
-        //Generate level info
-        currentLevlInfo = scanScene();
-        //Get lvlObjects
-        GetObjectItems();
-        //Get subject
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
+        fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         if (!watchedSubject)
         {
             Debug.LogWarning("subject not found!");
         }
         OnObsEnable();
+        StartCoroutine(IntroIn());
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
 
@@ -54,7 +52,9 @@ public class Level_Observer : MonoBehaviour, IObserver
                 GameObject.Destroy(GameObject.FindGameObjectWithTag("Door"));
                 Debug.Log("Player has open door!");
                 //Debugging 
-                EditorApplication.ExitPlaymode();
+                StartCoroutine(CompleteLevel());
+                //EditorApplication.ExitPlaymode();
+
             }
             else
             {
@@ -89,19 +89,17 @@ public class Level_Observer : MonoBehaviour, IObserver
             lvlObjects.Add(x);
         }
     }
-    public Level_Info scanScene()
+    public void scanScene()
     {
-        Level_Info tmp = new Level_Info();
-        tmp.levelName = SceneManager.GetActiveScene().name;
-        tmp.playerLives = 3;
+        //Level_Info tmp = new Level_Info();
+        currentLevlInfo.levelName = SceneManager.GetActiveScene().name;
+        currentLevlInfo.playerLives = 3;
         if (GameObject.FindGameObjectWithTag("Key"))
-            tmp.hasKey = false;
+            currentLevlInfo.hasKey = false;
         if (GameObject.FindGameObjectWithTag("Door"))
-            tmp.isLevelDone = false;
+            currentLevlInfo.isLevelDone = false;
         if (GameObject.Find("Start Position"))
-            tmp.startPos = GameObject.Find("Start Position").transform.position;
-       
-        return tmp;
+            currentLevlInfo.startPos = GameObject.Find("Start Position").transform.position;
     }
 
     public Level_Info GetLevel_Info()
@@ -120,5 +118,24 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             entry.RevertToInitialState();
         }
+    }
+    IEnumerator IntroIn()
+    {
+        yield return StartCoroutine(fadeCanvas.FadeIn());
+        //Generate level info
+        scanScene();
+        //Get lvlObjects
+        GetObjectItems();
+        //Get subject
+    }
+    IEnumerator CompleteLevel()
+    {   
+        yield return StartCoroutine(fadeCanvas.FadeOut());
+        if (currentLevlInfo.nextLevelName.Equals(""))
+        {
+            EditorApplication.ExitPlaymode();
+        }
+        SceneManager.LoadScene(currentLevlInfo.nextLevelName);
+        //EditorApplication.ExitPlaymode();
     }
 }

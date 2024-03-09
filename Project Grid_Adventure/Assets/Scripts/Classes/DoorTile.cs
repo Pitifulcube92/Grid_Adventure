@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoorTile : BaseInteractionTile
 {
+    [SerializeField] private string NextStageName;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +28,10 @@ public class DoorTile : BaseInteractionTile
         {
             gameObject.SetActive(true);
         }
+    }
+
+    public string ReturnNextStageName()
+    {
+        return NextStageName;
     }
 }
