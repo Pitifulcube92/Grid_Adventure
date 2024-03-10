@@ -11,11 +11,19 @@ public class FadeScript : MonoBehaviour
     [SerializeField] private bool fadeOut;
     [SerializeField] private Image targetCanvas;
     [SerializeField] private float imgAlpha;
-    void Start()
+    private void Awake()
     {
         targetCanvas = gameObject.GetComponentInChildren<Image>();
+        if (!targetCanvas)
+        {
+            Debug.Log("target Canvas not found!");
+        }
         //targetCanvas.color = new Color(0, 0, 0, 0);
         imgAlpha = targetCanvas.color.a;
+    }
+    void Start()
+    {
+      
     }
     public IEnumerator FadeIn()
     {

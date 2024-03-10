@@ -13,16 +13,31 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
 
-    private void Start()
+    private void Awake()
     {
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
+        if (!fadeCanvas)
+        {
+            Debug.LogWarning("Fade Canvas not found!");
+        }
         if (!watchedSubject)
         {
             Debug.LogWarning("subject not found!");
         }
+        //Generate level info
+        scanScene();
+        //Get lvlObjects
+        GetObjectItems();
+        //Get subject
+
         OnObsEnable();
+    }
+    private void Start()
+    {     
+
         StartCoroutine(IntroIn());
+
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
 
@@ -121,15 +136,13 @@ public class Level_Observer : MonoBehaviour, IObserver
     }
     IEnumerator IntroIn()
     {
+        watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeIn());
-        //Generate level info
-        scanScene();
-        //Get lvlObjects
-        GetObjectItems();
-        //Get subject
+        watchedSubject.GetComponent<Player_Tile>().SetIsMoving(true);
     }
     IEnumerator CompleteLevel()
-    {   
+    {
+        watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeOut());
         if (currentLevlInfo.nextLevelName.Equals(""))
         {

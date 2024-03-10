@@ -6,6 +6,7 @@ public class Player_Tile : ISubject
 {
     [SerializeField] private float speed;
     [SerializeField] private float movePointDistance;
+    [SerializeField] private bool isMoving;
     [SerializeField] Transform movePoint;
     [SerializeField] private KeyCode up;
     [SerializeField] private KeyCode down;
@@ -36,29 +37,31 @@ public class Player_Tile : ISubject
     }
     void PlayerMove()
     {
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed*Time.deltaTime);
-
-        if (Vector3.Distance(transform.position, movePoint.position) <= 0.5f && transform.position == movePoint.position)
+        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
+        if (isMoving)
         {
-            if (Input.GetKeyDown(right))
+            if (Vector3.Distance(transform.position, movePoint.position) <= 0.5f && transform.position == movePoint.position)
             {
-                if(!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
-                    movePoint.position += new Vector3(movePointDistance, 0f, 0f);
-            }
-            else if (Input.GetKeyDown(left))
-            {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
-                    movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
-            }
-            else if (Input.GetKeyDown(up))
-            {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
-                    movePoint.position += new Vector3(0f, movePointDistance, 0f);
-            }
-            else if (Input.GetKeyDown(down))
-            {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
-                    movePoint.position += new Vector3(0f, -movePointDistance, 0f);
+                if (Input.GetKeyDown(right))
+                {
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                        movePoint.position += new Vector3(movePointDistance, 0f, 0f);
+                }
+                else if (Input.GetKeyDown(left))
+                {
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                        movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
+                }
+                else if (Input.GetKeyDown(up))
+                {
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
+                        movePoint.position += new Vector3(0f, movePointDistance, 0f);
+                }
+                else if (Input.GetKeyDown(down))
+                {
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
+                        movePoint.position += new Vector3(0f, -movePointDistance, 0f);
+                }
             }
         }
     }
@@ -91,5 +94,11 @@ public class Player_Tile : ISubject
         gameObject.transform.SetLocalPositionAndRotation(tmp_, gameObject.transform.rotation);
         movePoint.transform.SetLocalPositionAndRotation(tmp_, gameObject.transform.rotation);
     }
+
+    public void SetIsMoving(bool tmp_)
+    { isMoving = tmp_; }
+    public bool GetIsMoving() 
+    { return isMoving; }
+
 }
     
