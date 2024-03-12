@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     private void IntializeApplication()
     {
         //Run MainMenu, Play music;
-        uiSys.ChangeUI("Canvas_Template");
+        uiSys.ChangeUI("MenuUI");
     }
     private bool SetUpManagers()
     {

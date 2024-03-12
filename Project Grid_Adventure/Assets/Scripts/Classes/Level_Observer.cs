@@ -30,8 +30,8 @@ public class Level_Observer : MonoBehaviour, IObserver
         //Get lvlObjects
         GetObjectItems();
         //Get subject
-
         OnObsEnable();
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
     }
     private void Start()
     {     
@@ -90,11 +90,12 @@ public class Level_Observer : MonoBehaviour, IObserver
             Debug.Log("Player is hurt back to from start");
             ResetLevelObjects();
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
-              
+
             currentLevlInfo.isLevelDone = false;
             currentLevlInfo.hasKey = false;
             currentLevlInfo.playerLives -= 1;
-
+            GameManager.instance.GetUIManager().GetCurrentUI().GetComponent<UI_Gameplay>().UpdatePlayerLives(currentLevlInfo.playerLives);
+            //GameManager.instance.GetUIManager().GetCurrentUI().GetComponent<UI_Gameplay>().gameplayTexts.Find(x => x.name == "NumberOfLives").text = currentLevlInfo.playerLives.ToString() + "X";
         }
     }
     public void GetObjectItems()

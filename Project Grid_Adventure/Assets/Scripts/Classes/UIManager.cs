@@ -45,4 +45,9 @@ public class UIManager : MonoBehaviour
             }
         }
     }
+
+    public Canvas GetCurrentUI()
+    {
+        return currentCanvas;
+    }
 }

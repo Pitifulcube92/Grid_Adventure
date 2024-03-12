@@ -158,7 +158,6 @@ MonoBehaviour:
   uiCanvas:
   - {fileID: 8748034366732966709, guid: be979b686892f58488aa6de5298af2d6, type: 3}
   - {fileID: 8748034366732966709, guid: 3c5e51a1adec0354b96141c4673bc3c4, type: 3}
-  - {fileID: 8748034366732966709, guid: c66ff583bddf54d4097fe794b17e8d8b, type: 3}
   currentCanvas: {fileID: 0}
 --- !u!114 &1160468675
 MonoBehaviour:
@@ -231,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1304253452}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Primary_UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}

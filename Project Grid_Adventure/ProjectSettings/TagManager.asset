@@ -8,6 +8,7 @@ TagManager:
   - Door
   - Game Manager
   - UI
+  - Level
   layers:
   - Default
   - TransparentFX

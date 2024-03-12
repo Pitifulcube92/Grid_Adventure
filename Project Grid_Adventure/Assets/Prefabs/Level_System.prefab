@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 2129699778576603889}
   m_Layer: 0
   m_Name: Level_System
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,9 +111,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   watchedSubject: {fileID: 0}
-  player: {fileID: 4009468943657416366, guid: 48925b59bc960724782c06a701d59874, type: 3}
-  door: {fileID: 4175101983845572161, guid: 91d8aa1487935f94094eeae769361b81, type: 3}
-  key: {fileID: 5585892975021143482, guid: 031e8c3d99fe80548a75738d1035909c, type: 3}
+  lvlObjects: []
+  currentLevlInfo:
+    hasKey: 0
+    isLevelDone: 0
+    levelName: 
+    nextLevelName: 
+    playerLives: 0
+    startPos: {x: 0, y: 0, z: 0}
+  fadeCanvas: {fileID: 0}
 --- !u!1 &4102463305791383382
 GameObject:
   m_ObjectHideFlags: 0

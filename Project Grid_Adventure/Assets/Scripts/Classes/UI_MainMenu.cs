@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class UI_MainMenu : BaseUIScript
 {
-    [SerializeField] private List<Button> menuButtons;
-    [SerializeField] private GameObject GM;
+    [SerializeField] public List<Button> menuButtons;
+    //[SerializeField] private GameObject GM;
     // Start is called before the first frame update
     void Start()
     {
-        GM = GameObject.FindGameObjectWithTag("Game Manager");
+        //GM = GameObject.FindGameObjectWithTag("Game Manager");
         foreach(Button x in GameObject.FindObjectsOfType<Button>())
         {
             menuButtons.Add(x);
@@ -31,14 +31,16 @@ public class UI_MainMenu : BaseUIScript
                 case "Start btn":
                     x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene("Test_Level_1");});
                     break;
+                case "Continue":
+                    break;
                 case "Level Select btn":
                     x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("Canvas_Template(Level select)");});
                     break;
                 case "Options":
                     break;
             }
-
-
         }
     }
+
+    
 }
