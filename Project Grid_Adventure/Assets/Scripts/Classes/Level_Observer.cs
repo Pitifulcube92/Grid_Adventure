@@ -10,11 +10,14 @@ public class Level_Observer : MonoBehaviour, IObserver
 {
     [SerializeField] private ISubject watchedSubject; 
     [SerializeField] private List<BaseInteractionTile> lvlObjects = new List<BaseInteractionTile>();
+    [SerializeField] private GameObject GamePlayUI;
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
 
     private void Awake()
     {
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GamePlayUI = GameObject.FindGameObjectWithTag("GameplayUI");
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         if (!fadeCanvas)
@@ -31,7 +34,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         GetObjectItems();
         //Get subject
         OnObsEnable();
-        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        
     }
     private void Start()
     {     
@@ -94,7 +97,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             currentLevlInfo.isLevelDone = false;
             currentLevlInfo.hasKey = false;
             currentLevlInfo.playerLives -= 1;
-            GameManager.instance.GetUIManager().GetCurrentUI().GetComponent<UI_Gameplay>().UpdatePlayerLives(currentLevlInfo.playerLives);
+            GamePlayUI.GetComponent<UI_Gameplay>().UpdatePlayerLives(currentLevlInfo.playerLives);
             //GameManager.instance.GetUIManager().GetCurrentUI().GetComponent<UI_Gameplay>().gameplayTexts.Find(x => x.name == "NumberOfLives").text = currentLevlInfo.playerLives.ToString() + "X";
         }
     }

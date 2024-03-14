@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.UI;
 
 public class UI_MainMenu : BaseUIScript
@@ -37,6 +38,9 @@ public class UI_MainMenu : BaseUIScript
                     x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("Canvas_Template(Level select)");});
                     break;
                 case "Options":
+                    break;
+                case "Quit btn":
+                    x.onClick.AddListener(delegate {Application.Quit();EditorApplication.ExitPlaymode(); });
                     break;
             }
         }

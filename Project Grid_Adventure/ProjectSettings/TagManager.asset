@@ -9,6 +9,7 @@ TagManager:
   - Game Manager
   - UI
   - Level
+  - GameplayUI
   layers:
   - Default
   - TransparentFX

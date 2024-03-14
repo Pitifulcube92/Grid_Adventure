@@ -39,13 +39,17 @@ public class UI_Gameplay : BaseUIScript
         }
         foreach (Text x in GameObject.FindObjectsOfType<Text>())
         {
-            gameplayTexts.Add(x);
+                gameplayTexts.Add(x);
+                Debug.Log("Text Name:" + x.name);
         }
         SetUIConfigure();
     }
     public void UpdatePlayerLives(int tmp_)
     {
-        gameplayTexts.Find(x => x.name == "NumberOfLives").text = tmp_ + "X";
+        
+        gameplayTexts.Find(x => x.name == "NumberOfLives").text = tmp_.ToString()+"X";
+        Debug.Log("Changed Lives Text!");
+        //tmp_.ToString() + "X";
     }
     override public void SetUIConfigure()
     {

@@ -32,11 +32,11 @@ public class FadeScript : MonoBehaviour
         {
             c.a = alpha;
             targetCanvas.color = c;
-            Debug.Log("Fading In...");
+            //Debug.Log("Fading In...");
             yield return new WaitForSeconds(.1f);
         }
         yield return new WaitForSeconds(.11f);
-        Debug.Log("Done Fading In!");
+       // Debug.Log("Done Fading In!");
     }
 
     public IEnumerator FadeOut()
@@ -46,11 +46,11 @@ public class FadeScript : MonoBehaviour
         {
             c.a = alpha;
             targetCanvas.color = c;
-            Debug.Log("Fading Out...");
+            //Debug.Log("Fading Out...");
             yield return new WaitForSeconds(0.1f);
         }
         yield return new WaitForSeconds(.1f);
-        Debug.Log("Done Fading Out!");
+        //Debug.Log("Done Fading Out!");
     }
     // Update is called once per frame
     void Update()
