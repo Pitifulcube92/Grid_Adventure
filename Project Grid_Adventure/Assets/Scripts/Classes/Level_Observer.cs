@@ -16,7 +16,7 @@ public class Level_Observer : MonoBehaviour, IObserver
 
     private void Awake()
     {
-        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        //GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
         GamePlayUI = GameObject.FindGameObjectWithTag("GameplayUI");
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
@@ -98,7 +98,6 @@ public class Level_Observer : MonoBehaviour, IObserver
             currentLevlInfo.hasKey = false;
             currentLevlInfo.playerLives -= 1;
             GamePlayUI.GetComponent<UI_Gameplay>().UpdatePlayerLives(currentLevlInfo.playerLives);
-            //GameManager.instance.GetUIManager().GetCurrentUI().GetComponent<UI_Gameplay>().gameplayTexts.Find(x => x.name == "NumberOfLives").text = currentLevlInfo.playerLives.ToString() + "X";
         }
     }
     public void GetObjectItems()

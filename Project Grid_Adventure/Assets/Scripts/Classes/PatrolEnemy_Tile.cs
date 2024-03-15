@@ -9,10 +9,12 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     // Start is called before the first frame update
     void Start()
     {
-        currentMove = 0;
-
+        currentMove = CommandPath.Find(x => x.index == 0).index;
+        currentDirection = CommandPath.Find(x => x.index == 0).Direction;
         //Debug.Log(CommandPath.Count);
+        Invokebehavior();
         base.baseStart();
+
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     }
     public override void Invokebehavior()
     {
-        //Debug.Log("Invoked Behavior!");
+        Debug.Log("Invoked Behavior!");
         //Check if ID is last of the List
         //int tmpLast = CommandPath.FindIndex(CommandPath.Count, x => x.index == currentMove);
         int tmpIndex = CommandPath.Find(x => x.index == currentMove).index;
@@ -39,13 +41,12 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         if (currentMove == tmpIndex) 
         {
             //Debug.Log(CommandPath.Find(x => x.index == currentMove).Direction);       
-            MoveEnemy(CommandPath.Find(x => x.index == currentMove).Direction);
-            //currentDirection = CommandPath.Find(x => x.index == currentMove).Direction;
-
-            currentMove++;
+            MoveEnemy(CommandPath.Find(x => x.index == currentMove).Direction);          
+            //currentDirection = CommandPath.Find(x => x.index == currentMove).Direction;         
         }
-
-       
+        
+        currentMove++;
     }
+    
 
 }
