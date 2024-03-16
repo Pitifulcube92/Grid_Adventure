@@ -16,7 +16,7 @@ public class Level_Observer : MonoBehaviour, IObserver
 
     private void Awake()
     {
-        //GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
         GamePlayUI = GameObject.FindGameObjectWithTag("GameplayUI");
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
