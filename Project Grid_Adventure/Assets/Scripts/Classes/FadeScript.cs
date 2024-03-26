@@ -9,17 +9,19 @@ public class FadeScript : MonoBehaviour
 
     [SerializeField] private bool fadeIn;
     [SerializeField] private bool fadeOut;
-    [SerializeField] private Image targetCanvas;
+    [SerializeField] private Canvas targetCanvas;
+    [SerializeField] private Image targetImage;
     [SerializeField] private float imgAlpha;
     private void Awake()
     {
-        targetCanvas = gameObject.GetComponentInChildren<Image>();
+        targetImage = gameObject.GetComponentInChildren<Image>();
+        targetCanvas = GameObject.Find("FadeCanvas").GetComponent<Canvas>();
         if (!targetCanvas)
         {
             Debug.Log("target Canvas not found!");
         }
         //targetCanvas.color = new Color(0, 0, 0, 0);
-        imgAlpha = targetCanvas.color.a;
+        imgAlpha = targetImage.color.a;
     }
     void Start()
     {
@@ -27,29 +29,31 @@ public class FadeScript : MonoBehaviour
     }
     public IEnumerator FadeIn()
     {
-        Color c = targetCanvas.color;
+        Color c = targetImage.color;
         for(float alpha = c.a; alpha >= 0; alpha -= 0.1f)
         {
             c.a = alpha;
-            targetCanvas.color = c;
+            targetImage.color = c;
             //Debug.Log("Fading In...");
             yield return new WaitForSeconds(.1f);
         }
+        targetCanvas.sortingOrder = 0;
         yield return new WaitForSeconds(.11f);
        // Debug.Log("Done Fading In!");
     }
 
     public IEnumerator FadeOut()
     {
-        Color c = targetCanvas.color;
-        for(float alpha = c.a; alpha <= 2f; alpha += 0.1f)
+        Color c = targetImage.color;
+        targetCanvas.sortingOrder = 2;
+        for (float alpha = c.a; alpha <= 2f; alpha += 0.1f)
         {
             c.a = alpha;
-            targetCanvas.color = c;
+            targetImage.color = c;
             //Debug.Log("Fading Out...");
             yield return new WaitForSeconds(0.1f);
         }
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.11f);
         //Debug.Log("Done Fading Out!");
     }
     // Update is called once per frame

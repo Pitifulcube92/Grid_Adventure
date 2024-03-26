@@ -12,6 +12,8 @@ TagManager:
   - GameplayUI
   - PauseGroup
   - PauseSettingGroup
+  - PauseUI
+  - UICanvas
   layers:
   - Default
   - TransparentFX

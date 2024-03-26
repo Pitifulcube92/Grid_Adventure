@@ -61,7 +61,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &8938289087294459720
 MonoBehaviour:
@@ -118,6 +118,7 @@ MonoBehaviour:
   fadeIn: 0
   fadeOut: 0
   targetCanvas: {fileID: 0}
+  targetImage: {fileID: 0}
   imgAlpha: 0
 --- !u!1 &4565443959444184187
 GameObject:

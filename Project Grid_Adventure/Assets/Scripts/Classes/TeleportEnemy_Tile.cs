@@ -43,7 +43,7 @@ public class TeleportEnemy_Tile : BaseEnemy_Tile
     {
         //Move Character from a random position
         int tmp = GenerateRandomIndex();
-        Debug.Log("Index Next: " + tmp);
+        //Debug.Log("Index Next: " + tmp);
         ChangePosition(enemyPaths.Find(x => x.index == tmp).positionInfo.position);
     }
 }

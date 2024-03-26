@@ -35,12 +35,12 @@ public class UI_MainMenu : BaseUIScript
                 case "Continue":
                     break;
                 case "Level Select btn":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("Canvas_Template(Level select)");});
+                    //x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("Canvas_Template(Level select)",GameManager.instance.transform);});
                     break;
                 case "Options":
                     break;
                 case "Quit btn":
-                    x.onClick.AddListener(delegate {Application.Quit();EditorApplication.ExitPlaymode(); });
+                    //x.onClick.AddListener(delegate {Application.Quit();EditorApplication.ExitPlaymode(); });
                     break;
             }
         }

@@ -30,6 +30,9 @@ public class UIManager : MonoBehaviour
 
     public void ChangeUI(string name_)
     {
+ 
+        Destroy(GameObject.FindGameObjectWithTag("UICanvas"));
+
         foreach(Canvas x in uiCanvas)
         {
             Debug.Log(x.name);

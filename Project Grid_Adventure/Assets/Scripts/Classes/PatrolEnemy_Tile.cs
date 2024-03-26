@@ -98,7 +98,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
 
     public override void Invokebehavior()
     {
-        Debug.Log("Invoked Behavior!");
+        //Debug.Log("Invoked Behavior!");
         //Check if ID is last of the List
         //int tmpLast = CommandPath.FindIndex(CommandPath.Count, x => x.index == currentMove);
         int tmpIndex = CommandPath.Find(x => x.index == currentMove).index;
@@ -127,7 +127,8 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         {
             //transform.position = Vector3.Lerp(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
             transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.position, speed * Time.deltaTime);
-            Debug.Log("Moving!");
+            //Debug.Log("Moving!");
+            //Debug.Log("Moving!");
             yield return null;
         }
         //Debug.Log("Moved completed!");

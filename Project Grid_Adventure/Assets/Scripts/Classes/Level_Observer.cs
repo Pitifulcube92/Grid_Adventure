@@ -10,14 +10,15 @@ public class Level_Observer : MonoBehaviour, IObserver
 {
     [SerializeField] private ISubject watchedSubject; 
     [SerializeField] private List<BaseInteractionTile> lvlObjects = new List<BaseInteractionTile>();
-    [SerializeField] private GameObject GamePlayUI;
+    [SerializeField] private UI_Gameplay GamePlayUI;
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
 
     private void Awake()
     {
+
         GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
-        GamePlayUI = GameObject.FindGameObjectWithTag("GameplayUI");
+        GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         if (!fadeCanvas)
@@ -97,7 +98,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             currentLevlInfo.isLevelDone = false;
             currentLevlInfo.hasKey = false;
             currentLevlInfo.playerLives -= 1;
-            GamePlayUI.GetComponent<UI_Gameplay>().UpdatePlayerLives(currentLevlInfo.playerLives);
+            GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
         }
     }
     public void GetObjectItems()
