@@ -35,13 +35,12 @@ public class Level_Observer : MonoBehaviour, IObserver
         GetObjectItems();
         //Get subject
         OnObsEnable();
-        
+
     }
     private void Start()
-    {     
-
+    {
+        
         StartCoroutine(IntroIn());
-
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
 
@@ -86,7 +85,8 @@ public class Level_Observer : MonoBehaviour, IObserver
             {
                 
                 Debug.Log("Player is dead... Game Over");
-                EditorApplication.ExitPlaymode();
+                StartCoroutine(GameOver());
+                //EditorApplication.ExitPlaymode();
                 //GameObject.Destroy(GameObject.FindGameObjectWithTag("Player"));
             }
             //level restarts then take player life!
@@ -144,13 +144,20 @@ public class Level_Observer : MonoBehaviour, IObserver
         yield return StartCoroutine(fadeCanvas.FadeIn());
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(true);
     }
+    IEnumerator GameOver()
+    {
+        //watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
+        yield return StartCoroutine(fadeCanvas.FadeOut());
+        GameManager.instance.GetLevelManager().LoadScene("Main Menu");
+    }
     IEnumerator CompleteLevel()
     {
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeOut());
         if (currentLevlInfo.nextLevelName.Equals(""))
         {
-            EditorApplication.ExitPlaymode();
+            //EditorApplication.ExitPlaymode();
+            Application.Quit();
         }
         SceneManager.LoadScene(currentLevlInfo.nextLevelName);
         //EditorApplication.ExitPlaymode();

@@ -40,7 +40,9 @@ public class UI_MainMenu : BaseUIScript
                 case "Options":
                     break;
                 case "Quit btn":
-                    //x.onClick.AddListener(delegate {Application.Quit();EditorApplication.ExitPlaymode(); });
+                    x.onClick.AddListener(delegate {Application.Quit();
+                                                    //EditorApplication.ExitPlaymode();
+                                                    });
                     break;
             }
         }

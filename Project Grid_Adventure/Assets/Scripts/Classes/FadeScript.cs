@@ -57,16 +57,16 @@ public class FadeScript : MonoBehaviour
         //Debug.Log("Done Fading Out!");
     }
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown("f"))
-        {
-            StartCoroutine(FadeIn());
-        }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown("f"))
+    //    {
+    //        StartCoroutine(FadeIn());
+    //    }
 
-        if (Input.GetKeyDown("g"))
-        {
-            StartCoroutine(FadeOut());
-        }
-    }
+    //    if (Input.GetKeyDown("g"))
+    //    {
+    //        StartCoroutine(FadeOut());
+    //    }
+    //}
 }

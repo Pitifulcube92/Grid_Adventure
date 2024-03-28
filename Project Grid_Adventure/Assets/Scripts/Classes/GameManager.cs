@@ -53,6 +53,19 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    public void ToggleFullScreen(bool tmp_)
+    {
+        Debug.Log(tmp_);
+        if (tmp_)
+        {
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+        }
+        else
+        {
+            Screen.fullScreenMode = FullScreenMode.Windowed;
+        }
+    }
+
     public UIManager GetUIManager() { return uiSys; }
     public SoundManager GetSoundManager() { return audioSys; }
     public LevelManager GetLevelManager() { return lvlSys; }

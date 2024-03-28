@@ -8,6 +8,8 @@ public class UI_Gameplay : BaseUIScript
 {
     [SerializeField] public Player_Tile target_player;
     [SerializeField] public Level_Observer lvlObs;
+    [SerializeField] private GameObject pauseContext;
+    [SerializeField] private GameObject settingContext;
 
     [Header("UI Components")]
     [SerializeField] public List<Button> gameplayButtons;
@@ -69,6 +71,8 @@ public class UI_Gameplay : BaseUIScript
         {
             gameplayToggles.Add(x);
         }
+        pauseContext = GameObject.FindGameObjectWithTag("PauseGroup");
+        settingContext = GameObject.FindGameObjectWithTag("PauseSettingGroup");
 
         SetUIConfigure();
 
@@ -92,10 +96,10 @@ public class UI_Gameplay : BaseUIScript
                     x.onClick.AddListener(delegate { OpenSettings(); });
                     break;
                 case "Button Exit":
-                    x.onClick.AddListener(delegate { });
+                    x.onClick.AddListener(delegate { Time.timeScale = 1; GameManager.instance.GetLevelManager().LoadScene("Main Menu"); });
                     break;
-                case "Setting Back Btn":
-                    x.onClick.AddListener(delegate { });
+                case "Button SettingBack":
+                    x.onClick.AddListener(delegate { CloseSettings(); });
                     break;
             }
         }
@@ -118,6 +122,7 @@ public class UI_Gameplay : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Fullscreen Toggle":
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.ToggleFullScreen(x.isOn); });
                     break;
             }
         }
@@ -163,6 +168,13 @@ public class UI_Gameplay : BaseUIScript
     }
     public void OpenSettings()
     {
+        pauseContext.SetActive(false);
+        settingContext.SetActive(true);
+    }
 
+    public void CloseSettings()
+    {
+        pauseContext.SetActive(true);
+        settingContext.SetActive(false);
     }
 }

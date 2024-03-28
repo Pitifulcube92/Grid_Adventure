@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 198021670426715283}
   m_Layer: 0
-  m_Name: Settings
+  m_Name: Settings Context
   m_TagString: PauseSettingGroup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 1919127954108965070}
   m_Layer: 5
   m_Name: Button Resume
-  m_TagString: PauseGroup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +622,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7179393567326728515}
-  m_Father: {fileID: 2770377708653866693}
+  m_Father: {fileID: 2425774228316405877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -742,9 +742,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 367325414101453507}
-  - {fileID: 3142407960714521847}
-  - {fileID: 5426685492888266367}
-  - {fileID: 7913369718193640696}
+  - {fileID: 2425774228316405877}
   - {fileID: 198021670426715283}
   m_Father: {fileID: 2603811480736271995}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -875,7 +873,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &2769931353237789445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target_player: {fileID: 0}
   lvlObs: {fileID: 0}
+  pauseContext: {fileID: 0}
+  settingContext: {fileID: 0}
   gameplayButtons: []
   gameplayTexts: []
   gameplaySliders: []
@@ -1435,7 +1435,7 @@ GameObject:
   - component: {fileID: 8954071246765187257}
   - component: {fileID: 222641869127022156}
   m_Layer: 5
-  m_Name: Setting Back Btn
+  m_Name: Button SettingBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 2369725544136525720}
   m_Layer: 5
   m_Name: Button Setting
-  m_TagString: PauseGroup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1763,7 +1763,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2693718348761452579}
-  m_Father: {fileID: 2770377708653866693}
+  m_Father: {fileID: 2425774228316405877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2010,6 +2010,44 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Back to title
+--- !u!1 &6776101069400670034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2425774228316405877}
+  m_Layer: 5
+  m_Name: Pause Context
+  m_TagString: PauseGroup
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2425774228316405877
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6776101069400670034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3142407960714521847}
+  - {fileID: 5426685492888266367}
+  - {fileID: 7913369718193640696}
+  m_Father: {fileID: 2770377708653866693}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7770932376981870224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,7 +2295,7 @@ GameObject:
   - component: {fileID: 6519708814062283787}
   m_Layer: 5
   m_Name: Button Exit
-  m_TagString: PauseGroup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2275,7 +2313,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 448216895535713308}
-  m_Father: {fileID: 2770377708653866693}
+  m_Father: {fileID: 2425774228316405877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
