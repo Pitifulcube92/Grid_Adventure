@@ -122,6 +122,7 @@ public class UI_Gameplay : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Fullscreen Toggle":
+                    x.isOn = Screen.fullScreen;
                     x.onValueChanged.AddListener(delegate { GameManager.instance.ToggleFullScreen(x.isOn); });
                     break;
             }
@@ -132,6 +133,8 @@ public class UI_Gameplay : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Volume Slider":
+                    x.value = GameManager.instance.GetSoundManager().GetVolume();
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetSoundManager().SetMasterVolume(x.value); });
                     break;
             }
         }
@@ -171,7 +174,6 @@ public class UI_Gameplay : BaseUIScript
         pauseContext.SetActive(false);
         settingContext.SetActive(true);
     }
-
     public void CloseSettings()
     {
         pauseContext.SetActive(true);

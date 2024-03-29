@@ -6,11 +6,11 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [Range(0.0f, 1f), SerializeField] private float volume;
-    [SerializeField] private int maxVolume;
+    [SerializeField] private float maxVolume;
     [SerializeField] private List<AudioClip> sfxClips;
     [SerializeField] private List<AudioClip> musicClips;
     [SerializeField] private AudioSource sfxSource;
-    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource bgmSource;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
     }
     public bool SetUpDefaultConfig()
     {
-        if (sfxSource == null || musicSource == null)
+        if (sfxSource == null || bgmSource == null)
         {
             Debug.LogWarning("sfx source or music source is not assigned!");
             return false;
@@ -32,9 +32,9 @@ public class SoundManager : MonoBehaviour
         }
 
         sfxSource.maxDistance = maxVolume;
-        musicSource.maxDistance = maxVolume;
+        bgmSource.maxDistance = maxVolume;
         sfxSource.volume = volume;
-        musicSource.volume = volume;
+        bgmSource.volume = volume;
         return true;
     }
 
@@ -66,9 +66,35 @@ public class SoundManager : MonoBehaviour
                     Debug.LogWarning("Error has occured in SFX audio clip!");
                     return;
                 }
-                musicSource.clip = x;
-                musicSource.Play();
+                bgmSource.clip = x;
+                bgmSource.Play();
             }
         }
+    }
+
+    public void SetLoopBGM(bool tmp_)
+    {
+        if (tmp_)
+        {
+            bgmSource.loop = tmp_;
+        }
+        else
+        {
+            bgmSource.loop = tmp_;
+        }
+    }
+
+    public void SetMasterVolume(float tmp_)
+    {
+        bgmSource.volume = tmp_;
+        sfxSource.volume = tmp_;
+    }
+    public float GetVolume()
+    {
+        return volume;
+    }
+    public float GetMaxVolume()
+    {
+        return maxVolume;
     }
 }
