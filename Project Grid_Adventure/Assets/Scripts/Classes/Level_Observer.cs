@@ -8,7 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class Level_Observer : MonoBehaviour, IObserver
 {
-    [SerializeField] private ISubject watchedSubject; 
+    [Header("Primary Info")]
+    [SerializeField] private ISubject watchedSubject;
+    [SerializeField] private bool isKeySpawned;
+    [SerializeField] private GameObject keyPrefab;
+    [SerializeField] private GameObject doorPrefab;
+    [Header("Secondary Info")]
     [SerializeField] private List<BaseInteractionTile> lvlObjects = new List<BaseInteractionTile>();
     [SerializeField] private UI_Gameplay GamePlayUI;
     [SerializeField] private Level_Info currentLevlInfo;
@@ -18,6 +23,8 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
 
         GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        scanScene();
+        //Get lvlObjects
         GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
@@ -30,8 +37,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             Debug.LogWarning("subject not found!");
         }
         //Generate level info
-        scanScene();
-        //Get lvlObjects
+        
         GetObjectItems();
         //Get subject
         OnObsEnable();
@@ -119,6 +125,9 @@ public class Level_Observer : MonoBehaviour, IObserver
             currentLevlInfo.isLevelDone = false;
         if (GameObject.Find("Start Position"))
             currentLevlInfo.startPos = GameObject.Find("Start Position").transform.position;
+
+        Instantiate(keyPrefab, GameObject.Find("Key Position").transform);
+        Instantiate(doorPrefab, GameObject.Find("Door Position").transform);
     }
 
     public Level_Info GetLevel_Info()

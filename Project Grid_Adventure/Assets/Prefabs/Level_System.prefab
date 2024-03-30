@@ -111,7 +111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   watchedSubject: {fileID: 0}
+  isKeySpawned: 0
+  keyPrefab: {fileID: 5585892975021143482, guid: 031e8c3d99fe80548a75738d1035909c, type: 3}
+  doorPrefab: {fileID: 4175101983845572161, guid: 91d8aa1487935f94094eeae769361b81, type: 3}
   lvlObjects: []
+  GamePlayUI: {fileID: 0}
   currentLevlInfo:
     hasKey: 0
     isLevelDone: 0
