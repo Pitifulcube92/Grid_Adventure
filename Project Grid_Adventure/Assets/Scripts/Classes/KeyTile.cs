@@ -18,7 +18,7 @@ public class KeyTile : BaseInteractionTile
         if (collision.tag == "Player")
         {
             collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Interact_Key);
-            Debug.Log(collision.name);
+            Debug.Log("Grabbed Key");
         }
     }
 

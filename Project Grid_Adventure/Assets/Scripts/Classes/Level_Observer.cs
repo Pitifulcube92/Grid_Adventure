@@ -36,8 +36,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             Debug.LogWarning("subject not found!");
         }
-        //Generate level info
-        
+        //Generate level info       
         GetObjectItems();
         //Get subject
         OnObsEnable();
@@ -61,50 +60,54 @@ public class Level_Observer : MonoBehaviour, IObserver
     }
     void IObserver.OnNotify(PlayerState action_)
     {
-        if (action_ == PlayerState.Interact_Key)
+        switch (action_)
         {
-            Debug.Log("Player has taken key");
-            currentLevlInfo.hasKey = true;
-            GameObject.FindGameObjectWithTag("Key").SetActive(false);
-        }
-        else if (action_ == PlayerState.Interact_Door)
-        {
-            
-            if(currentLevlInfo.hasKey == true)
-            {
-                currentLevlInfo.isLevelDone = true;
-                GameObject.Destroy(GameObject.FindGameObjectWithTag("Door"));
-                Debug.Log("Player has open door!");
-                //Debugging 
-                StartCoroutine(CompleteLevel());
-                //EditorApplication.ExitPlaymode();
+            case PlayerState.Interact_Key:
+                Debug.Log("Player has taken key");
+                currentLevlInfo.hasKey = true;
+                GameObject.FindGameObjectWithTag("Key").SetActive(false);
+                break;
 
-            }
-            else
-            {
-                Debug.Log("Player does not have Key!");
-            }
-            
-        }else if (action_ == PlayerState.Taken_Damage)
-        {
-            if (currentLevlInfo.playerLives == 0)
-            {
-                
-                Debug.Log("Player is dead... Game Over");
-                StartCoroutine(GameOver());
-                //EditorApplication.ExitPlaymode();
-                //GameObject.Destroy(GameObject.FindGameObjectWithTag("Player"));
-            }
-            //level restarts then take player life!
+            case PlayerState.Interact_Door:
+                if (currentLevlInfo.hasKey == true)
+                {
+                    currentLevlInfo.isLevelDone = true;
+                    GameObject.Destroy(GameObject.FindGameObjectWithTag("Door"));
+                    Debug.Log("Player has open door!");
+                    //Debugging 
+                    StartCoroutine(CompleteLevel());
+                    //EditorApplication.ExitPlaymode();
+                }
+                else
+                {
+                    Debug.Log("Player does not have Key!");
+                }
+                break;
 
-            Debug.Log("Player is hurt back to from start");
-            ResetLevelObjects();
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
+            case PlayerState.Taken_Damage:
+                if (currentLevlInfo.playerLives == 0)
+                {
+                    Debug.Log("Player is dead... Game Over");
+                    StartCoroutine(GameOver());
+                    //EditorApplication.ExitPlaymode();
+                    //GameObject.Destroy(GameObject.FindGameObjectWithTag("Player"));
+                }
 
-            currentLevlInfo.isLevelDone = false;
-            currentLevlInfo.hasKey = false;
-            currentLevlInfo.playerLives -= 1;
-            GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
+                    //level restarts then take player life!
+                Debug.Log("Player is hurt back to from start");
+                ResetLevelObjects();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
+
+                currentLevlInfo.isLevelDone = false;
+                currentLevlInfo.hasKey = false;
+                currentLevlInfo.playerLives -= 1;
+                GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
+                break;
+
+            case PlayerState.Interact_Fragment_Key:
+                gameObject.GetComponent<Fragment_Key_Componenet>().GainFragmentKey();
+                break;
+
         }
     }
     public void GetObjectItems()
@@ -126,7 +129,9 @@ public class Level_Observer : MonoBehaviour, IObserver
         if (GameObject.Find("Start Position"))
             currentLevlInfo.startPos = GameObject.Find("Start Position").transform.position;
 
-        Instantiate(keyPrefab, GameObject.Find("Key Position").transform);
+        if (isKeySpawned == true) { 
+            Instantiate(keyPrefab, GameObject.Find("Key Position").transform);
+        }
         Instantiate(doorPrefab, GameObject.Find("Door Position").transform);
     }
 
@@ -146,6 +151,8 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             entry.RevertToInitialState();
         }
+        if (gameObject.GetComponent<Fragment_Key_Componenet>())
+            gameObject.GetComponent<Fragment_Key_Componenet>().ResetComponent();
     }
     IEnumerator IntroIn()
     {
