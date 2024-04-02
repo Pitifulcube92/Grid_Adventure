@@ -15,13 +15,7 @@ public class Fragment_Key_Componenet : Base_Level_Component
     // Start is called before the first frame update
     void Start()
     {
-        if(fragmentLocations.Count == 0)
-        {
-            foreach(GameObject x in GameObject.FindGameObjectsWithTag("Fragment Location"))
-            {
-                fragmentLocations.Add(x.transform);
-            }
-        }
+        base.baseStart();        
     }
 
     private void CheckFragmentRequirement()
@@ -38,6 +32,14 @@ public class Fragment_Key_Componenet : Base_Level_Component
     }
     public override void InitalizeComponent()
     {
+        if (fragmentLocations.Count == 0)
+        {
+            foreach (GameObject x in GameObject.FindGameObjectsWithTag("Fragment Location"))
+            {
+                fragmentLocations.Add(x.transform);
+            }
+        }
+
         foreach (Transform x in fragmentLocations)
         {
             Instantiate(fragmentKey, x);

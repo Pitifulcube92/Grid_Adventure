@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Switch_Tile : BaseInteractionTile
 {
-    [SerializeField] private GameObject gate;
+    [SerializeField] private Gate_Tile gate;
     [SerializeField] private bool initActiveSelf;
     // Start is called before the first frame update
     void Start()
     {
         basePosition = gameObject.transform;
         baseSpriteRender = gameObject.GetComponent<SpriteRenderer>();
-        initActiveSelf = gate.activeSelf;
+        initActiveSelf = gate.gameObject.activeSelf;
         if (!gate || !baseSpriteRender)
         {
             Debug.LogError("No gate or sprite is not assigned!!");
@@ -24,29 +24,32 @@ public class Switch_Tile : BaseInteractionTile
         Debug.Log(collision.name);
         if (collision.tag == "Player")
         {
-            if (gate.activeSelf == true)
+            if (gate.gameObject.activeSelf == true)
             {
                 //switch sprite!
                 baseSpriteRender.transform.Rotate(0.0f, 180.0f, 0.0f);
-                gate.SetActive(false);
+                gate.gameObject.SetActive(false);
                 Debug.Log("Rotation y: " + baseSpriteRender.transform.rotation.y);
             }
             else
             {
                 baseSpriteRender.transform.Rotate(0.0f, -180.0f, 0.0f);
-                gate.SetActive(true);
+                gate.gameObject.SetActive(true);
                 Debug.Log("Rotation y: " + baseSpriteRender.transform.rotation.y);
             }
            
         }
     }
-    
+    public GameObject GetGate()
+    {
+        return gate.gameObject;
+    }
 
     override public void RevertToInitialState()
     {
         //Return state of gate
         Debug.Log("Switch call!");
-        gate.SetActive(initActiveSelf);
+        gate.gameObject.SetActive(initActiveSelf);
         float tmpY_ = baseSpriteRender.transform.rotation.y;
         if(tmpY_ == 1)
         {

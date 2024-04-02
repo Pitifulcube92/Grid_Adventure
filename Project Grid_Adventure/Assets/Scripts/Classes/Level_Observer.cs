@@ -15,6 +15,7 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private GameObject doorPrefab;
     [Header("Secondary Info")]
     [SerializeField] private List<BaseInteractionTile> lvlObjects = new List<BaseInteractionTile>();
+    [SerializeField] private List<Base_Level_Component> levelComponents = new List<Base_Level_Component>();
     [SerializeField] private UI_Gameplay GamePlayUI;
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
@@ -28,6 +29,8 @@ public class Level_Observer : MonoBehaviour, IObserver
         GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
+        
+        //Generate level info           
         if (!fadeCanvas)
         {
             Debug.LogWarning("Fade Canvas not found!");
@@ -36,7 +39,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             Debug.LogWarning("subject not found!");
         }
-        //Generate level info       
+        
         GetObjectItems();
         //Get subject
         OnObsEnable();
@@ -66,6 +69,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 Debug.Log("Player has taken key");
                 currentLevlInfo.hasKey = true;
                 GameObject.FindGameObjectWithTag("Key").SetActive(false);
+                GameObject.FindGameObjectWithTag("Door").layer = 0;
                 break;
 
             case PlayerState.Interact_Door:
@@ -97,7 +101,6 @@ public class Level_Observer : MonoBehaviour, IObserver
                 Debug.Log("Player is hurt back to from start");
                 ResetLevelObjects();
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
-
                 currentLevlInfo.isLevelDone = false;
                 currentLevlInfo.hasKey = false;
                 currentLevlInfo.playerLives -= 1;
@@ -138,11 +141,6 @@ public class Level_Observer : MonoBehaviour, IObserver
     public Level_Info GetLevel_Info()
     {
         return currentLevlInfo;
-    }
-    public GameObject GetKeyItem(string tmp_)
-    {
-        //Return Item from dictionary
-        return new GameObject();
     }
 
     public void ResetLevelObjects()

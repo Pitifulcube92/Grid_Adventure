@@ -9,6 +9,10 @@ public abstract class Base_Level_Component : MonoBehaviour
     {
         InitalizeComponent();
     }
+    public void baseStart()
+    {
+        Start();
+    }
     public abstract void InitalizeComponent();
     public abstract void ResetComponent();
 }

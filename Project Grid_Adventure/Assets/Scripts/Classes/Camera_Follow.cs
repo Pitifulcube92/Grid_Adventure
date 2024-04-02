@@ -16,6 +16,13 @@ public class Camera_Follow : MonoBehaviour
             centerPoint = gameObject.transform;
         if (!player)
             player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (canMove)
+        {
+            gameObject.transform.position = new Vector3(GameObject.Find("Start Position").transform.position.x,
+                                                        GameObject.Find("Start Position").transform.position.y,
+                                                        gameObject.transform.position.z);
+        }
+                
     }
 
 
