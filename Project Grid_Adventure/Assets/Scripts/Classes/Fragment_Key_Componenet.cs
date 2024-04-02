@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Fragment_Key_Componenet : MonoBehaviour
+public class Fragment_Key_Componenet : Base_Level_Component
 {
 
     [Header("Info")]
@@ -22,18 +22,8 @@ public class Fragment_Key_Componenet : MonoBehaviour
                 fragmentLocations.Add(x.transform);
             }
         }
-
-        InitalizeComponent();
     }
 
-    // Update is called once per frame
-    private void InitalizeComponent()
-    {
-        foreach(Transform x in fragmentLocations)
-        {
-            Instantiate(fragmentKey, x);
-        }
-    }
     private void CheckFragmentRequirement()
     {
         if(MaxFragments == currentFragments)
@@ -46,7 +36,15 @@ public class Fragment_Key_Componenet : MonoBehaviour
         currentFragments++;
         CheckFragmentRequirement();
     }
-    public void ResetComponent()
+    public override void InitalizeComponent()
+    {
+        foreach (Transform x in fragmentLocations)
+        {
+            Instantiate(fragmentKey, x);
+        }
+    }
+
+    public override void ResetComponent()
     {
         currentFragments = 0;
     }
