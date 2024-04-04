@@ -6,7 +6,6 @@ using System;
 [Serializable]
 public struct GateInfo
 {
-    
     public int id;
     public Switch_Tile switchT;
     public GameObject gate;

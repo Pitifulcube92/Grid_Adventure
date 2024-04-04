@@ -38,6 +38,7 @@ public class Fragment_Key_Componenet : Base_Level_Component
             {
                 fragmentLocations.Add(x.transform);
             }
+            MaxFragments = GameObject.FindGameObjectsWithTag("Fragment Location").Length;
         }
 
         foreach (Transform x in fragmentLocations)

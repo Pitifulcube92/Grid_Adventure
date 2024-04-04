@@ -32,7 +32,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         //Debug.Log(CommandPath.Count);
         Invokebehavior();
         base.baseStart();
-        StopCoroutine("MoveToTarget");
+        //StopCoroutine("MoveToTarget");
         StartCoroutine(MoveToTarget());
 
     }
@@ -104,9 +104,10 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         int tmpIndex = CommandPath.Find(x => x.index == currentMove).index;
         int tmpLastIndex = CommandPath.Find(x => x.index == CommandPath.Count - 1).index;
         //Debug.Log("Current Move:" + currentMove + "Path index:" + tmpIndex + "Last index:" +tmpLastIndex);
-        //Debug.Log(currentMove == tmpLastIndex);
+        Debug.Log(tmpLastIndex);
         if (currentMove == tmpLastIndex)
         {
+            MoveEnemy(CommandPath.Find(x => x.index == currentMove).Direction);
             currentMove = 0;
             return;
         }

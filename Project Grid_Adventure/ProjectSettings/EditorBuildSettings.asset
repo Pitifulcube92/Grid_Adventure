@@ -21,12 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Test Levels/Test_Level_4.unity
     guid: 4c4e889e537947c4a98c4128801f37f2
   - enabled: 1
-    path: Assets/Scenes/Test Levels/Test_Level_5.unity
+    path: Assets/Scenes/Test Levels/Test_Level_7.unity
     guid: 557710b643338d04f9ae40df5a2eee08
   - enabled: 1
-    path: Assets/Scenes/Test Levels/Test_Level_6.unity
+    path: Assets/Scenes/Test Levels/Test_Level_8.unity
     guid: 9137994668156fd4d83d710ee30a82dc
   - enabled: 1
-    path: Assets/Scenes/Test Levels/Test_Level_7.unity
+    path: Assets/Scenes/Test Levels/Test_Level_9.unity
     guid: 27ad7434036dd654e848e292174aa1d5
   m_configObjects: {}
