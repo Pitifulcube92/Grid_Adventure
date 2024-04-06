@@ -36,7 +36,8 @@ public class Gate_Managemet_Component : Base_Level_Component
 
     public override void ResetComponent()
     {
-        throw new System.NotImplementedException();
+        return;
+        //throw new System.NotImplementedException();
     }
 
     // Start is called before the first frame update

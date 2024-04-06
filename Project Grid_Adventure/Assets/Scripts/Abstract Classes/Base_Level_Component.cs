@@ -5,13 +5,13 @@ using UnityEngine;
 public abstract class Base_Level_Component : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         InitalizeComponent();
     }
     public void baseStart()
     {
-        Start();
+        Awake();
     }
     public abstract void InitalizeComponent();
     public abstract void ResetComponent();

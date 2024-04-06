@@ -13,16 +13,24 @@ public class Fragment_Key_Componenet : Base_Level_Component
     [SerializeField] private GameObject mainKey;
     [SerializeField] private GameObject fragmentKey;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+      
+    }
     void Start()
     {
-        base.baseStart();        
+        //base.baseStart();
     }
 
     private void CheckFragmentRequirement()
     {
         if(MaxFragments == currentFragments)
         {
-            Instantiate(mainKey, GameObject.Find("Key Position").transform);
+            mainKey.SetActive(true);
+            GameManager.instance.GetSoundManager().SetSFXVolume(0.5f);
+            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell");
+            GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetVolume());
         }
     }
     public void GainFragmentKey()
@@ -46,7 +54,10 @@ public class Fragment_Key_Componenet : Base_Level_Component
             Instantiate(fragmentKey, x);
         }
     }
-
+    public void SetKey(GameObject tmp_)
+    {
+        mainKey = tmp_;
+    }
     public override void ResetComponent()
     {
         currentFragments = 0;

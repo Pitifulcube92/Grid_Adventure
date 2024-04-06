@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KeyTile : BaseInteractionTile
 {
+    [Header("Info")]
+    [SerializeField] private bool initiallyActive;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +23,12 @@ public class KeyTile : BaseInteractionTile
             Debug.Log("Grabbed Key");
         }
     }
-
+    public void SetInitialActivity(bool tmp_) {
+        initiallyActive = tmp_;
+        gameObject.SetActive(tmp_);
+    }
     override public void RevertToInitialState()
     {
-        if(gameObject.activeSelf == false)
-        {
-            gameObject.SetActive(true);
-        }
+        gameObject.SetActive(initiallyActive);
     }
 }

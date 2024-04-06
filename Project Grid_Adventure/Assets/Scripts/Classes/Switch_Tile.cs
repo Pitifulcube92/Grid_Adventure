@@ -24,6 +24,7 @@ public class Switch_Tile : BaseInteractionTile
         Debug.Log(collision.name);
         if (collision.tag == "Player")
         {
+            GameManager.instance.GetSoundManager().PlaySFXClip("lever_metal");
             if (gate.gameObject.activeSelf == true)
             {
                 //switch sprite!

@@ -49,8 +49,8 @@ public class SoundManager : MonoBehaviour
                     Debug.LogWarning("Error has occured in SFX audio clip!");
                     return;
                 }
-                sfxSource.clip = x;
-                sfxSource.Play();
+                //sfxSource.clip = x;
+                sfxSource.PlayOneShot(x);
             }
         }      
     }
@@ -87,6 +87,10 @@ public class SoundManager : MonoBehaviour
     public void SetMasterVolume(float tmp_)
     {
         bgmSource.volume = tmp_;
+        sfxSource.volume = tmp_ * 2;
+    }
+    public void SetSFXVolume(float tmp_)
+    {
         sfxSource.volume = tmp_;
     }
     public float GetVolume()

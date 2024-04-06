@@ -20,6 +20,7 @@ public class UI_MainMenu : BaseUIScript
         {
             Debug.LogError("No UI buttons where found!");
         }
+        GameManager.instance.GetSoundManager().PlayMusicClip("Dazzling_2");
         SetUIConfigure();
     }
 
@@ -30,7 +31,8 @@ public class UI_MainMenu : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Start btn":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene("Test_Level_1");});
+                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene("Test_Level_1");
+                        GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");});
                     break;
                 case "Continue":
                     break;

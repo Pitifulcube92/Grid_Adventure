@@ -8,18 +8,35 @@ public struct EnemyMoveInfo
 {
     public int index;
     public Transform positionInfo;
+
+    public EnemyMoveInfo(int index_, Transform position_)
+    {
+        index = index_;
+        positionInfo = position_;
+    }
 }
 
 public class TeleportEnemy_Tile : BaseEnemy_Tile
 {
-    [SerializeField] List<EnemyMoveInfo> enemyPaths;
+    [SerializeField] List<EnemyMoveInfo> enemyPaths = new List<EnemyMoveInfo>();
     [SerializeField] private int maxIndex;
     // Start is called before the first frame update
     void Start()
     { 
-        maxIndex = enemyPaths.Count;
+       
         //Debug.Log(CommandPath.Count);
-        foreach(EnemyMoveInfo x in enemyPaths)
+        int tmpIndex = 0;
+        //gameObject.chil
+        foreach(Transform x in gameObject.GetComponentInChildren<Transform>())
+        {
+            if (x.tag == "enemyPos")
+            {
+                enemyPaths.Add(new EnemyMoveInfo(tmpIndex, x));
+                tmpIndex++;
+            }
+        }
+        maxIndex = enemyPaths.Count;
+        foreach (EnemyMoveInfo x in enemyPaths)
         {
             x.positionInfo.parent = null;
         }

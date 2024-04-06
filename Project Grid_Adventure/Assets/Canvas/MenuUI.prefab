@@ -78,7 +78,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Controls: W,A,S,D'
+  m_Text: 'Controls: Arrow Keys
+
+'
 --- !u!1 &491345048021779374
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pixel Adventure Demo!
+  m_Text: A Scarlings Escape Demo!
 --- !u!1 &2413586062802093656
 GameObject:
   m_ObjectHideFlags: 0

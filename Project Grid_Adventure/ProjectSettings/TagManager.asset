@@ -15,6 +15,7 @@ TagManager:
   - PauseUI
   - UICanvas
   - Fragment Location
+  - enemyPos
   layers:
   - Default
   - TransparentFX
@@ -52,9 +53,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: player
-    uniqueID: 852600217
-    locked: 0
   - name: Items
     uniqueID: 363017333
+    locked: 0
+  - name: player
+    uniqueID: 852600217
     locked: 0

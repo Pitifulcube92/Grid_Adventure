@@ -104,7 +104,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         int tmpIndex = CommandPath.Find(x => x.index == currentMove).index;
         int tmpLastIndex = CommandPath.Find(x => x.index == CommandPath.Count - 1).index;
         //Debug.Log("Current Move:" + currentMove + "Path index:" + tmpIndex + "Last index:" +tmpLastIndex);
-        Debug.Log(tmpLastIndex);
+        //Debug.Log(tmpLastIndex);
         if (currentMove == tmpLastIndex)
         {
             MoveEnemy(CommandPath.Find(x => x.index == currentMove).Direction);

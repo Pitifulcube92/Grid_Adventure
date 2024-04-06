@@ -23,14 +23,27 @@ public class Level_Observer : MonoBehaviour, IObserver
     private void Awake()
     {
 
-        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
-        scanScene();
         //Get lvlObjects
+        scanScene();
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
         GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
-        
-        //Generate level info           
+        foreach (Base_Level_Component x in GameObject.FindObjectsOfType<Base_Level_Component>())
+        {
+            levelComponents.Add(x);
+        }
+        foreach(Base_Level_Component x in levelComponents)
+        {
+            x.InitalizeComponent();
+        }
+        GetObjectItems();
+        if (levelComponents.Count != 0)
+        {
+            levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
+            lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
+        }
+  
         if (!fadeCanvas)
         {
             Debug.LogWarning("Fade Canvas not found!");
@@ -39,24 +52,25 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             Debug.LogWarning("subject not found!");
         }
-        
-        GetObjectItems();
+
+
         //Get subject
         OnObsEnable();
 
     }
     private void Start()
     {
-        
+       
+        if (!isKeySpawned)
+            lvlObjects.Find(x => x.tag == "Key").gameObject.SetActive(false);
         StartCoroutine(IntroIn());
+      
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
-
     private void OnObsEnable()
     {
         watchedSubject.AddObserver(this);
     }
-
     private void OnObsDisable()
     {
         watchedSubject.RemoveObserver(this);
@@ -70,6 +84,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 currentLevlInfo.hasKey = true;
                 GameObject.FindGameObjectWithTag("Key").SetActive(false);
                 GameObject.FindGameObjectWithTag("Door").layer = 0;
+                GameManager.instance.GetSoundManager().PlaySFXClip("Collect");
                 break;
 
             case PlayerState.Interact_Door:
@@ -78,6 +93,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                     currentLevlInfo.isLevelDone = true;
                     GameObject.Destroy(GameObject.FindGameObjectWithTag("Door"));
                     Debug.Log("Player has open door!");
+                    GameManager.instance.GetSoundManager().PlaySFXClip("dooropened");
                     //Debugging 
                     StartCoroutine(CompleteLevel());
                     //EditorApplication.ExitPlaymode();
@@ -97,10 +113,11 @@ public class Level_Observer : MonoBehaviour, IObserver
                     //GameObject.Destroy(GameObject.FindGameObjectWithTag("Player"));
                 }
 
-                    //level restarts then take player life!
+                //level restarts then take player life!
                 Debug.Log("Player is hurt back to from start");
                 ResetLevelObjects();
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
+                GameManager.instance.GetSoundManager().PlaySFXClip("Death");
                 currentLevlInfo.isLevelDone = false;
                 currentLevlInfo.hasKey = false;
                 currentLevlInfo.playerLives -= 1;
@@ -109,16 +126,19 @@ public class Level_Observer : MonoBehaviour, IObserver
 
             case PlayerState.Interact_Fragment_Key:
                 gameObject.GetComponent<Fragment_Key_Componenet>().GainFragmentKey();
+                GameManager.instance.GetSoundManager().PlaySFXClip("Collect");
                 break;
 
         }
     }
     public void GetObjectItems()
     {
-        foreach(BaseInteractionTile x in GameObject.FindObjectsOfType<BaseInteractionTile>())
+        foreach (BaseInteractionTile x in GameObject.FindObjectsOfType<BaseInteractionTile>())
         {
             lvlObjects.Add(x);
         }
+
+      
     }
     public void scanScene()
     {
@@ -132,9 +152,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         if (GameObject.Find("Start Position"))
             currentLevlInfo.startPos = GameObject.Find("Start Position").transform.position;
 
-        if (isKeySpawned == true) { 
-            Instantiate(keyPrefab, GameObject.Find("Key Position").transform);
-        }
+        Instantiate(keyPrefab, GameObject.Find("Key Position").transform);
         Instantiate(doorPrefab, GameObject.Find("Door Position").transform);
     }
 
@@ -149,8 +167,10 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             entry.RevertToInitialState();
         }
-        if (gameObject.GetComponent<Fragment_Key_Componenet>())
-            gameObject.GetComponent<Fragment_Key_Componenet>().ResetComponent();
+       foreach(Base_Level_Component comp in levelComponents)
+       {
+            comp.ResetComponent();
+       }
     }
     IEnumerator IntroIn()
     {

@@ -313,11 +313,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aec561e00a87544d80c71ebd6b10703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 0.5
-  maxVolume: 100
-  sfxClips: []
+  volume: 0.1
+  maxVolume: 1
+  sfxClips:
+  - {fileID: 8300000, guid: eb4b4a83028c333468b82a98690d0a9b, type: 3}
+  - {fileID: 8300000, guid: 7c21313c09ebada42a0ecb5e18b73f6a, type: 3}
+  - {fileID: 8300000, guid: 5776a0f0f6f688147aaca68e1d09d3df, type: 3}
+  - {fileID: 8300000, guid: 2197750aa54b4024b832710577f9b26d, type: 3}
+  - {fileID: 8300000, guid: 2b6fc50f6b261244b80c9c9245312db1, type: 3}
   musicClips:
   - {fileID: 8300000, guid: a98ba29c68c5b394e8439eff3b259558, type: 3}
+  - {fileID: 8300000, guid: 1055be36b957efc4d8f97daf78239ba1, type: 3}
+  - {fileID: 8300000, guid: 06624ed8669f2064e87de8144926131d, type: 3}
   sfxSource: {fileID: 923073943}
   bgmSource: {fileID: 2025542134}
 --- !u!114 &1160468677
