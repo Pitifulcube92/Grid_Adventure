@@ -91,7 +91,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 if (currentLevlInfo.hasKey == true)
                 {
                     currentLevlInfo.isLevelDone = true;
-                    GameObject.Destroy(GameObject.FindGameObjectWithTag("Door"));
+                    //GameObject.Destroy(GameObject.FindGameObjectWithTag("Door"));
                     Debug.Log("Player has open door!");
                     GameManager.instance.GetSoundManager().PlaySFXClip("dooropened");
                     //Debugging 

@@ -19,6 +19,7 @@ public class DoorTile : BaseInteractionTile
         if (collision.tag == "Player")
         {
             collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Interact_Door);
+            gameObject.GetComponent<DoorTile>().baseSpriteRender.color = Color.black;
         }
     }
 
