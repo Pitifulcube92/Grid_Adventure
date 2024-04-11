@@ -19,6 +19,7 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private UI_Gameplay GamePlayUI;
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
+    [SerializeField] private Transform currentCheckpoint;
 
     private void Awake()
     {
@@ -63,6 +64,7 @@ public class Level_Observer : MonoBehaviour, IObserver
        
         if (!isKeySpawned)
             lvlObjects.Find(x => x.tag == "Key").gameObject.SetActive(false);
+        currentCheckpoint.position = currentLevlInfo.startPos;
         StartCoroutine(IntroIn());
       
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
@@ -116,7 +118,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 //level restarts then take player life!
                 Debug.Log("Player is hurt back to from start");
                 ResetLevelObjects();
-                GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentLevlInfo.startPos);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(currentCheckpoint.position);
                 GameManager.instance.GetSoundManager().PlaySFXClip("Death");
                 currentLevlInfo.isLevelDone = false;
                 currentLevlInfo.hasKey = false;
@@ -160,7 +162,11 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         return currentLevlInfo;
     }
-
+    private void ResetToCheckpoint()
+    {
+        //To Do: Create a reset proceedure that only resets to the position
+        watchedSubject.
+    }
     public void ResetLevelObjects()
     {
         foreach(BaseInteractionTile entry in lvlObjects)
