@@ -23,7 +23,7 @@ public class Fragment_Key_Componenet : Base_Level_Component
         //base.baseStart();
     }
 
-    private void CheckFragmentRequirement()
+    public void CheckFragmentRequirement()
     {
         if(MaxFragments == currentFragments)
         {
