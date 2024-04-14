@@ -26,10 +26,10 @@ public class Level_Observer : MonoBehaviour, IObserver
 
         //Get lvlObjects
         scanScene();
-        //GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
-        //GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
-        //fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
+        fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         foreach (Base_Level_Component x in GameObject.FindObjectsOfType<Base_Level_Component>())
         {
             levelComponents.Add(x);
@@ -39,10 +39,13 @@ public class Level_Observer : MonoBehaviour, IObserver
             x.InitalizeComponent();
         }
         GetObjectItems();
-        if (levelComponents.Count != 0)
+        if (levelComponents.Count > 0)
         {
-            levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
-            lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
+            if (levelComponents.Exists(x => x.GetComponent<Fragment_Key_Componenet>()))
+            {
+                levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
+                lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
+            }
         }
         
       
@@ -69,7 +72,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         }
 
         currentCheckpoint = currentLevlInfo.startPos;
-        //StartCoroutine(IntroIn());
+        StartCoroutine(IntroIn());
       
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }

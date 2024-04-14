@@ -5,9 +5,9 @@ using UnityEngine;
 public class Parallax_Background_Component : Base_Level_Component
 {
     [Header("Info")]
-    [SerializeField] private List<Transform> backgrounds;
-    [SerializeField] private List<float> parallaxScales;
-    [SerializeField, Range(0, 1)] private float smoothing;
+    [SerializeField] private List<Transform> backgrounds = new List<Transform>();
+    [SerializeField] private List<float> parallaxScales = new List<float>();
+    [SerializeField, Range(0, 10)] private float smoothing;
 
     [SerializeField] private Transform cam;
     [SerializeField] private Vector3 prevCampos;
@@ -17,8 +17,15 @@ public class Parallax_Background_Component : Base_Level_Component
     }
     public override void InitalizeComponent()
     {
-        prevCampos = cam.position;
+        if (prevCampos == null)
+            prevCampos = cam.position;
+
         parallaxScales = new List<float>();
+
+        foreach(GameObject x in GameObject.FindGameObjectsWithTag("Parallax"))
+        {
+            backgrounds.Add(x.transform); 
+        }
 
         foreach(Transform x in backgrounds)
         {
