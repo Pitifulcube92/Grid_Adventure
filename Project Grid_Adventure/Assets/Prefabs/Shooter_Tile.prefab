@@ -85,7 +85,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,7 +131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePosition: {fileID: 0}
   baseSpriteRender: {fileID: 0}
-  currentDirection: 0
   launchLocation: {fileID: 4704588820274815666}
   projectial: {fileID: 283538199103417304, guid: 188d50579941486418ef47c57688c211, type: 3}
   maxTimer: 2

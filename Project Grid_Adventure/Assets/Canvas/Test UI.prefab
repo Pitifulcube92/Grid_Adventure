@@ -118,6 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target_player: {fileID: 0}
   lvlObs: {fileID: 0}
+  pauseContext: {fileID: 0}
+  settingContext: {fileID: 0}
   gameplayButtons: []
   gameplayTexts: []
   gameplaySliders: []
