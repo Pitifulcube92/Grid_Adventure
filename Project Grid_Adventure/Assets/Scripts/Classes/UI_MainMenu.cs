@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class UI_MainMenu : BaseUIScript
 {
-    [SerializeField] public List<Button> menuButtons;
+    [SerializeField] private List<Button> menuButtons;
+    [SerializeField] private RawImage backgroundImg;
+    [SerializeField] private float y, x;
     //[SerializeField] private GameObject GM;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +25,10 @@ public class UI_MainMenu : BaseUIScript
         GameManager.instance.GetSoundManager().PlayMusicClip("Dazzling_2");
         SetUIConfigure();
     }
-
+    private void Update()
+    {
+        backgroundImg.uvRect = new Rect(backgroundImg.uvRect.position + new Vector2(x,y) * Time.deltaTime,backgroundImg.uvRect.size);
+    }
     public override void SetUIConfigure()
     {
         foreach (Button x in menuButtons)
