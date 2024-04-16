@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0032000542, y: -0.00040006638, z: 0}
-    m_Extent: {x: 9.696501, y: 9.6849, z: 0}
+    m_Center: {x: 0.00059986115, y: -0.001349926, z: 0}
+    m_Extent: {x: 9.6971, y: 9.69825, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -93,8 +93,9 @@ GameObject:
   - component: {fileID: 1863739133711761143}
   - component: {fileID: 2125997883028991890}
   - component: {fileID: 2163614172964187250}
-  - component: {fileID: 5219196964561954148}
   - component: {fileID: -969597291493819731}
+  - component: {fileID: 3580887678904672642}
+  - component: {fileID: 1714110695920519577}
   m_Layer: 0
   m_Name: Gameplay_Camera
   m_TagString: MainCamera
@@ -177,23 +178,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8355163334641499188}
   m_Enabled: 1
---- !u!114 &5219196964561954148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8355163334641499188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e30478967d4625d4f8d6009a271d16d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 4
-  centerPoint: {fileID: 1863739133711761143}
-  player: {fileID: 0}
-  canMove: 0
-  smoothingSpeed: 0.2
 --- !u!114 &-969597291493819731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,3 +222,32 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &3580887678904672642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355163334641499188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6be7af446eedac4e90ecfb21be99a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1714110695920519577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355163334641499188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edec11c5c8685644ab9962b7e2323c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5
+  centerPoint: {fileID: 1863739133711761143}
+  player: {fileID: 0}
+  canMove: 0
+  smoothingSpeed: 1

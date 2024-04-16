@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera_Follow : MonoBehaviour
+public class Camera_Follow_Component : MonoBehaviour
 {
     [SerializeField] private float maxDistance;
     [SerializeField] private Transform centerPoint;
@@ -24,7 +24,6 @@ public class Camera_Follow : MonoBehaviour
         }
                 
     }
-
 
     private bool CheckDistance()
     {

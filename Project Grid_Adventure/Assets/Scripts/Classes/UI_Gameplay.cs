@@ -17,6 +17,7 @@ public class UI_Gameplay : BaseUIScript
     [SerializeField] public List<Slider> gameplaySliders;
     [SerializeField] public List<Toggle> gameplayToggles;
     [SerializeField] public List<Image> gameplayImages;
+    [SerializeField] public List<Sprite> playerHealthIcons;
 
     //[Header("Delagetes")]
     //PauseGameplay pauseGame;
@@ -145,12 +146,26 @@ public class UI_Gameplay : BaseUIScript
     }
     public void UpdatePlayerLives(int tmp_)
     {
-        
-        gameplayTexts.Find(x => x.name == "NumberOfLives").text = tmp_.ToString()+"X";
+        switch (tmp_)
+        {
+            case 3:
+                gameplayImages.Find(x => x.name == "Player Health").sprite = playerHealthIcons.Find(x => x.name == "FlameLife_0");
+                break;
+            case 2:
+                gameplayImages.Find(x => x.name == "Player Health").sprite = playerHealthIcons.Find(x => x.name == "FlameLife_1");
+                break;
+            case 1:
+                gameplayImages.Find(x => x.name == "Player Health").sprite = playerHealthIcons.Find(x => x.name == "FlameLife_2");
+                break;
+            case 0:
+                gameplayImages.Find(x => x.name == "Player Health").sprite = playerHealthIcons.Find(x => x.name == "FlameLife_3");
+                break;
+
+        }
+        //gameplayTexts.Find(x => x.name == "NumberOfLives").text = tmp_.ToString()+"X";
         Debug.Log("Changed Lives Text!");
         //tmp_.ToString() + "X";
     }
-
     public void PauseGameplay()
     {
         //Debug.Log("Pressed!");
