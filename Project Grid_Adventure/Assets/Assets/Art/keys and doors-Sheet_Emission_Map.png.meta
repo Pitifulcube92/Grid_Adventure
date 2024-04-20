@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 323f5ffa82d791544988c7fe83095346
+guid: 4826f7a366657de4e9df710576f1ecba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Turret_Fire_0
+      name: keys and doors-Sheet_Emission_Map_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e683a6c247c8e1f47a547966efb7eea8
+      internalID: 1146193991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keys and doors-Sheet_Emission_Map_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deeecde52f9310c43a80909b00942616
+      internalID: -1402024852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keys and doors-Sheet_Emission_Map_2
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +173,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55203a6b67a62b0408c5279b14b2b624
-      internalID: -318017282
+      spriteID: e6853a800365d344eb8eda7617c74440
+      internalID: -1851713567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Turret_Fire_1
+      name: keys and doors-Sheet_Emission_Map_3
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +194,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afd3a0e87adb88e4ca31e16234a7302e
-      internalID: 878370522
+      spriteID: 90815959759237444aaac1c061a860e7
+      internalID: 655238160
       vertices: []
       indices: 
       edges: []
@@ -173,12 +215,12 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 947c07fc879931448a342c55d2636b02, type: 3}
-      name: emission
+    secondaryTextures: []
     nameFileIdTable:
-      Turret_Fire_0: -318017282
-      Turret_Fire_1: 878370522
+      keys and doors-Sheet_Emission_Map_0: 1146193991
+      keys and doors-Sheet_Emission_Map_1: -1402024852
+      keys and doors-Sheet_Emission_Map_2: -1851713567
+      keys and doors-Sheet_Emission_Map_3: 655238160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
