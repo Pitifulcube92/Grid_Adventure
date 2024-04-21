@@ -26,10 +26,10 @@ public class Level_Observer : MonoBehaviour, IObserver
 
         //Get lvlObjects
         scanScene();
-        //GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
-        //GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
-        //fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
+        fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         foreach (Base_Level_Component x in GameObject.FindObjectsOfType<Base_Level_Component>())
         {
             levelComponents.Add(x);
@@ -72,7 +72,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         }
 
         currentCheckpoint = currentLevlInfo.startPos;
-        //StartCoroutine(IntroIn());
+        StartCoroutine(IntroIn());
       
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
@@ -111,19 +111,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 break;
 
             case PlayerState.Taken_Damage:
-                if (currentLevlInfo.playerLives == 0)
-                {
-                    Debug.Log("Player is dead... Game Over");
-                    StartCoroutine(GameOver());
-                }
-                //level restarts then take player life!
-                watchedSubject.GetComponent<Player_Tile>().ChangePosition(currentCheckpoint);
-                GameManager.instance.GetSoundManager().PlaySFXClip("Death");
-                
-                currentLevlInfo.isLevelDone = false;
-                currentLevlInfo.hasKey = false;
-                currentLevlInfo.playerLives -= 1;
-                GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
+                StartCoroutine(DamagePlayer());
                 break;
 
             case PlayerState.Interact_Checkpoint:
@@ -197,6 +185,26 @@ public class Level_Observer : MonoBehaviour, IObserver
         return null;
     }
     //Level Events
+    IEnumerator DamagePlayer()
+    {
+        if (currentLevlInfo.playerLives == 0)
+        {
+            Debug.Log("Player is dead... Game Over");
+            StartCoroutine(GameOver());
+        }
+        //level restarts then take player life!
+
+        currentLevlInfo.isLevelDone = false;
+        //currentLevlInfo.hasKey = false;
+        currentLevlInfo.playerLives -= 1;
+        GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
+
+        yield return StartCoroutine(Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.1f,0.15f));
+        
+        watchedSubject.GetComponent<Player_Tile>().ChangePosition(currentCheckpoint);
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death");
+
+    }
     IEnumerator IntroIn()
     {
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);

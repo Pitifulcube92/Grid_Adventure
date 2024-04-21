@@ -7,12 +7,12 @@ public class Camera_Shake_Component : MonoBehaviour
     [Header("Info")]
     [SerializeField] private float duration;
     [SerializeField] private float magnitude;
-    // Start is called before the first frame update
-    public void CallCameraShake(float duration_, float magnitude_)
-    {
-        StartCoroutine(ShakeCamera(duration_,magnitude_));
-    }
-    IEnumerator ShakeCamera(float duration_, float magnitude_)
+    //// Start is called before the first frame update
+    //public void CallCameraShake(float duration_, float magnitude_)
+    //{
+    //    StartCoroutine(ShakeCamera(duration_,magnitude_));
+    //}
+    public IEnumerator ShakeCamera(float duration_, float magnitude_)
     {
         Vector3 originalPos = transform.position;
         float elapsed = 0.0f;
