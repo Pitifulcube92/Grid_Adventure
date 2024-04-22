@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
         //Run MainMenu, Play music;
         audioSys.SetMasterVolume(audioSys.GetVolume());
         audioSys.SetLoopBGM(true);
-        uiSys.ChangeUI("MenuUI");
     }
     private bool SetUpManagers()
     {

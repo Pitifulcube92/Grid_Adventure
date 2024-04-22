@@ -36,7 +36,7 @@ public class UI_MainMenu : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Start btn":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene("Test_Level_5");
+                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene("Test_Level_1");
                         GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");});
                     break;
                 case "Continue":
