@@ -9,11 +9,5 @@ public class MainMenu_Script : MonoBehaviour
     {
         GameManager.instance.GetUIManager().ChangeUI("MenuUI");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
 
