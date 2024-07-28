@@ -25,7 +25,7 @@ public class Gate_Managemet_Component : Base_Level_Component
     [SerializeField] private List<GateInfo> ListOfGates = new List<GateInfo>();
     public override void InitalizeComponent()
     {
-        int idCounter = 0;
+        //int idCounter = 0;
         //To do: Get all switches and fill Gate info
         //foreach(Switch_Tile x in GameObject.FindObjectsOfType<Switch_Tile>())
         //{

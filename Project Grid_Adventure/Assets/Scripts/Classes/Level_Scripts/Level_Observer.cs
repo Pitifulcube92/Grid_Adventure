@@ -45,6 +45,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             {
                 levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
                 lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
+                isKeySpawned = false;
             }
         }
         
