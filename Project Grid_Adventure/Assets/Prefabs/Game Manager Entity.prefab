@@ -363,5 +363,5 @@ MonoBehaviour:
   uiCanvas:
   - {fileID: 8748034366732966709, guid: be979b686892f58488aa6de5298af2d6, type: 3}
   - {fileID: 8748034366732966709, guid: 3c5e51a1adec0354b96141c4673bc3c4, type: 3}
-  - {fileID: 5850080376607589099, guid: 0e09dda2f3a6b014e87e8223a843c665, type: 3}
+  - {fileID: 8748034366732966709, guid: 769399a10ee0c344b90be935c44dca45, type: 3}
   currentCanvas: {fileID: 0}

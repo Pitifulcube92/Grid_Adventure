@@ -26,10 +26,10 @@ public class Level_Observer : MonoBehaviour, IObserver
 
         //Get lvlObjects
         scanScene();
-        //GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
-        //GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
-        //fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
+        fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         foreach (Base_Level_Component x in GameObject.FindObjectsOfType<Base_Level_Component>())
         {
             levelComponents.Add(x);
@@ -47,11 +47,16 @@ public class Level_Observer : MonoBehaviour, IObserver
                 lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
                 isKeySpawned = false;
             }
+            else
+            {
+                isKeySpawned = true;
+            }
         }
         
       
         if (!fadeCanvas)
         {
+            //fadeCanvas = GameObject.Find("FadeCanvas").GetComponent<FadeScript>();
             Debug.LogWarning("Fade Canvas not found!");
         }
         if (!watchedSubject)
@@ -73,7 +78,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         }
 
         currentCheckpoint = currentLevlInfo.startPos;
-        //StartCoroutine(IntroIn());
+        StartCoroutine(IntroIn());
       
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
@@ -216,7 +221,8 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         //watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeOut());
-        GameManager.instance.GetLevelManager().LoadScene("Main Menu");
+        GameManager.instance.GetUIManager().ChangeUI("GameOverUI");
+        //GameManager.instance.GetLevelManager().LoadScene("Main Menu");
     }
     IEnumerator CompleteLevel()
     {

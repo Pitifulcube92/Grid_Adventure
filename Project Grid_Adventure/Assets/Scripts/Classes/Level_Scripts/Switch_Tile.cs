@@ -36,13 +36,12 @@ public class Switch_Tile : BaseInteractionTile
         if (collision.tag == "Player")
         {
             GameManager.instance.GetSoundManager().PlaySFXClip("lever_metal");
-            baseSpriteRender.transform.Rotate(0.0f, 180.0f, 0.0f);
-            if (isFliped)
+            if(isFliped)
                 baseSpriteRender.transform.Rotate(0.0f, -180.0f, 0.0f);
             else
                 baseSpriteRender.transform.Rotate(0.0f, 180.0f, 0.0f);
 
-            foreach(Gate_Tile x in gates)
+            foreach(Gate_Tile x in gates)   
             {
                 x.ActivateGate();
             }

@@ -8,6 +8,7 @@ public class Player_Tile : ISubject
     [SerializeField] private float movePointDistance;
     [SerializeField] private bool isMoving;
     [SerializeField] Transform movePoint;
+    [SerializeField] private Event test;
     [SerializeField] private KeyCode up;
     [SerializeField] private KeyCode down;
     [SerializeField] private KeyCode right;

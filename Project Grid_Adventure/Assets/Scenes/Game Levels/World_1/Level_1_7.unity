@@ -511,6 +511,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1714110695920519577, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1175,7 +1179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextLevelName
-      value: Level_1_7
+      value: Level_1_8
       objectReference: {fileID: 0}
     - target: {fileID: 2333976818808086545, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: m_Size.x
@@ -22753,7 +22757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePosition: {fileID: 0}
   baseSpriteRender: {fileID: 0}
-  isGateOpen: 0
+  isGateOpen: 1
 --- !u!1001 &845145258
 PrefabInstance:
   m_ObjectHideFlags: 0

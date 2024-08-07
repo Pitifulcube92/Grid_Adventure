@@ -4,10 +4,16 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public struct EnemyMoveCommand
+public class EnemyMoveCommand
 {
     public int index;
     public EnemyDirection Direction;
+    public EnemyMoveCommand(int index_, EnemyDirection dir_)
+    {
+        index = index_;
+        Direction = dir_;
+    }
+    
 }
 public enum EnemyDirection
 {
@@ -24,12 +30,18 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     [SerializeField] protected float movePointDistance;
     [SerializeField] protected List<EnemyMoveCommand> CommandPath;
     [SerializeField] protected EnemyDirection currentDirection;
+    private int tmpIndex = 0;
     // Start is called before the first frame update
     void Start()
     {
         currentMove = CommandPath.Find(x => x.index == 0).index;
         currentDirection = CommandPath.Find(x => x.index == 0).Direction;
         //Debug.Log(CommandPath.Count);
+        foreach(EnemyMoveCommand x in CommandPath)
+        {
+            x.index = tmpIndex;
+            tmpIndex++;
+        }
         Invokebehavior();
         base.baseStart();
         //StopCoroutine("MoveToTarget");
@@ -103,7 +115,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         //int tmpLast = CommandPath.FindIndex(CommandPath.Count, x => x.index == currentMove);
         int tmpIndex = CommandPath.Find(x => x.index == currentMove).index;
         int tmpLastIndex = CommandPath.Find(x => x.index == CommandPath.Count - 1).index;
-        //Debug.Log("Current Move:" + currentMove + "Path index:" + tmpIndex + "Last index:" +tmpLastIndex);
+        Debug.Log("Current Move:" + currentMove + "Path index:" + tmpIndex + "Last index:" +tmpLastIndex);
         //Debug.Log(tmpLastIndex);
         if (currentMove == tmpLastIndex)
         {

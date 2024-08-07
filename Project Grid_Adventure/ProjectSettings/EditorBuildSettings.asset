@@ -12,33 +12,60 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 5c7be63d4341e4b47919660d93653e4d
   - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_1.unity
+    guid: 1afd856a36025ef44a54fd6f1d88f9cf
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_2.unity
+    guid: 665c3f0205eb4cc4dbda26cd2d1fbe7f
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_3.unity
+    guid: b3ad7b0cdfa44f54488280d94b51fbfd
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_4.unity
+    guid: b88f3cf7bb4a48045a4560f16c9224a0
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_5.unity
+    guid: e2feec7c32d7e4f489c2b3e2cf7fe025
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_6.unity
+    guid: dacc3b1a58344d042ab9acc20ec63782
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_7.unity
+    guid: 4d91dd27830714e43a94c95bdf2da650
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_8.unity
+    guid: 43fc48180ec19f444acd56bebb8292c0
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_1/Level_1_9.unity
+    guid: 588c46e0d9311204d8df0c762e75c625
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_1.unity
     guid: 27db2f0e3c1680f458cbcb818a9e8fe2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_2.unity
     guid: ea27045c3b10c3840a603196b70c0201
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_3.unity
     guid: 9d8a23a286003c4469192557e1682536
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_4.unity
     guid: 4c4e889e537947c4a98c4128801f37f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_5.unity
     guid: d7263b0789ea5af4abc119fea953381a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_6.unity
     guid: 3b9a52b4fe0aecc468ba2803e2826576
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_7.unity
     guid: 557710b643338d04f9ae40df5a2eee08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_8.unity
     guid: 9137994668156fd4d83d710ee30a82dc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_9.unity
     guid: 27ad7434036dd654e848e292174aa1d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Levels/Test_Level_10.unity
     guid: a38458e9b07fb3a4cb4700c58708bf79
   m_configObjects: {}
