@@ -188,7 +188,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1428921521
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -318017282, guid: 323f5ffa82d791544988c7fe83095346, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -216,5 +216,6 @@ MonoBehaviour:
   baseSpriteRender: {fileID: 0}
   launchLocation: {fileID: 4704588820274815666}
   projectial: {fileID: 283538199103417304, guid: 188d50579941486418ef47c57688c211, type: 3}
+  turretSpeed: 1
   maxTimer: 2
   tmpTime: 0

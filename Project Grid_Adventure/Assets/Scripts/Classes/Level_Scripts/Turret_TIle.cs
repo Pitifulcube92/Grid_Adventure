@@ -14,6 +14,9 @@ public class Turret_TIle : BaseInteractionTile
     [Header("Info")]
     [SerializeField] private Transform launchLocation;
     [SerializeField] private GameObject projectial;
+    [SerializeField] private bool canInitialFire;
+
+    [SerializeField, Range(0,10)] private float turretSpeed;
     [Header("Timer Info")]
     [SerializeField] float maxTimer;
     [SerializeField] float tmpTime;
@@ -21,6 +24,10 @@ public class Turret_TIle : BaseInteractionTile
     void Start()
     {
         tmpTime = maxTimer;
+        if(canInitialFire == true)
+        {
+            FireTurrent();
+        }
     }
 
     // Update is called once per frame
@@ -51,7 +58,8 @@ public class Turret_TIle : BaseInteractionTile
     }
     private void FireTurrent()
     {
-        Instantiate(projectial, launchLocation);
+        GameObject tmp = Instantiate(projectial, launchLocation);
+        tmp.GetComponent<Fire_Canonball>().SetSpeed(turretSpeed);
     }
     [ContextMenu("Rotate Left")]
     private void RotateCClockwise()

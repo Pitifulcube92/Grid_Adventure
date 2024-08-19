@@ -10,6 +10,7 @@ public class Level_Dialogue_Component : Base_Level_Component
     [SerializeField] private Dialogue_Trigger trigger;
     [SerializeField] private Text dialogueName;
     [SerializeField] private Text dialogueText;
+    [SerializeField] private Image dialogImage;
     [SerializeField] private KeyCode continueBtn;
     [SerializeField] private bool initalConvo;
     [SerializeField] private Animator anim;
@@ -36,7 +37,10 @@ public class Level_Dialogue_Component : Base_Level_Component
     {
         dialogueText = GameObject.Find("Dialogue_Context").GetComponent<Text>();
         dialogueName = GameObject.Find("Dialogue_Name").GetComponent<Text>();
+        dialogImage = GameObject.Find("Dialogue_Image").GetComponent<Image>();
+        anim = GameObject.Find("Dialogue_Box").GetComponent<Animator>();
         trigger = gameObject.AddComponent<Dialogue_Trigger>();
+        continueBtn = KeyCode.Space;
     }
     public override void InitalizeComponent()
     {
@@ -53,6 +57,16 @@ public class Level_Dialogue_Component : Base_Level_Component
         sentences.Clear();
         trigger = null;
         dialogueName.text = "";
+        if(dialogue_.hasImage == false)
+        {
+            dialogImage.enabled = false;
+        }
+        if(dialogue_.hasImage == true)
+        {
+
+            dialogImage.sprite = dialogue_.targetImage;
+            dialogImage.enabled = true;
+        }
 
         foreach (string sentence in dialogue_.sentences)
         {

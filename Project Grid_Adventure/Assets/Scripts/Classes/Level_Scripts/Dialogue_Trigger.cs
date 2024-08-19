@@ -6,11 +6,11 @@ public class Dialogue_Trigger : MonoBehaviour
 {
     [SerializeField] private Dialogue_Info dialogue;
     [SerializeField] private SpriteRenderer speakIcon;
-    [SerializeField] private bool isTriggered;
+    [SerializeField] private bool isTriggered;  
 
     private void Awake()
     {
-        speakIcon = GameObject.Find("Dialog_icon").GetComponent<SpriteRenderer>();
+        //speakIcon = GameObject.Find("Dialog_icon").GetComponent<SpriteRenderer>();
         isTriggered = false;
     }
     private void Start()

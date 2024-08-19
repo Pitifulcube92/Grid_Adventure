@@ -11,5 +11,5 @@ public struct Dialogue_Info
     [TextArea(3,10)]
     public string[] sentences;
     public bool hasImage;
-    public Image targetImage;
+    public Sprite targetImage;
 }

@@ -17,6 +17,8 @@ TagManager:
   - Fragment Location
   - enemyPos
   - Parallax
+  - Level wall
+  - Level damage
   layers:
   - Default
   - TransparentFX

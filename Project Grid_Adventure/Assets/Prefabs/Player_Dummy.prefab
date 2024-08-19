@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   movePointDistance: 1
+  movePointRadius: 0.29
   isMoving: 0
   movePoint: {fileID: 4903252715897584204}
   up: 273

@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Skull Head
+    name: 
     sentences: []
     hasImage: 0
     targetImage: {fileID: 0}

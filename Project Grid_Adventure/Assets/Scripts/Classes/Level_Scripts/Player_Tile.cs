@@ -6,6 +6,7 @@ public class Player_Tile : ISubject
 {
     [SerializeField] private float speed;
     [SerializeField] private float movePointDistance;
+    [SerializeField] private float movePointRadius;
     [SerializeField] private bool isMoving;
     [SerializeField] Transform movePoint;
     [SerializeField] private Event test;
@@ -45,22 +46,22 @@ public class Player_Tile : ISubject
             {
                 if (Input.GetKeyDown(right))
                 {
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                         movePoint.position += new Vector3(movePointDistance, 0f, 0f);
                 }
                 else if (Input.GetKeyDown(left))
                 {
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                         movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
                 }
                 else if (Input.GetKeyDown(up))
                 {
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), movePointRadius, unWalkable))
                         movePoint.position += new Vector3(0f, movePointDistance, 0f);
                 }
                 else if (Input.GetKeyDown(down))
                 {
-                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), movePointRadius, unWalkable))
                         movePoint.position += new Vector3(0f, -movePointDistance, 0f);
                 }
             }
@@ -71,19 +72,19 @@ public class Player_Tile : ISubject
         switch (dir_)
         {
             case "up":
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), movePointRadius, unWalkable))
                     movePoint.position += new Vector3(0f, movePointDistance, 0f);
                 break;
             case "down":
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), movePointRadius, unWalkable))
                     movePoint.position += new Vector3(0f, -movePointDistance, 0f);
                 break;
             case "right":
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                     movePoint.position += new Vector3(movePointDistance, 0f, 0f);
                 break;
             case "left":
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                     movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
                 break;
         }
