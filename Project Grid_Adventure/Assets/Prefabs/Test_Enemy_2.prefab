@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 520907486825518933}
   m_Layer: 7
   m_Name: PositionInfo_1
-  m_TagString: Untagged
+  m_TagString: enemyPos
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
   unWalkable:
     serializedVersion: 2
     m_Bits: 64
-  maxTimer: 5
+  maxTimer: 3
   tmpTimer: 0
   enemyPaths: []
   maxIndex: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 2980984843456091262}
   m_Layer: 7
   m_Name: PositionInfo_4
-  m_TagString: Untagged
+  m_TagString: enemyPos
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 2712931398002591172}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 1932641588348859900}
   m_Layer: 7
   m_Name: PositionInfo_2
-  m_TagString: Untagged
+  m_TagString: enemyPos
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 9051985937337331429}
   m_Layer: 7
   m_Name: PositionInfo_3
-  m_TagString: Untagged
+  m_TagString: enemyPos
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,7 @@ Transform:
   m_GameObject: {fileID: 4369578084092934570}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -5, z: 0}
+  m_LocalPosition: {x: 4, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

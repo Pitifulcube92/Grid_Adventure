@@ -19,6 +19,7 @@ TagManager:
   - Parallax
   - Level wall
   - Level damage
+  - Enemy Spawn
   layers:
   - Default
   - TransparentFX

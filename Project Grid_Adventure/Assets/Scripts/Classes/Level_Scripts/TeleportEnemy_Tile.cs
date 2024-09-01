@@ -13,7 +13,7 @@ public struct EnemyMoveInfo
     {
         index = index_;
         positionInfo = position_;
-    }
+    }   
 }
 
 public class TeleportEnemy_Tile : BaseEnemy_Tile

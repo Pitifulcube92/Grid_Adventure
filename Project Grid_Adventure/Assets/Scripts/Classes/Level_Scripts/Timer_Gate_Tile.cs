@@ -10,7 +10,7 @@ public class Timer_Gate_Tile : BaseInteractionTile
     [SerializeField] private float MaxTimer;
     [SerializeField] private float tmpTime;
     [SerializeField] private bool initClosed;
-    [SerializeField] private bool isClosed;
+    private bool isClosed;
     // Start is called before the first frame update
     void Start()
     {
