@@ -504,6 +504,10 @@ PrefabInstance:
       propertyPath: currentLevlInfo.nextLevelName
       value: Level_1_5
       objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: currentLevlInfo.nextSceneIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2333976818808086545, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: m_Size.x
       value: 9

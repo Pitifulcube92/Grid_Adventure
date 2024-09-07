@@ -8,6 +8,7 @@ public class MainMenu_Script : MonoBehaviour
     void Start()
     {
         GameManager.instance.GetUIManager().ChangeUI("MenuUI");
+        GameManager.instance.GetSoundManager().PlayMusicClip("Dazzling_2");
     }
 }
 

@@ -22,8 +22,8 @@ public class UI_MainMenu : BaseUIScript
         {
             Debug.LogError("No UI buttons where found!");
         }
-        GameManager.instance.GetSoundManager().PlayMusicClip("Dazzling_2");
-        SetUIConfigure();
+      
+        //SetUIConfigure();
     }
     private void Update()
     {
@@ -42,7 +42,7 @@ public class UI_MainMenu : BaseUIScript
                 case "Continue":
                     break;
                 case "Level Select btn":
-                    //x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("Canvas_Template(Level select)",GameManager.instance.transform);});
+                    x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("LevelSelectUI");});
                     break;
                 case "Options":
                     break;

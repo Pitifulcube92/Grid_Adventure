@@ -1525,8 +1525,6 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 32
     m_Data: {fileID: -551572838, guid: f5b9654483769c4479e7918a70e22dc2, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 50
     m_Data:
@@ -3427,6 +3425,10 @@ PrefabInstance:
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextLevelName
       value: Level_1_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: currentLevlInfo.nextSceneIndex
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 2333976818808086545, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: m_Size.x

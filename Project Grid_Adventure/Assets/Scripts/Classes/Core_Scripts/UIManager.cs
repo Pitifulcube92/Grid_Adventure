@@ -43,7 +43,8 @@ public class UIManager : MonoBehaviour
                     currentCanvas = null;
                 }               
                 currentCanvas = x;
-                Instantiate(currentCanvas);
+                Instantiate(currentCanvas).GetComponent<BaseUIScript>().SetUIConfigure();
+               
                 return;
             }
         }

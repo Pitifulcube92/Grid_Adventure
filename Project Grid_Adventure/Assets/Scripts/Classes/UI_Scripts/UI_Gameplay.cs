@@ -75,7 +75,7 @@ public class UI_Gameplay : BaseUIScript
         pauseContext = GameObject.FindGameObjectWithTag("PauseGroup");
         settingContext = GameObject.FindGameObjectWithTag("PauseSettingGroup");
 
-        SetUIConfigure();
+        //SetUIConfigure();
 
     }
     override public void SetUIConfigure()

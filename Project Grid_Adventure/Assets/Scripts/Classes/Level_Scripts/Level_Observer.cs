@@ -20,14 +20,14 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
     [SerializeField] private Vector3 currentCheckpoint;
-
+    //[SerializeField] private 
     private void Awake()
     {
 
         //Get lvlObjects    
         scanScene();
-        //GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
-        //GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
+        GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
         foreach (Base_Level_Component x in GameObject.FindObjectsOfType<Base_Level_Component>())
@@ -227,12 +227,14 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeOut());
-        if (currentLevlInfo.nextLevelName.Equals(""))
+        if (currentLevlInfo.nextSceneIndex.Equals(0))
         {
+            GameManager.instance.GetLevelManager().LoadScene("Main Menu");
             //EditorApplication.ExitPlaymode();
-            Application.Quit();
+            //Application.Quit();
         }
-        SceneManager.LoadScene(currentLevlInfo.nextLevelName);
+        GameManager.instance.GetLevelManager().LoadScene(currentLevlInfo.nextSceneIndex);
+        //SceneManager.LoadScene(currentLevlInfo.nextLevelName);
         //EditorApplication.ExitPlaymode();
     }
 }

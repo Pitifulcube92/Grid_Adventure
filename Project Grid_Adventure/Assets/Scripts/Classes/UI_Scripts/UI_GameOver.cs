@@ -35,6 +35,6 @@ public class UI_GameOver : BaseUIScript
             buttons.Add(x);
         }
 
-        SetUIConfigure();
+        //SetUIConfigure();
     }
 }

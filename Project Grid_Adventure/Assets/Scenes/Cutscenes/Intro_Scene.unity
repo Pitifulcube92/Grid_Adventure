@@ -934,6 +934,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager Entity
       objectReference: {fileID: 0}
+    - target: {fileID: 7551717350076393344, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: uiCanvas.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551717350076393344, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: uiCanvas.Array.data[3]
+      value: 
+      objectReference: {fileID: 8748034366732966709, guid: 32c9d6fb5c663154f85a8f7d032c7b7c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

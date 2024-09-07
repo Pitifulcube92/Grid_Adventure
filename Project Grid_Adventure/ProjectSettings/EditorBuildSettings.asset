@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Cutscenes/Intro_Scene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 5c7be63d4341e4b47919660d93653e4d
-  - enabled: 1
     path: Assets/Scenes/Game Levels/World_1/Level_1_1.unity
     guid: 1afd856a36025ef44a54fd6f1d88f9cf
   - enabled: 1
@@ -38,34 +32,133 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Levels/World_1/Level_1_9.unity
     guid: 588c46e0d9311204d8df0c762e75c625
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_1.unity
-    guid: 27db2f0e3c1680f458cbcb818a9e8fe2
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_2.unity
-    guid: ea27045c3b10c3840a603196b70c0201
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_3.unity
-    guid: 9d8a23a286003c4469192557e1682536
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_4.unity
-    guid: 4c4e889e537947c4a98c4128801f37f2
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_5.unity
-    guid: d7263b0789ea5af4abc119fea953381a
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_6.unity
-    guid: 3b9a52b4fe0aecc468ba2803e2826576
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_7.unity
-    guid: 557710b643338d04f9ae40df5a2eee08
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_8.unity
-    guid: 9137994668156fd4d83d710ee30a82dc
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_9.unity
-    guid: 27ad7434036dd654e848e292174aa1d5
-  - enabled: 0
-    path: Assets/Scenes/Test Levels/Test_Level_10.unity
-    guid: a38458e9b07fb3a4cb4700c58708bf79
+  - enabled: 1
+    path: Assets/Scenes/Boss Levels/Level_1_10.unity
+    guid: 6535420eea4bb2649a73cf86d42fb93c
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_1.unity
+    guid: 4085286bea5f6564cbe24a30a45f1751
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_2.unity
+    guid: aa104d35fc7aeea40a86f1fcf85c100d
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_3.unity
+    guid: fbc004c67e538b747b6b0f41c14a1c64
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_4.unity
+    guid: 28c246a579e8dd24e9c524d44fad2ea5
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_5.unity
+    guid: d2a09624911250d40ba118ee30914c4e
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_6.unity
+    guid: 2e3de8a2424cc4941bc9a309a5b74292
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_7.unity
+    guid: b5b835cd830a6df4497743d4cdc708b2
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_8.unity
+    guid: 333c306458bed8542934922f9d9e9fb5
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_2/Level_2_9.unity
+    guid: fe9d610cfff68754a8d9562304b3f472
+  - enabled: 1
+    path: Assets/Scenes/Lore Levels/Level_2_10.unity
+    guid: eed0a9c248da8f24db02b1ff0c838c09
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_1.unity
+    guid: 9524215e900037c4da3e3dd973cc6db1
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_2.unity
+    guid: 65cac76fb692f5144ba4becc2cf9f649
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_3.unity
+    guid: 1b61854b30f8d814aa562a607e535b30
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_4.unity
+    guid: d3fff4a850a922a4a85cd95fd43fbeb1
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_5.unity
+    guid: 8d7f4cb32ee948042a9c46c71f73eb6c
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_6.unity
+    guid: 8488e9c20d09ace4d9dbec1c45223291
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_7.unity
+    guid: b7ec5e9bb6bfa5943b89208fa7ac9923
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_8.unity
+    guid: 060901d948ebca247aa20ba0cd568133
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_3/Level_3_9.unity
+    guid: db8bb058aaf6e724f8093fe2f9a4c0fd
+  - enabled: 1
+    path: Assets/Scenes/Boss Levels/Level_3_10.unity
+    guid: 2f5775a9db59830479c8fb07002e1470
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_1.unity
+    guid: c4fa1f60556309a4cb05d3d5d4358dae
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_2.unity
+    guid: 0903e92ecdd46e541b56a91fb1f39261
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_3.unity
+    guid: 49434d4e3427d0543bc1a572a66a4ada
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_4.unity
+    guid: a5985548e32ea4a49b2f2ef86f7e35a6
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_5.unity
+    guid: c441da344509d634a8cf205500ac7cba
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_6.unity
+    guid: 188218a3a96795d4685a438cd1365065
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_7.unity
+    guid: 5ae1d5154e0f9ba449f857da260e8005
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_8.unity
+    guid: 83f8723f78744bf45a11aee5e8d8a60c
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_4/Level_4_9.unity
+    guid: 6d611dd222dd5e44ab8b36b3fe3f0d29
+  - enabled: 1
+    path: Assets/Scenes/Lore Levels/Level_4_10.unity
+    guid: b88e7e803c9dd694086f5af91fe9fc31
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_1.unity
+    guid: 9c96b25aee1dd49479f9bc7dcc96cb43
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_2.unity
+    guid: a5107f4ac80172c4390381d46f8b3db6
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_3.unity
+    guid: 7e1aaf47fbd2a4f4ea6ed1fef0f439c5
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_4.unity
+    guid: aeb083585c1531c49b8d06c3c52eaa3d
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_5.unity
+    guid: cb5d44a25e891e54c946495c62757f27
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_6.unity
+    guid: afe18f6147431c645a28b567aabf54f7
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_7.unity
+    guid: 53d3608b67a7a1c47884c445190ce576
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_8.unity
+    guid: a91b1018ff945eb40abfc9aac07cea20
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/World_5/Level_5_9.unity
+    guid: 126fc8c733fae004c904d17f5067b429
+  - enabled: 1
+    path: Assets/Scenes/Boss Levels/Level_5_10.unity
+    guid: e1988a2b3a453e749995277f6d9910e0
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Intro_Scene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 5c7be63d4341e4b47919660d93653e4d
   m_configObjects: {}

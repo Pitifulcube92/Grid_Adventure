@@ -25,9 +25,18 @@ public class LevelManager : MonoBehaviour
 
     public void LoadScene(string name_)
     {
-        SceneManager.LoadScene(name_);
+        SceneManager.LoadScene(name_, LoadSceneMode.Single);
     }
+    public void LoadScene(int index_)
+    {
+        SceneManager.LoadScene(index_, LoadSceneMode.Single);
+        GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");
+    }
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
 
+    }
     public void ListLevelName()
     {
 

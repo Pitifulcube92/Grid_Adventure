@@ -20,6 +20,7 @@ TagManager:
   - Level wall
   - Level damage
   - Enemy Spawn
+  - LvlSelectPan
   layers:
   - Default
   - TransparentFX

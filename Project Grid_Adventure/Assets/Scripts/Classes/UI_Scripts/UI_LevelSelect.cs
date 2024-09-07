@@ -5,29 +5,92 @@ using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class UI_LevelSelect : MonoBehaviour
+public class UI_LevelSelect : BaseUIScript
 {
-    [SerializeField] private GameObject lvlContainer;
-    [SerializeField] private Text worldName;
-    [SerializeField] private List<Button> levelBtns;
-    //[SerializeField] private List<string> lvlNames;
-    [SerializeField] private Button btnPrefab;
-    [SerializeField] private int numOfBtns;
-    [SerializeField] private string currentWorldName;
-    
+    [SerializeField] private List<GameObject> WorldPanels;
+    [SerializeField] private RawImage backgroundImg;
+    [SerializeField] private float y, x;
 
-    void Start()
-    { 
-      worldName.text = "World 1";
-
-      for (int i =0; i < numOfBtns; i++)
+    public override void SetUIConfigure()
+    {
+      foreach (GameObject x in GameObject.FindGameObjectsWithTag("LvlSelectPan"))
       {
-           btnPrefab.GetComponentInChildren<Text>().text = "LVL " + (i+1);
-           btnPrefab.GetComponent<SceneData>().sceneName = currentWorldName + (i + 1);
-           levelBtns.Add(Instantiate(btnPrefab, lvlContainer.transform));
+            WorldPanels.Add(x);
+            Debug.Log(x.name);
       }
+        SelectWorldPanel(1);
+        
+    }
+    public void SelectWorldPanel(int tmp_)
+    {
+        switch (tmp_)
+        {
+            case 1:
+                // WorldPanels.Find(x => x.name.Equals("World 1 btns"));
+                foreach (GameObject x in WorldPanels)
+                {
+                    x.SetActive(false);
+
+                    if (x.name == "World 1 btns")
+                    {
+                        x.SetActive(true);
+                    }          
+                }         
+                break;
+            case 2:
+                foreach (GameObject x in WorldPanels)
+                {
+                    x.SetActive(false);
+
+                    if (x.name == "World 2 btns")
+                    {
+                        x.SetActive(true);
+                    }
+                }
+                break;
+            case 3:
+                foreach (GameObject x in WorldPanels)
+                {
+                    x.SetActive(false);
+
+                    if (x.name == "World 3 btns")
+                    {
+                        x.SetActive(true);
+                    }                  
+                }
+                break;
+            case 4:
+                foreach (GameObject x in WorldPanels)
+                {
+                    x.SetActive(false);
+
+                    if (x.name == "World 4 btns")
+                    {
+                        x.SetActive(true);
+                    }                   
+                }
+                break;
+            case 5:
+                foreach (GameObject x in WorldPanels)
+                {
+                    x.SetActive(false);
+
+                    if (x.name == "World 5 btns")
+                    {
+                        x.SetActive(true);
+                    }                  
+                }
+                break;
+        }
+    }
+    void Start()
+    {
+        //SetUIConfigure();
+    }
+    private void Update()
+    {
+        backgroundImg.uvRect = new Rect(backgroundImg.uvRect.position + new Vector2(x, y) * Time.deltaTime, backgroundImg.uvRect.size);
     }
 
-    
 }
     
