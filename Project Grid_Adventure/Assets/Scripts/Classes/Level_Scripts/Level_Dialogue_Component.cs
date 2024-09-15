@@ -13,7 +13,9 @@ public class Level_Dialogue_Component : Base_Level_Component
     [SerializeField] private Image dialogImage;
     [SerializeField] private KeyCode continueBtn;
     [SerializeField] private bool initalConvo;
+    [SerializeField] private bool canTriggerDialog;
     [SerializeField] private Animator anim;
+    [SerializeField] private UI_Gameplay UI;
 
     /// <summary>
     /// Note: Add a disable player controls to not move while conversing
@@ -21,13 +23,14 @@ public class Level_Dialogue_Component : Base_Level_Component
     private void Update()
     {
  
-            if (Input.GetKeyDown(continueBtn)) //&& pressedOnce == true)
+            if (Input.GetKeyDown(continueBtn) && canTriggerDialog == true)
             {
                 if (initalConvo == true)
                 {
-                    anim.SetBool("isDialogueBoxOpen",true);
+                    UI.DialogeUI.SetActive(true);    
+                    //anim.SetBool("isDialogueBoxOpen",true);
                 }
-                Debug.Log("Input Called");
+                //Debug.Log("Input Called");
                 //pressedOnce = false;
                 initalConvo = false;
                 DisplayNextSentence();
@@ -38,9 +41,15 @@ public class Level_Dialogue_Component : Base_Level_Component
         dialogueText = GameObject.Find("Dialogue_Context").GetComponent<Text>();
         dialogueName = GameObject.Find("Dialogue_Name").GetComponent<Text>();
         dialogImage = GameObject.Find("Dialogue_Image").GetComponent<Image>();
-        anim = GameObject.Find("Dialogue_Box").GetComponent<Animator>();
+        UI = GameObject.FindObjectOfType<UI_Gameplay>();
+        canTriggerDialog = true;
+        //anim = GameObject.Find("Dialogue_Box").GetComponent<Animator>();
         trigger = gameObject.AddComponent<Dialogue_Trigger>();
         continueBtn = KeyCode.Space;
+    }
+    public void SetcanTriggerDialog(bool tmp_)
+    {
+        canTriggerDialog = tmp_;
     }
     public override void InitalizeComponent()
     {
@@ -108,7 +117,8 @@ public class Level_Dialogue_Component : Base_Level_Component
     public void EndDialogue()
     {
         Debug.Log("Dialogue has ended!");
-        anim.SetBool("isDialogueBoxOpen", false);
+        UI.DialogeUI.SetActive(false);
+        //anim.SetBool("isDialogueBoxOpen", false);
         trigger.ResetTrigger();
     }  
 

@@ -170,7 +170,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 06624ed8669f2064e87de8144926131d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -333,6 +333,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1055be36b957efc4d8f97daf78239ba1, type: 3}
   - {fileID: 8300000, guid: 06624ed8669f2064e87de8144926131d, type: 3}
   - {fileID: 8300000, guid: 6bb3e3bdbfa5c3f41a3e385bbca25b1c, type: 3}
+  - {fileID: 8300000, guid: 73312c9237b4fb5409108cb8b07afb14, type: 3}
+  - {fileID: 8300000, guid: 409712515eef58b4b9c1b1f96cca83d7, type: 3}
   sfxSource: {fileID: 3588324846383894197}
   bgmSource: {fileID: 998789373698189302}
 --- !u!114 &3759371420889901790
@@ -364,4 +366,6 @@ MonoBehaviour:
   - {fileID: 8748034366732966709, guid: be979b686892f58488aa6de5298af2d6, type: 3}
   - {fileID: 8748034366732966709, guid: 3c5e51a1adec0354b96141c4673bc3c4, type: 3}
   - {fileID: 8748034366732966709, guid: 769399a10ee0c344b90be935c44dca45, type: 3}
-  currentCanvas: {fileID: 0}
+  - {fileID: 8748034366732966709, guid: 32c9d6fb5c663154f85a8f7d032c7b7c, type: 3}
+  - {fileID: 8748034366732966709, guid: 0fba95986a4b22d488b9a5f43daacc97, type: 3}
+  currentCanvas: {fileID: 8748034366732966709, guid: be979b686892f58488aa6de5298af2d6, type: 3}

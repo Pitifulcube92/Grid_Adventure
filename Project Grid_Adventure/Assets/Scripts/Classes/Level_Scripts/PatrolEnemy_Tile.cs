@@ -44,7 +44,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         }
         Invokebehavior();
         base.baseStart();
-        //StopCoroutine("MoveToTarget");
+        StopCoroutine("MoveToTarget");
         StartCoroutine(MoveToTarget());
 
     }

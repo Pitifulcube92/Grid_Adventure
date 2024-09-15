@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3255040234739120942}
   m_Layer: 5
   m_Name: Level_btn (7)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -210,6 +210,18 @@ MonoBehaviour:
           m_IntArgument: 27
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &344279545033281277
@@ -305,7 +317,7 @@ GameObject:
   - component: {fileID: 2135532474270395249}
   m_Layer: 5
   m_Name: Level_btn (1)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -414,7 +426,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -422,6 +434,18 @@ MonoBehaviour:
           m_IntArgument: 21
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &399643412183096227
@@ -503,6 +527,87 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 5
+--- !u!1 &487422460067623826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2279419274732930514}
+  - component: {fileID: 9159125269829255093}
+  - component: {fileID: 7938333511916069959}
+  m_Layer: 5
+  m_Name: Level Select text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2279419274732930514
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487422460067623826}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5000012, y: 0.5000012, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8867545808805555417}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 215}
+  m_SizeDelta: {x: 600, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9159125269829255093
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487422460067623826}
+  m_CullTransparentMesh: 1
+--- !u!114 &7938333511916069959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487422460067623826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Floor 2
+
+'
 --- !u!1 &503756419533854599
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +687,87 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 2
+--- !u!1 &510921131026852942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309545218086709938}
+  - component: {fileID: 4303098488184577186}
+  - component: {fileID: 4944202088862608513}
+  m_Layer: 5
+  m_Name: Level Select text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1309545218086709938
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510921131026852942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5000012, y: 0.5000012, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3325442961903152347}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 215}
+  m_SizeDelta: {x: 600, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4303098488184577186
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510921131026852942}
+  m_CullTransparentMesh: 1
+--- !u!114 &4944202088862608513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510921131026852942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Floor 3
+
+'
 --- !u!1 &651755637037322537
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,7 +940,7 @@ GameObject:
   - component: {fileID: 1305927435048264085}
   m_Layer: 5
   m_Name: Level_btn (2)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -863,7 +1049,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -871,6 +1057,18 @@ MonoBehaviour:
           m_IntArgument: 32
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &720591508953646364
@@ -1031,85 +1229,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 4
---- !u!1 &903333869088937869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1486361306178940875}
-  - component: {fileID: 6389208164828147230}
-  - component: {fileID: 7261606294626992919}
-  m_Layer: 5
-  m_Name: Level Select text (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1486361306178940875
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903333869088937869}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8867545808805555417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 250}
-  m_SizeDelta: {x: 600, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6389208164828147230
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903333869088937869}
-  m_CullTransparentMesh: 1
---- !u!114 &7261606294626992919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903333869088937869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
-    m_FontSize: 150
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 1
-    m_MaxSize: 150
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: Floor 2
 --- !u!1 &929470681938834298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1243,7 @@ GameObject:
   - component: {fileID: 8051431237238827677}
   m_Layer: 5
   m_Name: Level_btn (4)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1233,7 +1352,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1241,6 +1360,18 @@ MonoBehaviour:
           m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &946630261059793375
@@ -1257,7 +1388,7 @@ GameObject:
   - component: {fileID: 3192996790501143921}
   m_Layer: 5
   m_Name: Level_btn
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1366,7 +1497,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1374,6 +1505,18 @@ MonoBehaviour:
           m_IntArgument: 30
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1187244785126205152
@@ -1390,7 +1533,7 @@ GameObject:
   - component: {fileID: 6950275033809639678}
   m_Layer: 5
   m_Name: Level_btn (8)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1499,7 +1642,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1507,6 +1650,18 @@ MonoBehaviour:
           m_IntArgument: 28
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1204532826523347666
@@ -1602,7 +1757,7 @@ GameObject:
   - component: {fileID: 4376265869318323543}
   m_Layer: 5
   m_Name: Level_btn (2)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1711,7 +1866,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1719,6 +1874,18 @@ MonoBehaviour:
           m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1308585095395486035
@@ -1972,7 +2139,7 @@ GameObject:
   - component: {fileID: 858087874647433611}
   m_Layer: 5
   m_Name: Level_btn_Event
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2081,7 +2248,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2184,7 +2351,7 @@ GameObject:
   - component: {fileID: 3002102426053712140}
   m_Layer: 5
   m_Name: Level_btn_Boss
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2293,12 +2460,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2317,7 +2484,7 @@ GameObject:
   - component: {fileID: 6106821516402597317}
   m_Layer: 5
   m_Name: Level_btn (3)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2426,7 +2593,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2434,6 +2601,18 @@ MonoBehaviour:
           m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1743591233099305667
@@ -2450,7 +2629,7 @@ GameObject:
   - component: {fileID: 5087874860262604972}
   m_Layer: 5
   m_Name: Level_btn (2)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2559,7 +2738,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2567,6 +2746,18 @@ MonoBehaviour:
           m_IntArgument: 42
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1748317706144617437
@@ -2662,7 +2853,7 @@ GameObject:
   - component: {fileID: 1271076271213127752}
   m_Layer: 5
   m_Name: Level_btn (7)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2771,7 +2962,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2779,6 +2970,18 @@ MonoBehaviour:
           m_IntArgument: 47
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1864492915163594274
@@ -2795,7 +2998,7 @@ GameObject:
   - component: {fileID: 7155846458925000277}
   m_Layer: 5
   m_Name: Level_btn (4)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2904,95 +3107,28 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1878469160352756703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1929585541148219063}
-  - component: {fileID: 1195014808084190884}
-  - component: {fileID: 5857365116257944890}
-  m_Layer: 5
-  m_Name: Level Select text (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1929585541148219063
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878469160352756703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4901169572943678162}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 250}
-  m_SizeDelta: {x: 600, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1195014808084190884
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878469160352756703}
-  m_CullTransparentMesh: 1
---- !u!114 &5857365116257944890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878469160352756703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
-    m_FontSize: 150
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 1
-    m_MaxSize: 150
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: Floor 4
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1879928056010104677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,7 +3163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.3501587, y: 0.60998535}
+  m_AnchoredPosition: {x: 0.35009766, y: 0.60998535}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8326185503947836025
@@ -3079,7 +3215,7 @@ GameObject:
   - component: {fileID: 3846564355913332373}
   m_Layer: 5
   m_Name: Level_btn (6)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3188,7 +3324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3196,6 +3332,18 @@ MonoBehaviour:
           m_IntArgument: 36
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1955954486476290447
@@ -3277,87 +3425,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 6
---- !u!1 &2013009167903369919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7749170388833879678}
-  - component: {fileID: 921910653411504686}
-  - component: {fileID: 7828194024460367777}
-  m_Layer: 5
-  m_Name: Level Select text (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7749170388833879678
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013009167903369919}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3325442961903152347}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 215}
-  m_SizeDelta: {x: 600, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &921910653411504686
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013009167903369919}
-  m_CullTransparentMesh: 1
---- !u!114 &7828194024460367777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013009167903369919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
-    m_FontSize: 150
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 1
-    m_MaxSize: 150
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Floor 3
-
-'
 --- !u!1 &2133730584059207158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,7 +3518,7 @@ GameObject:
   - component: {fileID: 8999722949753548625}
   m_Layer: 5
   m_Name: Level_btn (1)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3560,7 +3627,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3568,6 +3635,18 @@ MonoBehaviour:
           m_IntArgument: 31
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2238183423060400575
@@ -3584,7 +3663,7 @@ GameObject:
   - component: {fileID: 6284444548483611136}
   m_Layer: 5
   m_Name: Level_btn (7)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3693,7 +3772,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3701,6 +3780,18 @@ MonoBehaviour:
           m_IntArgument: 37
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2328311686329945079
@@ -3796,7 +3887,7 @@ GameObject:
   - component: {fileID: 3618327388707713276}
   m_Layer: 5
   m_Name: Level_btn (8)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3905,7 +3996,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3913,6 +4004,18 @@ MonoBehaviour:
           m_IntArgument: 48
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2445544147672348222
@@ -4166,7 +4269,7 @@ GameObject:
   - component: {fileID: 4620125254020114244}
   m_Layer: 5
   m_Name: Level_btn_Event
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4275,7 +4378,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4298,8 +4401,8 @@ GameObject:
   - component: {fileID: 2429200309990197035}
   - component: {fileID: 4777146578066707947}
   m_Layer: 5
-  m_Name: Level_btn_5
-  m_TagString: Untagged
+  m_Name: Floor_btn_5
+  m_TagString: FloorUIbtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4431,8 +4534,8 @@ GameObject:
   - component: {fileID: 6135344545981888419}
   - component: {fileID: 982382084889797711}
   m_Layer: 5
-  m_Name: Level_btn_4
-  m_TagString: Untagged
+  m_Name: Floor_btn_4
+  m_TagString: FloorUIbtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4881,7 +4984,7 @@ GameObject:
   - component: {fileID: 1314779571919747087}
   m_Layer: 5
   m_Name: Level_btn (3)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4990,14 +5093,26 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3135566719252299756
@@ -5014,7 +5129,7 @@ GameObject:
   - component: {fileID: 492738693553320234}
   m_Layer: 5
   m_Name: Level_btn
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5123,7 +5238,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5131,6 +5246,18 @@ MonoBehaviour:
           m_IntArgument: 40
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3235377175545675983
@@ -5147,7 +5274,7 @@ GameObject:
   - component: {fileID: 8319644286843400543}
   m_Layer: 5
   m_Name: Level_btn (3)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5256,7 +5383,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5264,6 +5391,18 @@ MonoBehaviour:
           m_IntArgument: 33
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3269674790091459120
@@ -5359,7 +5498,7 @@ GameObject:
   - component: {fileID: 7358238003215894045}
   m_Layer: 5
   m_Name: Level_btn (6)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5468,14 +5607,26 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3423739441364299130
@@ -5492,7 +5643,7 @@ GameObject:
   - component: {fileID: 4861171649461861491}
   m_Layer: 5
   m_Name: Level_btn (1)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5601,7 +5752,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5609,6 +5760,18 @@ MonoBehaviour:
           m_IntArgument: 41
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3439564694397285855
@@ -5625,7 +5788,7 @@ GameObject:
   - component: {fileID: 126210771896414283}
   m_Layer: 5
   m_Name: Level_btn (4)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5734,7 +5897,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5742,6 +5905,18 @@ MonoBehaviour:
           m_IntArgument: 44
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3469742758159398209
@@ -5962,7 +6137,7 @@ GameObject:
   - component: {fileID: 5161689048891303326}
   m_Layer: 5
   m_Name: Level_btn_Boss
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6071,7 +6246,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6095,7 +6270,7 @@ GameObject:
   - component: {fileID: 7731192207090441060}
   m_Layer: 5
   m_Name: Level_btn (7)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6204,16 +6379,96 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &4035560489233675376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6801764284969233863}
+  - component: {fileID: 4805346802666935591}
+  - component: {fileID: 8096958500224720514}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6801764284969233863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035560489233675376}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -960.41364, y: -539.76733, z: 0}
+  m_LocalScale: {x: 3.7225335, y: 3.7225335, z: 3.7225335}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2603811480736271995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4805346802666935591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035560489233675376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &8096958500224720514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035560489233675376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!1 &4060069189740669292
 GameObject:
   m_ObjectHideFlags: 0
@@ -6307,7 +6562,7 @@ GameObject:
   - component: {fileID: 560736277275929290}
   m_Layer: 5
   m_Name: Floor_btn_1
-  m_TagString: Untagged
+  m_TagString: FloorUIbtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6522,7 +6777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4901169572943678162}
   m_Layer: 5
-  m_Name: 'World 4 btns '
+  m_Name: World 4 btns
   m_TagString: LvlSelectPan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6550,7 +6805,7 @@ RectTransform:
   - {fileID: 366871918846447521}
   - {fileID: 1940013494313550843}
   - {fileID: 7970674691725709442}
-  - {fileID: 1929585541148219063}
+  - {fileID: 665955927212037922}
   m_Father: {fileID: 5686167325707685683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6572,7 +6827,7 @@ GameObject:
   - component: {fileID: 2083189723307847747}
   m_Layer: 5
   m_Name: Level_btn (6)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6681,7 +6936,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6689,6 +6944,18 @@ MonoBehaviour:
           m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4481167723298762155
@@ -6705,7 +6972,7 @@ GameObject:
   - component: {fileID: 6524034134402756607}
   m_Layer: 5
   m_Name: Level_btn (2)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6814,14 +7081,26 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4645278924385505168
@@ -6859,6 +7138,8 @@ RectTransform:
   - {fileID: 2878348869193843967}
   - {fileID: 5686167325707685683}
   - {fileID: 112788901777025800}
+  - {fileID: 6801764284969233863}
+  - {fileID: 271945714331946897}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6942,6 +7223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WorldPanels: []
+  levelBtns: []
+  unlockedLevels: 50
   backgroundImg: {fileID: 4039881439993984130}
   y: 0.05
   x: 0.05
@@ -7220,7 +7503,7 @@ RectTransform:
   - {fileID: 2834466082372186142}
   - {fileID: 6677530695169455091}
   - {fileID: 7966619850899072565}
-  - {fileID: 5576568228468361671}
+  - {fileID: 3715289601440983560}
   m_Father: {fileID: 5686167325707685683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7242,7 +7525,7 @@ GameObject:
   - component: {fileID: 4772579290490454853}
   m_Layer: 5
   m_Name: Level_btn (5)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7351,7 +7634,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7359,6 +7642,18 @@ MonoBehaviour:
           m_IntArgument: 45
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4840211438748895341
@@ -7533,7 +7828,7 @@ GameObject:
   - component: {fileID: 6467415612631473100}
   m_Layer: 5
   m_Name: Level_btn (6)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7642,7 +7937,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7650,6 +7945,18 @@ MonoBehaviour:
           m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5100607023367229397
@@ -7824,7 +8131,7 @@ GameObject:
   - component: {fileID: 3622187103030077060}
   m_Layer: 5
   m_Name: Level_btn (2)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7933,7 +8240,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7941,6 +8248,18 @@ MonoBehaviour:
           m_IntArgument: 22
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5246964073119756787
@@ -7957,7 +8276,7 @@ GameObject:
   - component: {fileID: 7019421556113071350}
   m_Layer: 5
   m_Name: Level_btn (5)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8066,7 +8385,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8074,6 +8393,18 @@ MonoBehaviour:
           m_IntArgument: 35
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5312126808701465503
@@ -8090,7 +8421,7 @@ GameObject:
   - component: {fileID: 109304395834835244}
   m_Layer: 5
   m_Name: Level_btn (3)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8199,7 +8530,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8207,6 +8538,18 @@ MonoBehaviour:
           m_IntArgument: 43
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5314822344211276236
@@ -8381,7 +8724,7 @@ GameObject:
   - component: {fileID: 4400446508076636914}
   m_Layer: 5
   m_Name: Level_btn
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8490,16 +8833,109 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &5437068229483030000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665955927212037922}
+  - component: {fileID: 4923001243015750803}
+  - component: {fileID: 8647732357833216486}
+  m_Layer: 5
+  m_Name: Level Select text (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &665955927212037922
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437068229483030000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5000012, y: 0.5000012, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4901169572943678162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 215}
+  m_SizeDelta: {x: 600, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4923001243015750803
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437068229483030000}
+  m_CullTransparentMesh: 1
+--- !u!114 &8647732357833216486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437068229483030000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Floor 4
+
+'
 --- !u!1 &5455405007187899670
 GameObject:
   m_ObjectHideFlags: 0
@@ -8514,7 +8950,7 @@ GameObject:
   - component: {fileID: 8420567024728312852}
   m_Layer: 5
   m_Name: Level_btn (1)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8623,7 +9059,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8631,6 +9067,18 @@ MonoBehaviour:
           m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5551575819720735946
@@ -8647,7 +9095,7 @@ GameObject:
   - component: {fileID: 4381913543665689425}
   m_Layer: 5
   m_Name: Floor_btn_2
-  m_TagString: Untagged
+  m_TagString: FloorUIbtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8780,7 +9228,7 @@ GameObject:
   - component: {fileID: 8896501623927849288}
   m_Layer: 5
   m_Name: Level_btn (5)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8889,7 +9337,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8897,6 +9345,18 @@ MonoBehaviour:
           m_IntArgument: 25
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5757720409335637121
@@ -8992,7 +9452,7 @@ GameObject:
   - component: {fileID: 5245703588866604500}
   m_Layer: 5
   m_Name: Level_btn (5)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9101,14 +9561,26 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6089337981708612225
@@ -9204,7 +9676,7 @@ GameObject:
   - component: {fileID: 7563302113120845153}
   m_Layer: 5
   m_Name: Level_btn
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9313,7 +9785,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9321,6 +9793,18 @@ MonoBehaviour:
           m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6159115485227409408
@@ -9574,7 +10058,7 @@ GameObject:
   - component: {fileID: 5968989293231708971}
   m_Layer: 5
   m_Name: Level_btn (4)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9683,7 +10167,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9691,6 +10175,18 @@ MonoBehaviour:
           m_IntArgument: 24
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6272507857032968745
@@ -9786,7 +10282,7 @@ GameObject:
   - component: {fileID: 8508534457458420637}
   m_Layer: 5
   m_Name: Level_btn_Boss
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9895,7 +10391,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9998,7 +10494,7 @@ GameObject:
   - component: {fileID: 8603762717817790532}
   m_Layer: 5
   m_Name: Level_btn (7)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10107,7 +10603,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10115,6 +10611,18 @@ MonoBehaviour:
           m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6738056265232164048
@@ -10289,7 +10797,7 @@ GameObject:
   - component: {fileID: 4283275653711596104}
   m_Layer: 5
   m_Name: Level_btn (8)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10398,14 +10906,26 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7223364295509184399
@@ -10421,8 +10941,8 @@ GameObject:
   - component: {fileID: 8048744172034446000}
   - component: {fileID: 7775332070137061597}
   m_Layer: 5
-  m_Name: Level_btn_3
-  m_TagString: Untagged
+  m_Name: Floor_btn_3
+  m_TagString: FloorUIbtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10555,7 +11075,7 @@ GameObject:
   - component: {fileID: 7344092999729526125}
   m_Layer: 5
   m_Name: Level_btn (3)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10664,7 +11184,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10672,6 +11192,18 @@ MonoBehaviour:
           m_IntArgument: 23
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7276687323871056732
@@ -10688,7 +11220,7 @@ GameObject:
   - component: {fileID: 6086474362012084571}
   m_Layer: 5
   m_Name: Level_btn
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10797,7 +11329,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10805,6 +11337,18 @@ MonoBehaviour:
           m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7284325520679934916
@@ -11163,7 +11707,7 @@ RectTransform:
   - {fileID: 1730079667615240621}
   - {fileID: 6587939497928592918}
   - {fileID: 2769237835082775972}
-  - {fileID: 7749170388833879678}
+  - {fileID: 1309545218086709938}
   m_Father: {fileID: 5686167325707685683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -11185,7 +11729,7 @@ GameObject:
   - component: {fileID: 6626536709274119268}
   m_Layer: 5
   m_Name: Level_btn (6)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11294,7 +11838,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11302,6 +11846,18 @@ MonoBehaviour:
           m_IntArgument: 46
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7736807391348931464
@@ -11318,7 +11874,7 @@ GameObject:
   - component: {fileID: 7633393305726216289}
   m_Layer: 5
   m_Name: Level_btn (1)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11427,14 +11983,26 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7899691190563917651
@@ -11609,7 +12177,7 @@ GameObject:
   - component: {fileID: 7361797161240590840}
   m_Layer: 5
   m_Name: Level_btn (5)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11718,7 +12286,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11726,6 +12294,18 @@ MonoBehaviour:
           m_IntArgument: 15
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8010411206839269988
@@ -11965,6 +12545,37 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 6
+--- !u!1 &8686054909045944711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 271945714331946897}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &271945714331946897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686054909045944711}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 152.59221, y: -35.3757, z: 7.9941845}
+  m_LocalScale: {x: 2.326093, y: 2.326093, z: 2.326093}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2603811480736271995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8772501968772344911
 GameObject:
   m_ObjectHideFlags: 0
@@ -11979,7 +12590,7 @@ GameObject:
   - component: {fileID: 4413723162003077870}
   m_Layer: 5
   m_Name: Level_btn (4)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12088,7 +12699,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12096,6 +12707,18 @@ MonoBehaviour:
           m_IntArgument: 34
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8778376324682734789
@@ -12191,7 +12814,7 @@ GameObject:
   - component: {fileID: 309715127089120321}
   m_Layer: 5
   m_Name: Level_btn (8)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12300,7 +12923,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12308,6 +12931,18 @@ MonoBehaviour:
           m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8891162323207393928
@@ -12389,87 +13024,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Floor 3
---- !u!1 &8891950782632141857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5576568228468361671}
-  - component: {fileID: 5534519438238686991}
-  - component: {fileID: 5484547037958956557}
-  m_Layer: 5
-  m_Name: Level Select text (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &5576568228468361671
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8891950782632141857}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3699490654259337014}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 215}
-  m_SizeDelta: {x: 600, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5534519438238686991
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8891950782632141857}
-  m_CullTransparentMesh: 1
---- !u!114 &5484547037958956557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8891950782632141857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
-    m_FontSize: 150
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 1
-    m_MaxSize: 150
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Floor 5
-
-'
 --- !u!1 &8946032358873860331
 GameObject:
   m_ObjectHideFlags: 0
@@ -12484,7 +13038,7 @@ GameObject:
   - component: {fileID: 702175039294683889}
   m_Layer: 5
   m_Name: Level_btn (8)
-  m_TagString: Untagged
+  m_TagString: LvlSelectBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12593,7 +13147,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneByIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12601,6 +13155,18 @@ MonoBehaviour:
           m_IntArgument: 38
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayMusicClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8987172765657308823
@@ -12735,6 +13301,87 @@ MonoBehaviour:
           m_StringArgument: MenuUI
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &9000636906255442271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3715289601440983560}
+  - component: {fileID: 8843444460386653552}
+  - component: {fileID: 2096871162341534583}
+  m_Layer: 5
+  m_Name: Level Select text (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3715289601440983560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000636906255442271}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5000012, y: 0.5000012, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3699490654259337014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 215}
+  m_SizeDelta: {x: 600, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8843444460386653552
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000636906255442271}
+  m_CullTransparentMesh: 1
+--- !u!114 &2096871162341534583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000636906255442271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3816ea99267c6a945a22ea31e44367ae, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 150
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Floor 5
+
+'
 --- !u!1 &9113665746545641610
 GameObject:
   m_ObjectHideFlags: 0
@@ -12773,7 +13420,7 @@ RectTransform:
   - {fileID: 8939349615466271110}
   - {fileID: 8029154432494323553}
   - {fileID: 6732401165164958967}
-  - {fileID: 1486361306178940875}
+  - {fileID: 2279419274732930514}
   m_Father: {fileID: 5686167325707685683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

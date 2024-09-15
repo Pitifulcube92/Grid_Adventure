@@ -17,7 +17,7 @@ public class SceneData : MonoBehaviour
             btn = gameObject.GetComponent<Button>();
         if (lvlMng == null)
             lvlMng = GameObject.FindAnyObjectByType<LevelManager>();
-        btn.onClick.AddListener(delegate { lvlMng.LoadScene(sceneName); });
+        btn.onClick.AddListener(delegate { lvlMng.LoadSceneByName(sceneName);});
         Debug.Log("Scene Name: " + sceneName);
     }
 }

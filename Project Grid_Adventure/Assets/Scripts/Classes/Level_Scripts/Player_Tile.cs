@@ -35,7 +35,7 @@ public class Player_Tile : ISubject
     }
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(movePoint.position, 0.1f);
+        Gizmos.DrawSphere(movePoint.position, movePointRadius);
     }
     void PlayerMove()
     {

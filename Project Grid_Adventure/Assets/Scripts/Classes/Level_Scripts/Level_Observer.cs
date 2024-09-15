@@ -27,6 +27,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         //Get lvlObjects    
         scanScene();
         GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
+        GameManager.instance.GetSoundManager().PlayMusicClip("DungeonMusic");
         GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
@@ -189,6 +190,10 @@ public class Level_Observer : MonoBehaviour, IObserver
         }
         return null;
     }
+    public List<Base_Level_Component> GetLevel_Components()
+    {
+        return levelComponents;
+    }
     //Level Events
     IEnumerator DamagePlayer()
     {
@@ -229,11 +234,11 @@ public class Level_Observer : MonoBehaviour, IObserver
         yield return StartCoroutine(fadeCanvas.FadeOut());
         if (currentLevlInfo.nextSceneIndex.Equals(0))
         {
-            GameManager.instance.GetLevelManager().LoadScene("Main Menu");
+            GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu");
             //EditorApplication.ExitPlaymode();
             //Application.Quit();
         }
-        GameManager.instance.GetLevelManager().LoadScene(currentLevlInfo.nextSceneIndex);
+        GameManager.instance.GetLevelManager().LoadSceneByIndex(currentLevlInfo.nextSceneIndex);
         //SceneManager.LoadScene(currentLevlInfo.nextLevelName);
         //EditorApplication.ExitPlaymode();
     }

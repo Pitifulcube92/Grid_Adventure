@@ -12,62 +12,89 @@ public class Boss_1_Level_Component : Base_Level_Component
     - Boss Health
      */
 
-    [SerializeField] private bool isTimerOn;
-    [SerializeField] private float maxTimer;
-    [SerializeField] private float timer;
     [Header("Boss Info")]
     [SerializeField] private int bosshealth;
+    [SerializeField] private float countdownSpeed;
+    [SerializeField] private float remainingTime;
     [SerializeField] private GameObject floorKey;
     [SerializeField] private Transform floorKeyLocation;
     [SerializeField] private GameObject currentChallengeSwitch;
+    [SerializeField] private UI_Gameplay uI_Gameplay;
+
+    private float baseInterval;
     public override void InitalizeComponent()
     {
-        isTimerOn = false;
         bosshealth = 3;
+        baseInterval = 1;
+        uI_Gameplay = GameObject.FindObjectOfType<UI_Gameplay>();
     }
 
     public override void ResetComponent()
     {
-        isTimerOn = false;
         bosshealth = 3;
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "Boss 1 HP Var").text = bosshealth.ToString();
     }
 
     // Start is called before the first frame update
     void Start()
     {
         InitalizeComponent();
+        GameManager.instance.GetSoundManager().PlayMusicClip("モノクロライブラリー");
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "Boss 1 HP Var").text = bosshealth.ToString();
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(0);
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        while (isTimerOn)
-        {
-            ChallengeTimer();
-        }   
-    }
-    //Note: when timer is done recreate Timer and set flag to false;
-    private void ChallengeTimer()
-    {
-        if (timer >= 0.0f)
-        {
-            timer -= Time.deltaTime;
-        }
-        else
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().NotifyObserver(PlayerState.Taken_Damage);
-            isTimerOn = false;
-            timer = maxTimer;
-        }
-    }
 
+    //Note: when timer is done recreate Timer and set flag to false;
+    IEnumerator ChallengeTimer(float time)
+    {
+        Debug.Log("Challenge start!");
+        float waitTime = baseInterval / countdownSpeed;
+        while (time > 0)
+        {
+           yield return new WaitForSeconds(waitTime);        
+           time -= countdownSpeed;
+           uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(time);
+           //Debug.Log(displayTimer(time));
+        }
+        
+        FailedChallenge();
+    }
+    private void FailedChallenge()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().NotifyObserver(PlayerState.Taken_Damage);
+        currentChallengeSwitch.GetComponent<BaseInteractionTile>().RevertToInitialState();
+        currentChallengeSwitch = null;
+        StopAllCoroutines();
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(0);
+    }
     public void DamageBoss()
     {
         bosshealth -= 1;
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "Boss 1 HP Var").text = bosshealth.ToString();
+        currentChallengeSwitch.GetComponent<BaseInteractionTile>().RevertToInitialState();
+        currentChallengeSwitch = null;
+        StopAllCoroutines();
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(0);
+        if (bosshealth == 0)
+        {
+            //Instantiate(floorKey, floorKeyLocation);
+            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell");
+        }
     }
-
     public void StartChallege(float tmp_,GameObject currentswitch_)
     {
-
+        StartCoroutine(ChallengeTimer(tmp_));
+        currentChallengeSwitch = currentswitch_;
+        currentChallengeSwitch.GetComponent<BoxCollider2D>().enabled = false;
+    }
+    
+    public string displayTimer(float currentTime_)
+    {
+        float minutes = Mathf.FloorToInt(currentTime_/60);
+        float seconds = Mathf.FloorToInt(currentTime_ % 60);
+        string result = string.Format("{0:00}:{1:00}", minutes, seconds);
+        return result;
     }
 }

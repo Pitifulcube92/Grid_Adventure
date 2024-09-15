@@ -68,7 +68,6 @@ public abstract class BaseEnemy_Tile : MonoBehaviour
         }
         else
         {         
-
             //StopCoroutine("MoveToTarget");
             //StartCoroutine(MoveToTarget());
             Invokebehavior();

@@ -1753,12 +1753,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: currentLevlInfo.levelName
+      value: Level 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextLevelName
       value: Level_1_9
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextSceneIndex
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2333976818808086545, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: m_Size.x
@@ -24788,7 +24792,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3770899601030940776, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1879734630}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4049899141305311404, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 813258500}
+    - targetCorrespondingSourceObject: {fileID: 4049899141305311404, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 813258499}
   m_SourcePrefab: {fileID: 100100000, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
 --- !u!4 &813258495 stripped
 Transform:
@@ -24805,6 +24815,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3770899601030940776, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
   m_PrefabInstance: {fileID: 813258494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &813258498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4049899141305311404, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+  m_PrefabInstance: {fileID: 813258494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &813258499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813258498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61235afbbb0d4d34fac426aa3cb48597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
+    hasImage: 0
+    targetImage: {fileID: 0}
+  speakIcon: {fileID: 0}
+  isTriggered: 0
+--- !u!114 &813258500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813258498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c78c27aac5996438aaf04f0b3fea09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 0}
+  dialogueName: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogImage: {fileID: 0}
+  continueBtn: 0
+  initalConvo: 0
+  anim: {fileID: 0}
+  UI: {fileID: 0}
 --- !u!1001 &831619356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26953,6 +27007,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8932594625520753375, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
   m_PrefabInstance: {fileID: 1810925683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1830110440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.name
+      value: Lost Scarling
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Oh hey there!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Its nice to see a fresh face in these parts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: I've been just stuck here for a while...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: I dont know where the key is, it has to be in one of these rooms right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Name
+      value: NPC_Prefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
 --- !u!1001 &1879734629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27643,3 +27778,4 @@ SceneRoots:
   - {fileID: 1892911285}
   - {fileID: 1037876272}
   - {fileID: 272265475}
+  - {fileID: 1830110440}

@@ -21,7 +21,13 @@ public class DamageTile : BaseInteractionTile
             collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Taken_Damage);
         }
     }
-
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player")
+    //    {
+    //        collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Taken_Damage);
+    //    }
+    //}
     override public void RevertToInitialState()
     {
         return;

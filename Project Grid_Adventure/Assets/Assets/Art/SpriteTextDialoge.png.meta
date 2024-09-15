@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d67fbd6f7b1b5dc4e9253c4a2e939d3a
+guid: 4c45d58a8ea29a142bf426ea624d5a2b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_1_Sprite Sheet_0
+      name: SpriteTextDialoge_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,35 +131,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 9, z: 9, w: 9}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b09880c626d30f49a5c2b253f9d7418
-      internalID: 431277552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_1_Sprite Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a54780f7ee325c4d9eeb507f53b180b
-      internalID: 1556767796
+      spriteID: c6351b1801106f246aedd98ca8baf618
+      internalID: -972517992
       vertices: []
       indices: 
       edges: []
@@ -175,8 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boss_1_Sprite Sheet_0: 431277552
-      Boss_1_Sprite Sheet_1: 1556767796
+      SpriteTextDialoge_0: -972517992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

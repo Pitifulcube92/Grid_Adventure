@@ -21,6 +21,10 @@ TagManager:
   - Level damage
   - Enemy Spawn
   - LvlSelectPan
+  - LvlSelectBtn
+  - BossUI
+  - Text box
+  - FloorUIbtn
   layers:
   - Default
   - TransparentFX

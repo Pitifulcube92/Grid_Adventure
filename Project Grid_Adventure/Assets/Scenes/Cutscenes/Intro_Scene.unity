@@ -928,7 +928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3759371420889901790, guid: c8596da886f702d4fb2685a607276331, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7129070071565006793, guid: c8596da886f702d4fb2685a607276331, type: 3}
       propertyPath: m_Name
@@ -936,12 +936,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7551717350076393344, guid: c8596da886f702d4fb2685a607276331, type: 3}
       propertyPath: uiCanvas.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7551717350076393344, guid: c8596da886f702d4fb2685a607276331, type: 3}
       propertyPath: uiCanvas.Array.data[3]
       value: 
       objectReference: {fileID: 8748034366732966709, guid: 32c9d6fb5c663154f85a8f7d032c7b7c, type: 3}
+    - target: {fileID: 7551717350076393344, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: uiCanvas.Array.data[4]
+      value: 
+      objectReference: {fileID: 8748034366732966709, guid: 0fba95986a4b22d488b9a5f43daacc97, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -964,7 +968,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1129494258}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129494259}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3cc4ee1a29010f4784f368eaca96346, type: 3}
   m_Name: 
@@ -1010,7 +1014,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1129494260}
           m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-          m_MethodName: LoadScene
+          m_MethodName: LoadSceneByName
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

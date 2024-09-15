@@ -23,14 +23,14 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void LoadScene(string name_)
+    public void LoadSceneByName(string name_)
     {
-        SceneManager.LoadScene(name_, LoadSceneMode.Single);
+        SceneManager.LoadScene(name_,LoadSceneMode.Single);
     }
-    public void LoadScene(int index_)
+    public void LoadSceneByIndex(int index_)
     {
-        SceneManager.LoadScene(index_, LoadSceneMode.Single);
-        GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");
+        SceneManager.LoadScene(index_,LoadSceneMode.Single);
+        //GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");
     }
     public void LoadMainMenu()
     {

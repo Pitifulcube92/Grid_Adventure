@@ -21,6 +21,6 @@ public class Cutscene_Script_Component : MonoBehaviour
     }
     public void SkipCutscene()
     {
-        GameManager.instance.GetLevelManager().LoadScene(nextScene);
+        GameManager.instance.GetLevelManager().LoadSceneByName(nextScene);
     }
 }

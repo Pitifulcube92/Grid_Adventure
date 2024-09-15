@@ -18,6 +18,8 @@ public class UI_Gameplay : BaseUIScript
     [SerializeField] public List<Toggle> gameplayToggles;
     [SerializeField] public List<Image> gameplayImages;
     [SerializeField] public List<Sprite> playerHealthIcons;
+    [SerializeField] public GameObject DialogeUI;
+    [SerializeField] public List<GameObject> BossUIComponents;
 
     //[Header("Delagetes")]
     //PauseGameplay pauseGame;
@@ -47,6 +49,8 @@ public class UI_Gameplay : BaseUIScript
         if (gameplayToggles == null) { Debug.Log("missing UI"); }
         if (gameplayTexts == null) { Debug.Log("missing UI"); }
 
+      
+
         foreach (Button x in GameObject.FindObjectsOfType<Button>())
         {
             //Debug.Log(x.gameObject.name);
@@ -72,10 +76,12 @@ public class UI_Gameplay : BaseUIScript
         {
             gameplayToggles.Add(x);
         }
-        pauseContext = GameObject.FindGameObjectWithTag("PauseGroup");
-        settingContext = GameObject.FindGameObjectWithTag("PauseSettingGroup");
-
-        //SetUIConfigure();
+        if (pauseContext == null)
+            Debug.LogWarning("PauseContext not initalized");
+        if (settingContext == null)
+            Debug.LogWarning("SettingContext not initalized");
+        DialogeUI = GameObject.FindGameObjectWithTag("Text box");
+        SetUIConfigure();
 
     }
     override public void SetUIConfigure()
@@ -85,7 +91,7 @@ public class UI_Gameplay : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Button Restart":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadScene(lvlObs.GetLevel_Info().levelName);});
+                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);});
                     break;
                 case "Button Pause":
                     x.onClick.AddListener(delegate { PauseGameplay(); });
@@ -97,7 +103,7 @@ public class UI_Gameplay : BaseUIScript
                     x.onClick.AddListener(delegate { OpenSettings(); });
                     break;
                 case "Button Exit":
-                    x.onClick.AddListener(delegate { Time.timeScale = 1; GameManager.instance.GetLevelManager().LoadScene("Main Menu"); });
+                    x.onClick.AddListener(delegate { Time.timeScale = 1; GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu"); });
                     break;
                 case "Button SettingBack":
                     x.onClick.AddListener(delegate { CloseSettings(); });
@@ -139,9 +145,25 @@ public class UI_Gameplay : BaseUIScript
                     break;
             }
         }
-
+        
+        foreach(GameObject x in GameObject.FindGameObjectsWithTag("BossUI"))
+        {
+            BossUIComponents.Add(x);
+        }
         GameObject.FindGameObjectWithTag("PauseSettingGroup").SetActive(false);
         GameObject.FindGameObjectWithTag("PauseUI").SetActive(false);
+        DialogeUI.SetActive(false);
+        GameObject.Find("Boss_Info_1").SetActive(false);
+
+       //Check it boss lvl component is in lvl
+       foreach(Base_Level_Component x in GameObject.FindObjectOfType<Level_Observer>().GetLevel_Components())
+       {
+            if(x.GetComponent<Boss_1_Level_Component>() == true)
+            {
+                Debug.Log("Boss Componenet Found!");
+                BossUIComponents.Find(x => x.name == "Boss_Info_1").SetActive(true);
+            }
+       }
 
     }
     public void UpdatePlayerLives(int tmp_)
@@ -160,7 +182,6 @@ public class UI_Gameplay : BaseUIScript
             case 0:
                 gameplayImages.Find(x => x.name == "Player Health").sprite = playerHealthIcons.Find(x => x.name == "FlameLife_3");
                 break;
-
         }
         //gameplayTexts.Find(x => x.name == "NumberOfLives").text = tmp_.ToString()+"X";
         Debug.Log("Changed Lives Text!");
@@ -174,6 +195,7 @@ public class UI_Gameplay : BaseUIScript
         gameplayButtons.Find(x => x.gameObject.name == "Button Restart").gameObject.SetActive(false);
         gameplayImages.Find(x => x.gameObject.name == "SubInfo Panel").gameObject.SetActive(false);
         gameplayImages.Find(x => x.gameObject.name == "Pause Panel").gameObject.SetActive(true);
+        
     }
     public void ResumeGameplay()
     {
