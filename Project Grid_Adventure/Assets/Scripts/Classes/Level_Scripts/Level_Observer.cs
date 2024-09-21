@@ -54,7 +54,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             }
         }
         
-      
+
         if (!fadeCanvas)
         {
             //fadeCanvas = GameObject.Find("FadeCanvas").GetComponent<FadeScript>();
@@ -70,6 +70,11 @@ public class Level_Observer : MonoBehaviour, IObserver
         OnObsEnable();
 
     }
+    public void ChangePlayerSpawnPos(Transform tmp_)
+    {
+        currentCheckpoint = tmp_.position;
+    }
+
     private void Start()
     {
 
@@ -169,14 +174,14 @@ public class Level_Observer : MonoBehaviour, IObserver
        }
     }
 
-    public void RestFromCheckpoint()
-    {
-        lvlObjects.Find(x => x.tag == "Key").RevertToInitialState();
-        if(gameObject.GetComponent<Fragment_Key_Componenet>())
-        {
-            gameObject.GetComponent<Fragment_Key_Componenet>().CheckFragmentRequirement();
-        }
-    }
+    //public void RestFromCheckpoint()
+    //{
+    //    lvlObjects.Find(x => x.tag == "Key").RevertToInitialState();
+    //    if(gameObject.GetComponent<Fragment_Key_Componenet>())
+    //    {
+    //        gameObject.GetComponent<Fragment_Key_Componenet>().CheckFragmentRequirement();
+    //    }
+    //}
 
     private BaseInteractionTile GetInteractedTile()
     {

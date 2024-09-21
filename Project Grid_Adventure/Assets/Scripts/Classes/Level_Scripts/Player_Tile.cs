@@ -33,10 +33,10 @@ public class Player_Tile : ISubject
     {
         
     }
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(movePoint.position, movePointRadius);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawSphere(movePoint.position, movePointRadius);
+    //}
     void PlayerMove()
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);

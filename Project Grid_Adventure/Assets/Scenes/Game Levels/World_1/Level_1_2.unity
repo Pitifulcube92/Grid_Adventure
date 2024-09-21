@@ -189,11 +189,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Watch your step, some flooring can hurt us scarlings
+      value: "Watch your step! \t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Some of the flooring are damaged or are missing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Becareful when going around or you''ll fall into the
+
+        abyss.'
       objectReference: {fileID: 0}
     - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_Name
@@ -6014,7 +6024,7 @@ MonoBehaviour:
   dialogImage: {fileID: 0}
   continueBtn: 0
   initalConvo: 0
-  anim: {fileID: 0}
+  canTriggerDialog: 0
   UI: {fileID: 0}
 --- !u!1001 &935073853
 PrefabInstance:

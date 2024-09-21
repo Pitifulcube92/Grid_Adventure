@@ -13,20 +13,21 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         //speakIcon = GameObject.Find("Dialog_icon").GetComponent<SpriteRenderer>();
         isTriggered = false;
-        if (dialogue_Comp == null)
-        {
-            dialogue_Comp = GameObject.FindObjectOfType<Level_Dialogue_Component>();
-        }
+       
     }
     private void Start()
     {
         if(speakIcon != null)
                 speakIcon.enabled = false;
+        if (dialogue_Comp == null)
+        {
+            dialogue_Comp = FindObjectOfType<Level_Dialogue_Component>();
+        }
     }
     public void TriggerDialogue()
     {
         dialogue_Comp.StartDialogue(dialogue,this);
-        dialogue_Comp.DisplayNextSentence();
+        //dialogue_Comp.DisplayNextSentence();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

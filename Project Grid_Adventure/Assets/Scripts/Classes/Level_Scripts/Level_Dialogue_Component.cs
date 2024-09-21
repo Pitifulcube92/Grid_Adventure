@@ -14,7 +14,6 @@ public class Level_Dialogue_Component : Base_Level_Component
     [SerializeField] private KeyCode continueBtn;
     [SerializeField] private bool initalConvo;
     [SerializeField] private bool canTriggerDialog;
-    [SerializeField] private Animator anim;
     [SerializeField] private UI_Gameplay UI;
 
     /// <summary>
@@ -27,8 +26,8 @@ public class Level_Dialogue_Component : Base_Level_Component
             {
                 if (initalConvo == true)
                 {
-                    UI.DialogeUI.SetActive(true);    
-                    //anim.SetBool("isDialogueBoxOpen",true);
+                    UI.DialogeUI.SetActive(true);
+
                 }
                 //Debug.Log("Input Called");
                 //pressedOnce = false;
@@ -38,14 +37,13 @@ public class Level_Dialogue_Component : Base_Level_Component
     }
     private void Awake()
     {
-        dialogueText = GameObject.Find("Dialogue_Context").GetComponent<Text>();
-        dialogueName = GameObject.Find("Dialogue_Name").GetComponent<Text>();
-        dialogImage = GameObject.Find("Dialogue_Image").GetComponent<Image>();
-        UI = GameObject.FindObjectOfType<UI_Gameplay>();
-        canTriggerDialog = true;
-        //anim = GameObject.Find("Dialogue_Box").GetComponent<Animator>();
-        trigger = gameObject.AddComponent<Dialogue_Trigger>();
-        continueBtn = KeyCode.Space;
+       
+     
+    }
+    private void Start()
+    {
+        
+        UI = FindFirstObjectByType<UI_Gameplay>();
     }
     public void SetcanTriggerDialog(bool tmp_)
     {
@@ -53,6 +51,12 @@ public class Level_Dialogue_Component : Base_Level_Component
     }
     public override void InitalizeComponent()
     {
+        dialogueText = GameObject.Find("Dialogue_Context").GetComponent<Text>();
+        dialogueName = GameObject.Find("Dialogue_Name").GetComponent<Text>();
+        dialogImage = GameObject.Find("Dialogue_Image").GetComponent<Image>();
+        canTriggerDialog = false;
+        trigger = gameObject.AddComponent<Dialogue_Trigger>();
+        continueBtn = KeyCode.Space;
         sentences = new Queue<string>();
         //if (trigger == null)
         //    Debug.LogWarning("trigger not assigned!");

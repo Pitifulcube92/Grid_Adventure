@@ -32,6 +32,10 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     [SerializeField] protected EnemyDirection currentDirection;
     private int tmpIndex = 0;
     // Start is called before the first frame update
+    private void Awake()
+    {
+       StopAllCoroutines();
+    }
     void Start()
     {
         currentMove = CommandPath.Find(x => x.index == 0).index;
@@ -43,8 +47,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
             tmpIndex++;
         }
         Invokebehavior();
-        base.baseStart();
-        StopCoroutine("MoveToTarget");
+        base.baseStart();   
         StartCoroutine(MoveToTarget());
 
     }

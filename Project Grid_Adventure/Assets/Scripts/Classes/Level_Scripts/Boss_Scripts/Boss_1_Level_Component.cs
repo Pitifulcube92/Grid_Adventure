@@ -22,25 +22,28 @@ public class Boss_1_Level_Component : Base_Level_Component
     [SerializeField] private UI_Gameplay uI_Gameplay;
 
     private float baseInterval;
+    private void Awake()
+    {
+       
+    }
     public override void InitalizeComponent()
     {
         bosshealth = 3;
         baseInterval = 1;
-        uI_Gameplay = GameObject.FindObjectOfType<UI_Gameplay>();
+        uI_Gameplay = FindObjectOfType<UI_Gameplay>();     
     }
 
     public override void ResetComponent()
     {
         bosshealth = 3;
-        uI_Gameplay.gameplayTexts.Find(x => x.name == "Boss 1 HP Var").text = bosshealth.ToString();
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 HP").text = bosshealth.ToString();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        InitalizeComponent();
         GameManager.instance.GetSoundManager().PlayMusicClip("モノクロライブラリー");
-        uI_Gameplay.gameplayTexts.Find(x => x.name == "Boss 1 HP Var").text = bosshealth.ToString();
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 HP").text = bosshealth.ToString();
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(0);
     }
 
@@ -72,7 +75,7 @@ public class Boss_1_Level_Component : Base_Level_Component
     public void DamageBoss()
     {
         bosshealth -= 1;
-        uI_Gameplay.gameplayTexts.Find(x => x.name == "Boss 1 HP Var").text = bosshealth.ToString();
+        uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 HP").text = bosshealth.ToString();
         currentChallengeSwitch.GetComponent<BaseInteractionTile>().RevertToInitialState();
         currentChallengeSwitch = null;
         StopAllCoroutines();

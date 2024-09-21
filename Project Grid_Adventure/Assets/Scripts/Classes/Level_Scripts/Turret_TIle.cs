@@ -20,6 +20,7 @@ public class Turret_TIle : BaseInteractionTile
     [Header("Timer Info")]
     [SerializeField] float maxTimer;
     [SerializeField] float tmpTime;
+    [SerializeField] private int turn;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,8 +53,32 @@ public class Turret_TIle : BaseInteractionTile
         }
         else
         {
-            FireTurrent();
-            tmpTime = maxTimer;
+            if (canInitialFire == true)
+            {
+                if (turn % 2 != 0)
+                {
+                    FireTurrent();
+                    tmpTime = maxTimer;
+                }
+                else
+                {
+                    tmpTime = maxTimer;
+                }
+                turn++;
+            }
+            else {
+                if (turn % 2 == 0)
+                {
+                    FireTurrent();
+                    tmpTime = maxTimer;
+                }
+                else
+                {
+                    tmpTime = maxTimer;
+                }
+                turn++;
+
+            }
         }
     }
     private void FireTurrent()

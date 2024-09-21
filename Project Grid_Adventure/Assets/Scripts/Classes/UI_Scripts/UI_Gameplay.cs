@@ -80,7 +80,6 @@ public class UI_Gameplay : BaseUIScript
             Debug.LogWarning("PauseContext not initalized");
         if (settingContext == null)
             Debug.LogWarning("SettingContext not initalized");
-        DialogeUI = GameObject.FindGameObjectWithTag("Text box");
         SetUIConfigure();
 
     }

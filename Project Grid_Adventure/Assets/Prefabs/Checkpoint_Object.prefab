@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &6013319943097826147
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basePosition: {fileID: 0}
-  baseSpriteRender: {fileID: 0}
-  collidor: {fileID: 0}
-  render: {fileID: 0}
+  baseSpriteRender: {fileID: 2361146968053519685}
+  collidor: {fileID: 2232256809429448091}
+  render: {fileID: 2361146968053519685}
   checkPointActive: {fileID: -1739223720, guid: 56d2be047f876a844b5c4f1db9368752, type: 3}

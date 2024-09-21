@@ -19,13 +19,17 @@ public class Checkpoint_Object : BaseInteractionTile
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
-    {
+    {   
         if(collision.tag == "Player")
         {
-            collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Interact_Checkpoint);
-            collision.GetComponent<Player_Tile>().ChangePosition(gameObject.transform.position);
+            //collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Interact_Checkpoint);
+
+            //collision.GetComponent<Player_Tile>().ChangePosition(gameObject.transform.position);
+            FindObjectOfType<Level_Observer>().ChangePlayerSpawnPos(gameObject.transform);
             render.sprite = checkPointActive;
             collidor.enabled = false;
+            //Destroy(gameObject);
+
         }
     }
     public override void RevertToInitialState()

@@ -33,13 +33,13 @@ public class UI_LevelSelect : BaseUIScript
             Debug.Log(x.name);
       }
       //Detect what levels are available
-      foreach(Button x in levelBtns)
-      { 
-        if(levelBtns.IndexOf(x) >= unlockedLevels)
-        {
-           x.interactable = false;
-        }
-      }
+      //foreach(Button x in levelBtns)
+      //{ 
+      //  if(levelBtns.IndexOf(x) < unlockedLevels)
+      //  {
+      //     x.interactable = false;
+      //  }
+      //}
 
       foreach(GameObject x in GameObject.FindGameObjectsWithTag("FloorUIbtn"))
       {
@@ -47,23 +47,23 @@ public class UI_LevelSelect : BaseUIScript
             switch (x.name)
             {
                 case"Floor_btn_1":
-                    if (unlockedLevels > 1)
-                        x.SetActive(true);
-                    break;
-                case "Floor_btn_2":
                     if (unlockedLevels > 11)
                         x.SetActive(true);
                     break;
-                case "Floor_btn_3":
+                case "Floor_btn_2":
                     if (unlockedLevels > 21)
                         x.SetActive(true);
                     break;
-                case "Floor_btn_4":
+                case "Floor_btn_3":
                     if (unlockedLevels > 31)
                         x.SetActive(true);
                     break;
-                case "Floor_btn_5":
+                case "Floor_btn_4":
                     if (unlockedLevels > 41)
+                        x.SetActive(true);
+                    break;
+                case "Floor_btn_5":
+                    if (unlockedLevels == 50)
                         x.SetActive(true);
                     break;
             }           
