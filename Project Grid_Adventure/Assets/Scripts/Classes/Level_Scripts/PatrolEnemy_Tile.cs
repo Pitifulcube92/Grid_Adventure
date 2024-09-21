@@ -29,24 +29,27 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
     [SerializeField] protected float speed;
     [SerializeField] protected float movePointDistance;
     [SerializeField] protected List<EnemyMoveCommand> CommandPath;
+    [SerializeField] protected float movePointRadius;
     [SerializeField] protected EnemyDirection currentDirection;
     private int tmpIndex = 0;
     // Start is called before the first frame update
     private void Awake()
     {
-       StopAllCoroutines();
+      
     }
     void Start()
     {
         currentMove = CommandPath.Find(x => x.index == 0).index;
         currentDirection = CommandPath.Find(x => x.index == 0).Direction;
+        movePointRadius = 0.45f;
         //Debug.Log(CommandPath.Count);
-        foreach(EnemyMoveCommand x in CommandPath)
+        foreach (EnemyMoveCommand x in CommandPath)
         {
             x.index = tmpIndex;
             tmpIndex++;
         }
-        Invokebehavior();
+        StopCoroutine(MoveToTarget());
+        //Invokebehavior();
         base.baseStart();   
         StartCoroutine(MoveToTarget());
 
@@ -63,7 +66,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
         {
             if (tmp_ == EnemyDirection.ED_RIGHT)
             {
-                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                 {
                     enemyMovePoint.position += new Vector3(movePointDistance, 0f, 0f);
                     //ChangePosition(enemyMovePoint.position + new Vector3(movePointDistance, 0f, 0f));
@@ -74,7 +77,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
             }
             else if (tmp_ == EnemyDirection.ED_LEFT)
             {
-                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(-movePointDistance, 0f, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(-movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                 {
                     enemyMovePoint.position += new Vector3(-movePointDistance, 0f, 0f);
                     //ChangePosition(enemyMovePoint.position + new Vector3(-movePointDistance, 0f, 0f));
@@ -85,7 +88,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
             }
             else if (tmp_ == EnemyDirection.ED_UP)
             {
-                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(0f, movePointDistance, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(0f, movePointDistance, 0f), movePointRadius, unWalkable))
                 {
                     enemyMovePoint.position += new Vector3(0f, movePointDistance, 0f);
                     //ChangePosition(enemyMovePoint.position + new Vector3(0f, movePointDistance, 0f));
@@ -96,7 +99,7 @@ public class PatrolEnemy_Tile : BaseEnemy_Tile
             }
             else if (tmp_ == EnemyDirection.ED_DOWN)
             {
-                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(0f, -movePointDistance, 0f), 0.2f, unWalkable))
+                if (!Physics2D.OverlapCircle(enemyMovePoint.position + new Vector3(0f, -movePointDistance, 0f), movePointRadius, unWalkable))
                 {
                     enemyMovePoint.position += new Vector3(0f, -movePointDistance, 0f);
                     //ChangePosition(enemyMovePoint.position + new Vector3(0f, -movePointDistance, 0f));
