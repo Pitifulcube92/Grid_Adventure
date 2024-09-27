@@ -132,8 +132,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
-      propertyPath: maxTimer
+      propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
@@ -535,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2125997883028991890, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8355163334641499188, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_Name
@@ -586,8 +590,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
-      propertyPath: maxTimer
+      propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
@@ -706,8 +714,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
-      propertyPath: maxTimer
+      propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size

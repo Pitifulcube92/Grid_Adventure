@@ -70,7 +70,9 @@ public class UI_LevelSelect : BaseUIScript
       }
 
         SelectWorldPanel(1);
-        
+        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+        gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
+
     }
     public void SelectWorldPanel(int tmp_)
     {

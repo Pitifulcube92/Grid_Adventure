@@ -11,7 +11,7 @@ public class UI_GameOver : BaseUIScript
     public override void SetUIConfigure()
     {
        foreach(Button x in buttons)
-        {
+       {
             switch (x.gameObject.name)
             {
                 case "Restart Level":
@@ -21,7 +21,9 @@ public class UI_GameOver : BaseUIScript
                      x.onClick.AddListener(delegate {GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu"); });
                     break;
             }
-        }
+       }
+       //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+       gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindAnyObjectByType<Camera>();
     }
 
     // Start is called before the first frame update

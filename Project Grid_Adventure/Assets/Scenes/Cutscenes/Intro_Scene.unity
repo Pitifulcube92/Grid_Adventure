@@ -241,13 +241,13 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 33
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -659,8 +659,8 @@ Canvas:
   m_GameObject: {fileID: 594875667}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 86554806}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -886,6 +886,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1461334732671961043, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2522997119654069842, guid: c8596da886f702d4fb2685a607276331, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -946,6 +950,14 @@ PrefabInstance:
       propertyPath: uiCanvas.Array.data[4]
       value: 
       objectReference: {fileID: 8748034366732966709, guid: 0fba95986a4b22d488b9a5f43daacc97, type: 3}
+    - target: {fileID: 8635544398820259543, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: weight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8635544398820259543, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: m_IsGlobal
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

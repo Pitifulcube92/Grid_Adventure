@@ -25,6 +25,7 @@ TagManager:
   - BossUI
   - Text box
   - FloorUIbtn
+  - CamUI
   layers:
   - Default
   - TransparentFX
@@ -70,4 +71,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 852600217
+    locked: 0
+  - name: UI
+    uniqueID: 4246845379
     locked: 0

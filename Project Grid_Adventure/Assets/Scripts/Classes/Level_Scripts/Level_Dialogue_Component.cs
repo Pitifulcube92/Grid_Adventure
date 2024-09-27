@@ -29,8 +29,6 @@ public class Level_Dialogue_Component : Base_Level_Component
                     UI.DialogeUI.SetActive(true);
 
                 }
-                //Debug.Log("Input Called");
-                //pressedOnce = false;
                 initalConvo = false;
                 DisplayNextSentence();
             }
@@ -65,8 +63,8 @@ public class Level_Dialogue_Component : Base_Level_Component
     }
     public void StartDialogue(Dialogue_Info dialogue_, Dialogue_Trigger trigger_)
     {
-        Debug.Log("A conversation has started with " + dialogue_.name);
-
+        //Debug.Log("A conversation has started with " + dialogue_.name);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(false);
         sentences.Clear();
         trigger = null;
         dialogueName.text = "";
@@ -124,6 +122,7 @@ public class Level_Dialogue_Component : Base_Level_Component
         UI.DialogeUI.SetActive(false);
         //anim.SetBool("isDialogueBoxOpen", false);
         trigger.ResetTrigger();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(true);
     }  
 
     public override void ResetComponent()

@@ -1463,6 +1463,7 @@ GameObject:
   - component: {fileID: 764338763604805228}
   - component: {fileID: 1076884875466057882}
   - component: {fileID: 8838783392268920490}
+  - component: {fileID: 2377750726873057896}
   m_Layer: 5
   m_Name: GameplayUI
   m_TagString: UICanvas
@@ -1505,7 +1506,7 @@ Canvas:
   m_GameObject: {fileID: 4645278924385505168}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1514,7 +1515,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
@@ -1532,7 +1533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
@@ -1587,6 +1588,18 @@ MonoBehaviour:
   - {fileID: -1405253301, guid: b817dc9cc10121b4e85638ff5b85bf1c, type: 3}
   DialogeUI: {fileID: 2829287788933561256}
   BossUIComponents: []
+--- !u!225 &2377750726873057896
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4645278924385505168}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4911387195643475392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,7 +1831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -190, y: -40}
+  m_AnchoredPosition: {x: -250, y: -30}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &7604042423224812335
@@ -1913,7 +1926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724179001035486141}
   - component: {fileID: 7117286853689057241}
-  - component: {fileID: 5600994103012183527}
+  - component: {fileID: 5105889320900186097}
   m_Layer: 5
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1951,7 +1964,7 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &5600994103012183527
+--- !u!114 &5105889320900186097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1969,7 +1982,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.47
+  m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
 --- !u!1 &5569825084720216815
 GameObject:

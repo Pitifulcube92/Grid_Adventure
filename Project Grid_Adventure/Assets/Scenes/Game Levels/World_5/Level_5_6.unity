@@ -278,6 +278,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 24
       objectReference: {fileID: 0}
@@ -530,6 +538,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile
@@ -899,6 +915,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (13)
@@ -956,6 +980,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (9)
@@ -1567,11 +1599,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1607,7 +1639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2125997883028991890, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: orthographic size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8355163334641499188, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_Name
@@ -1626,6 +1658,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (16)
@@ -1992,6 +2032,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (2)
@@ -2133,6 +2181,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (8)
@@ -2190,6 +2246,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (6)
@@ -2247,6 +2311,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 40
@@ -2780,6 +2852,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (1)
@@ -57144,6 +57224,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 24
       objectReference: {fileID: 0}
@@ -57292,6 +57380,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+--- !u!1001 &969600691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031356094251108970, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint_Object (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
 --- !u!1001 &1030907920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57300,6 +57445,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (3)
@@ -57844,6 +57997,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (10)
@@ -57901,6 +58062,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 10
@@ -58329,6 +58498,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (11)
@@ -58378,6 +58555,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+--- !u!1001 &1244333961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031356094251108970, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint_Object (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
 --- !u!1001 &1274450480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58386,6 +58620,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 10
@@ -58479,6 +58721,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 10
@@ -58604,6 +58854,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -58696,6 +58954,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (15)
@@ -58950,6 +59216,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (4)
@@ -59007,6 +59281,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
+      propertyPath: maxTimer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 604393970321476157, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: CommandPath.Array.size
       value: 40
@@ -59727,6 +60009,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (12)
@@ -60236,6 +60526,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (7)
@@ -60293,6 +60591,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (5)
@@ -60835,6 +61141,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: turretSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8188213793172608746, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: m_Name
       value: Shooter_Tile (14)
@@ -60884,6 +61198,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+--- !u!1001 &2095889595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5031356094251108970, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint_Object
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -60924,3 +61295,6 @@ SceneRoots:
   - {fileID: 1453370096}
   - {fileID: 61253476}
   - {fileID: 932727897}
+  - {fileID: 2095889595}
+  - {fileID: 969600691}
+  - {fileID: 1244333961}

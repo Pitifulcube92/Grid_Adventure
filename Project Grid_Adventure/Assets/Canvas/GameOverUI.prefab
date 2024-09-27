@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 764338763604805228}
   - component: {fileID: 1076884875466057882}
   - component: {fileID: 810017659458240893}
+  - component: {fileID: 6193756896138726560}
   m_Layer: 5
   m_Name: GameOverUI
   m_TagString: UICanvas
@@ -410,7 +411,7 @@ Canvas:
   m_GameObject: {fileID: 4645278924385505168}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -478,6 +479,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons: []
   lvlObs: {fileID: 0}
+--- !u!225 &6193756896138726560
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4645278924385505168}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &5329946087074137395
 GameObject:
   m_ObjectHideFlags: 0

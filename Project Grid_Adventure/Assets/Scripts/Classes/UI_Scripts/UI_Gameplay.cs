@@ -80,21 +80,27 @@ public class UI_Gameplay : BaseUIScript
             Debug.LogWarning("PauseContext not initalized");
         if (settingContext == null)
             Debug.LogWarning("SettingContext not initalized");
-        SetUIConfigure();
+
+        gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
+        gameObject.GetComponent<Canvas>().sortingLayerName = "UI";
+
+       SetUIConfigure();
 
     }
     override public void SetUIConfigure()
     {
+     
         foreach (Button x in gameplayButtons)
         {
             switch (x.gameObject.name)
             {
-                case "Button Restart":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);});
-                    break;
-                case "Button Pause":
-                    x.onClick.AddListener(delegate { PauseGameplay(); });
-                    break;
+               case "Button Restart":
+                   //x.GetComponent<Image>().IsRaycastLocationValid
+                   x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);});
+                   break;
+               case "Button Pause":
+                   x.onClick.AddListener(delegate { PauseGameplay(); });
+                   break;
                 case "Button Resume":
                     x.onClick.AddListener(delegate { ResumeGameplay(); });
                     break;
@@ -163,7 +169,8 @@ public class UI_Gameplay : BaseUIScript
                 BossUIComponents.Find(x => x.name == "Boss_Info_1").SetActive(true);
             }
        }
-
+       //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+      
     }
     public void UpdatePlayerLives(int tmp_)
     {

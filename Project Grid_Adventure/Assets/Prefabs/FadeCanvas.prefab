@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8938289087294459720}
   - component: {fileID: 1633689322278470273}
   - component: {fileID: 2375792713819452019}
+  - component: {fileID: 1582214546945415037}
   m_Layer: 5
   m_Name: FadeCanvas
   m_TagString: UI
@@ -120,6 +121,18 @@ MonoBehaviour:
   targetCanvas: {fileID: 0}
   targetImage: {fileID: 0}
   imgAlpha: 0
+--- !u!225 &1582214546945415037
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713782612002615944}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4565443959444184187
 GameObject:
   m_ObjectHideFlags: 0

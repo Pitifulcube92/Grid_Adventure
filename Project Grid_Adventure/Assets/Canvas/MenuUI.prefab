@@ -1201,6 +1201,7 @@ GameObject:
   - component: {fileID: 764338763604805228}
   - component: {fileID: 177971000352949843}
   - component: {fileID: 50371046591481246}
+  - component: {fileID: 3245537739728704996}
   m_Layer: 5
   m_Name: MenuUI
   m_TagString: UICanvas
@@ -1239,7 +1240,7 @@ Canvas:
   m_GameObject: {fileID: 4645278924385505168}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1266,7 +1267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
@@ -1309,6 +1310,18 @@ MonoBehaviour:
   backgroundImg: {fileID: 3056108985382487633}
   y: 0.05
   x: 0.05
+--- !u!225 &3245537739728704996
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4645278924385505168}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6436640939993764499
 GameObject:
   m_ObjectHideFlags: 0

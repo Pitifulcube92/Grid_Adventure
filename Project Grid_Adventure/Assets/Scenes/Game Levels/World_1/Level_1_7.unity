@@ -517,11 +517,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -557,7 +557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2125997883028991890, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8355163334641499188, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_Name
@@ -26943,7 +26943,7 @@ MonoBehaviour:
   dialogImage: {fileID: 0}
   continueBtn: 32
   initalConvo: 0
-  anim: {fileID: 0}
+  canTriggerDialog: 0
   UI: {fileID: 0}
 --- !u!114 &1630840273
 MonoBehaviour:
@@ -26964,6 +26964,7 @@ MonoBehaviour:
     targetImage: {fileID: 0}
   speakIcon: {fileID: 0}
   isTriggered: 0
+  dialogue_Comp: {fileID: 0}
 --- !u!1001 &1693453985
 PrefabInstance:
   m_ObjectHideFlags: 0

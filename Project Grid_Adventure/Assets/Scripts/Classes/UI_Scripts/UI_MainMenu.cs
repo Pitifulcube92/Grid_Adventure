@@ -53,6 +53,9 @@ public class UI_MainMenu : BaseUIScript
                     break;
             }
         }
+        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+        gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
+        //GameObject.FindAnyObjectByType<Camera>();
     }
 
     
