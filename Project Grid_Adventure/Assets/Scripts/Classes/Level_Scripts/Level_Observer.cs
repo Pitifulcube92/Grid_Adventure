@@ -121,7 +121,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 }
                 break;
 
-            case PlayerState.Taken_Damage:
+            case PlayerState.Taken_Damage:               
                 StartCoroutine(DamagePlayer());
                 break;
 
@@ -214,10 +214,19 @@ public class Level_Observer : MonoBehaviour, IObserver
         currentLevlInfo.playerLives -= 1;
         GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
 
-        yield return StartCoroutine(Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.1f,0.15f));
-        
+        StartCoroutine(Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f));
+        StartCoroutine(Explode());
+        yield return new WaitForSeconds(0.3f);
+       
         watchedSubject.GetComponent<Player_Tile>().ChangePosition(currentCheckpoint);
         GameManager.instance.GetSoundManager().PlaySFXClip("Death");
+
+    }
+    IEnumerator Explode()
+    {
+        watchedSubject.GetComponent<Player_Tile>().GetAnimator().Play("Explosion");
+        yield return new WaitForSeconds(watchedSubject.GetComponent<Player_Tile>().GetAnimator().GetCurrentAnimatorStateInfo(0).length - 0.01f);
+      
 
     }
     IEnumerator IntroIn()

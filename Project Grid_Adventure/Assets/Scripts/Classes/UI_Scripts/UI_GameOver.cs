@@ -24,6 +24,8 @@ public class UI_GameOver : BaseUIScript
        }
        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
        gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindAnyObjectByType<Camera>();
+       gameObject.GetComponent<Canvas>().sortingLayerName = "UI";
+       //gameObject.GetComponent<Canvas>().sortingLayerID = 2;
     }
 
     // Start is called before the first frame update

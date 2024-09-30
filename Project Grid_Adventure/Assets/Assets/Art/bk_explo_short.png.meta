@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c9c9a7d0dcf32740843fb2bc27e7c53
+guid: 311b8b2f69a59294092ecbdd64dcf0d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,32 +123,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background-1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f8057b5e771d640b4c709e2776c4de
-      internalID: -1928100083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background-1_1
+      name: bk_explo_short_0
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -158,18 +137,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c6835fa2d926e54f80bf29690185657
-      internalID: -340481136
+      spriteID: 4952c744a864ccf4ba6d793b2b354cf1
+      internalID: 20693067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background-1_2
+      name: bk_explo_short_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -179,101 +158,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c88ce91d9111e2498083ca1b15b56e4
-      internalID: 1800071134
+      spriteID: d0da84e761207884296f68bd2fddd05d
+      internalID: -1347464993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background-1_3
+      name: bk_explo_short_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21cd8905cd9b286448dd4f3a31f449ee
-      internalID: 399680225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background-1_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72e988769386b6f449c32f838fc6c399
-      internalID: -1208152178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background-1_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96c5e0cdebe5b48489bef8bfaeb4f2c0
-      internalID: -333777567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background-1_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ed6a51275445a045a5048cf3d6acdd4
-      internalID: -1016920123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background-1_7
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 32
         height: 32
@@ -284,17 +179,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ebcac68bb002d04488edcaf0961950f
-      internalID: -2039040731
+      spriteID: 2fbb0e00f7cf0eb4781412c3d34d211f
+      internalID: -1803583741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background-1_8
+      name: bk_explo_short_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -305,17 +200,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bc07b3ce32d575498770b712ec2c64e
-      internalID: -1122793990
+      spriteID: 005f68b96040bc14b99c2a09508fb572
+      internalID: -213870252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background-1_9
+      name: bk_explo_short_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -326,8 +221,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f81b5780e5ad1498565492610f7b18
-      internalID: 1124196041
+      spriteID: da3055403bdb82341978ed1faa7a647f
+      internalID: 1412135917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_short_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02020709837b914ea27f3b56a14de1f
+      internalID: -2036443381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_short_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05d89574a55ed940b2e567cbd8ab4c5
+      internalID: -1546340461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_short_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aefe7d2cf49a344be17a6736fe079a
+      internalID: 94946847
       vertices: []
       indices: 
       edges: []
@@ -343,16 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Background-1_0: -1928100083
-      Background-1_1: -340481136
-      Background-1_2: 1800071134
-      Background-1_3: 399680225
-      Background-1_4: -1208152178
-      Background-1_5: -333777567
-      Background-1_6: -1016920123
-      Background-1_7: -2039040731
-      Background-1_8: -1122793990
-      Background-1_9: 1124196041
+      bk_explo_short_0: 20693067
+      bk_explo_short_1: -1347464993
+      bk_explo_short_2: -1803583741
+      bk_explo_short_3: -213870252
+      bk_explo_short_4: 1412135917
+      bk_explo_short_5: -2036443381
+      bk_explo_short_6: -1546340461
+      bk_explo_short_7: 94946847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

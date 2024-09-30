@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7100372761802515900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 196619672707278484, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd5ed5ad30005cf4b9c51799cfe5e50a, type: 3}
+    - target: {fileID: 196619672707278484, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238016315254877429, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238016315254877429, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Each room has a key to unlock to the next floor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Just find the key and your able to get out of here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Good Luck...
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Name
+      value: Text_Dialog_Poster
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}

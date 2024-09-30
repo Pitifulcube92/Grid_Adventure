@@ -212,7 +212,7 @@ MonoBehaviour:
   unWalkable:
     serializedVersion: 2
     m_Bits: 64
-  maxTimer: 3
+  maxTimer: 2
   tmpTimer: 0
   enemyPaths: []
   maxIndex: 0

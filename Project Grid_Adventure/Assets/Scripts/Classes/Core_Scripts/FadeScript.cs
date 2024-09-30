@@ -25,7 +25,9 @@ public class FadeScript : MonoBehaviour
     }
     void Start()
     {
-      
+        gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindAnyObjectByType<Camera>();
+        gameObject.GetComponent<Canvas>().sortingLayerName = "UI";
+        //gameObject.GetComponent<Canvas>().sortingLayerID = 2;
     }
     public IEnumerator FadeIn()
     {

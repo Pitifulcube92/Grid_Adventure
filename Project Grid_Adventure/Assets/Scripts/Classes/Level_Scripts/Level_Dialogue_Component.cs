@@ -64,7 +64,7 @@ public class Level_Dialogue_Component : Base_Level_Component
     public void StartDialogue(Dialogue_Info dialogue_, Dialogue_Trigger trigger_)
     {
         //Debug.Log("A conversation has started with " + dialogue_.name);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(false);
+      
         sentences.Clear();
         trigger = null;
         dialogueName.text = "";
@@ -100,6 +100,7 @@ public class Level_Dialogue_Component : Base_Level_Component
     
         string sentence_ = sentences.Dequeue();
         Debug.Log(sentence_);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(false);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence_));
 

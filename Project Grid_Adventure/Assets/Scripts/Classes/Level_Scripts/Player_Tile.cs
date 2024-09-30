@@ -14,6 +14,7 @@ public class Player_Tile : ISubject
     [SerializeField] private KeyCode down;
     [SerializeField] private KeyCode right;
     [SerializeField] private KeyCode left;
+    [SerializeField] private Animator animExplosion;
 
     [SerializeField] private LayerMask unWalkable;
     // Start is called before the first frame update
@@ -66,6 +67,10 @@ public class Player_Tile : ISubject
                 }
             }
         }
+    }
+    public Animator GetAnimator()
+    {
+        return animExplosion;
     }
     public void MovePlayerButton(string dir_)
     {

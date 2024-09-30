@@ -94,8 +94,7 @@ public class UI_Gameplay : BaseUIScript
         {
             switch (x.gameObject.name)
             {
-               case "Button Restart":
-                   //x.GetComponent<Image>().IsRaycastLocationValid
+               case "Button Restart":             
                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);});
                    break;
                case "Button Pause":
