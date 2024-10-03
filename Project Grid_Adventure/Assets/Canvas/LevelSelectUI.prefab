@@ -214,6 +214,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -221,7 +233,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &344279545033281277
@@ -438,6 +450,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -445,7 +469,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &399643412183096227
@@ -1061,6 +1085,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -1068,7 +1104,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &720591508953646364
@@ -1364,6 +1400,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -1371,7 +1419,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &946630261059793375
@@ -1509,6 +1557,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -1516,7 +1576,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1187244785126205152
@@ -1654,6 +1714,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -1661,7 +1733,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1204532826523347666
@@ -1878,6 +1950,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -1885,7 +1969,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1308585095395486035
@@ -2258,6 +2342,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1507053482694819274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,6 +2578,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u30E2\u30CE\u30AF\u30ED\u30E9\u30A4\u30D6\u30E9\u30EA\u30FC"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1684196491506323072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,6 +2737,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -2612,7 +2756,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1743591233099305667
@@ -2750,6 +2894,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -2757,7 +2913,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1748317706144617437
@@ -2974,6 +3130,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -2981,7 +3149,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1864492915163594274
@@ -3115,6 +3283,18 @@ MonoBehaviour:
           m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
@@ -3336,6 +3516,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -3343,7 +3535,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1955954486476290447
@@ -3639,6 +3831,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -3646,7 +3850,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2238183423060400575
@@ -3784,6 +3988,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -3791,7 +4007,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2328311686329945079
@@ -4008,6 +4224,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -4015,7 +4243,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2445544147672348222
@@ -4388,6 +4616,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2703544345875260215
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,6 +4773,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2707384415491465262
 GameObject:
   m_ObjectHideFlags: 0
@@ -4652,6 +4916,18 @@ MonoBehaviour:
           m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2811445919200269357
@@ -4969,7 +5245,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Boss
+  m_Text: Tavern
 --- !u!1 &2970270985892788622
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,6 +5377,18 @@ MonoBehaviour:
           m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
@@ -5250,6 +5538,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -5257,7 +5557,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3235377175545675983
@@ -5395,6 +5695,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -5402,7 +5714,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3269674790091459120
@@ -5619,6 +5931,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -5764,6 +6088,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -5771,7 +6107,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3439564694397285855
@@ -5909,6 +6245,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -5916,7 +6264,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3469742758159398209
@@ -6256,6 +6604,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u30E2\u30CE\u30AF\u30ED\u30E9\u30A4\u30D6\u30E9\u30EA\u30FC"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3814701780206858006
 GameObject:
   m_ObjectHideFlags: 0
@@ -6387,6 +6759,18 @@ MonoBehaviour:
           m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
@@ -6681,6 +7065,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4252680603848483061
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,6 +7344,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -6955,7 +7363,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4481167723298762155
@@ -7093,6 +7501,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -7225,6 +7645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorldPanels: []
   levelBtns: []
+  backBtn: {fileID: 0}
   unlockedLevels: 50
   backgroundImg: {fileID: 4039881439993984130}
   y: 0.05
@@ -7659,6 +8080,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -7666,7 +8099,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4840211438748895341
@@ -7962,6 +8395,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -7969,7 +8414,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5100607023367229397
@@ -8265,6 +8710,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -8272,7 +8729,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5246964073119756787
@@ -8410,6 +8867,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -8417,7 +8886,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5312126808701465503
@@ -8555,6 +9024,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -8562,7 +9043,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5314822344211276236
@@ -8858,6 +9339,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -9084,6 +9577,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -9091,7 +9596,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5551575819720735946
@@ -9225,6 +9730,18 @@ MonoBehaviour:
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5708006645472188938
@@ -9362,6 +9879,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -9369,7 +9898,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5757720409335637121
@@ -9582,6 +10111,18 @@ MonoBehaviour:
           m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
@@ -9810,6 +10351,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -9817,7 +10370,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6159115485227409408
@@ -10192,6 +10745,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -10199,7 +10764,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6272507857032968745
@@ -10410,6 +10975,30 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10628,6 +11217,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -10635,7 +11236,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6738056265232164048
@@ -10931,6 +11532,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -11074,6 +11687,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7233337021153598626
 GameObject:
   m_ObjectHideFlags: 0
@@ -11209,6 +11834,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -11216,7 +11853,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7276687323871056732
@@ -11354,6 +11991,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -11361,7 +12010,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7284325520679934916
@@ -11602,7 +12251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Boss
+  m_Text: Gallary
 --- !u!1 &7621280098254153209
 GameObject:
   m_ObjectHideFlags: 0
@@ -11863,6 +12512,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -11870,7 +12531,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7736807391348931464
@@ -12004,6 +12665,18 @@ MonoBehaviour:
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
@@ -12311,6 +12984,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -12318,7 +13003,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8010411206839269988
@@ -12724,6 +13409,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -12731,7 +13428,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8778376324682734789
@@ -12948,6 +13645,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -12955,7 +13664,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8891162323207393928
@@ -13172,6 +13881,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: PlayMusicClip
         m_Mode: 5
         m_Arguments:
@@ -13179,7 +13900,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u53E4\u5C4B\u6577\u3067\u306E\u6669\u9910\u4F1A\u7684\u306ABGM_2"
+          m_StringArgument: DungeonMusic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8987172765657308823
@@ -13312,6 +14033,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: MenuUI
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &9000636906255442271

@@ -23,6 +23,7 @@ public class Teleprt_Tile_set : BaseInteractionTile
     {
         yield return new WaitForSeconds(0.25f);
         tmp_.GetComponent<Player_Tile>().ChangePosition(teleportOut.position);
+        GameManager.instance.GetSoundManager().PlaySFXClip("Retro Magic Protection 01");
     }
     // Update is called once per frame
     public override void RevertToInitialState()

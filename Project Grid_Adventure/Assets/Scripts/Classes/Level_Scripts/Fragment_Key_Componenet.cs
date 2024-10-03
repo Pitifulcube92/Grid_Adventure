@@ -27,10 +27,11 @@ public class Fragment_Key_Componenet : Base_Level_Component
     {
         if(MaxFragments == currentFragments)
         {
-            mainKey.SetActive(true);
+            //mainKey.SetActive(true);
+            gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(true);
             GameManager.instance.GetSoundManager().SetSFXVolume(0.5f);
             GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell");
-            GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetVolume());
+            GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
         }
     }
     public void GainFragmentKey()
@@ -48,11 +49,13 @@ public class Fragment_Key_Componenet : Base_Level_Component
             }
             MaxFragments = GameObject.FindGameObjectsWithTag("Fragment Location").Length;
         }
-
         foreach (Transform x in fragmentLocations)
         {
             Instantiate(fragmentKey, x);
         }
+        //mainKey = gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").GetComponent<GameObject>();
+        gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
+
     }
     public void SetKey(GameObject tmp_)
     {

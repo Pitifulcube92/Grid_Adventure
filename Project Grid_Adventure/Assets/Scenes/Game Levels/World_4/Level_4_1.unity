@@ -57331,6 +57331,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.name
+      value: Scrapped Note
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -57342,7 +57346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: 'Becareful and try and avoid them as much as you
+      value: 'Be careful and try and avoid them as much as you
 
         can.'
       objectReference: {fileID: 0}

@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    [Range(0.0f, 1f), SerializeField] private float volume;
+    [Range(0.0f, 1f), SerializeField] private float BGMvolume;
+    [Range(0.0f, 1f), SerializeField] private float SFXvolume;
     [SerializeField] private float maxVolume;
     [SerializeField] private List<AudioClip> sfxClips;
     [SerializeField] private List<AudioClip> musicClips;
@@ -33,8 +34,8 @@ public class SoundManager : MonoBehaviour
 
         sfxSource.maxDistance = maxVolume;
         bgmSource.maxDistance = maxVolume;
-        sfxSource.volume = volume;
-        bgmSource.volume = volume;
+        sfxSource.volume = SFXvolume;
+        bgmSource.volume = BGMvolume;
         return true;
     }
 
@@ -84,20 +85,23 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void SetMasterVolume(float tmp_)
+    public void SetBGMVolume(float tmp_)
     {
         bgmSource.volume = tmp_;
-        sfxSource.volume = tmp_ * 2;
     }
     public void SetSFXVolume(float tmp_)
     {
         sfxSource.volume = tmp_;
     }
-    public float GetVolume()
+    public float GetBGMVolume()
     {
-        return volume;
+        return BGMvolume;
     }
-    public float GetMaxVolume()
+    public float GetSFXVolume()
+    {
+        return SFXvolume;
+    }
+    public float GetMaxBGMVolume()
     {
         return maxVolume;
     }

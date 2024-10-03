@@ -26,6 +26,7 @@ TagManager:
   - Text box
   - FloorUIbtn
   - CamUI
+  - Boss_2_Switch
   layers:
   - Default
   - TransparentFX

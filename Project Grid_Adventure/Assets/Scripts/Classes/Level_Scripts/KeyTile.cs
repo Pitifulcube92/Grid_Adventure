@@ -9,7 +9,7 @@ public class KeyTile : BaseInteractionTile
     // Start is called before the first frame update
     void Start()
     {
-        if(base.basePosition == null)
+        if (base.basePosition == null)
             base.basePosition = transform;
         if (base.baseSpriteRender == null)
             base.baseSpriteRender = gameObject.GetComponent<SpriteRenderer>();

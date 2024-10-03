@@ -7,7 +7,7 @@ public abstract class Base_Level_Component : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        InitalizeComponent();
+        //InitalizeComponent();
     }
     public void baseStart()
     {

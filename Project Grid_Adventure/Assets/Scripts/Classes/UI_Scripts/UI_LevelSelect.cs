@@ -9,6 +9,7 @@ public class UI_LevelSelect : BaseUIScript
 {
     [SerializeField] private List<GameObject> WorldPanels;
     [SerializeField] private List<Button> levelBtns;
+    [SerializeField] private Button backBtn;
     [SerializeField] int unlockedLevels;
     [SerializeField] private RawImage backgroundImg;
     [SerializeField] private float y, x;
@@ -20,6 +21,7 @@ public class UI_LevelSelect : BaseUIScript
             if (x.GetComponent<Button>())
             {
                 levelBtns.Add(x.GetComponent<Button>());
+                x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
             }
         }
 
@@ -29,7 +31,7 @@ public class UI_LevelSelect : BaseUIScript
     {
       foreach (GameObject x in GameObject.FindGameObjectsWithTag("LvlSelectPan"))
       {
-            WorldPanels.Add(x);
+            WorldPanels.Add(x);          
             Debug.Log(x.name);
       }
       //Detect what levels are available
@@ -66,9 +68,11 @@ public class UI_LevelSelect : BaseUIScript
                     if (unlockedLevels == 50)
                         x.SetActive(true);
                     break;
-            }           
-      }
-
+            }
+            x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
+        }
+        backBtn = GameObject.Find("Back btn").GetComponent<Button>();
+        backBtn.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
         SelectWorldPanel(1);
         //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
         gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();

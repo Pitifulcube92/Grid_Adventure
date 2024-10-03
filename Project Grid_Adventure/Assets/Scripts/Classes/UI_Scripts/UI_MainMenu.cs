@@ -37,19 +37,24 @@ public class UI_MainMenu : BaseUIScript
             {
                 case "Start btn":
                     x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName("Level_1_1");
-                        GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");});
+                        GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                    });
                     break;
                 case "Continue":
                     break;
                 case "Level Select btn":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("LevelSelectUI");});
+                    x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("LevelSelectUI");
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                    });
                     break;
                 case "Options":
                     break;
                 case "Quit btn":
                     x.onClick.AddListener(delegate {Application.Quit();
-                                                    //EditorApplication.ExitPlaymode();
-                                                    });
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                        //EditorApplication.ExitPlaymode();
+                    });
                     break;
             }
         }

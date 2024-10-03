@@ -92,7 +92,7 @@ public class Level_Dialogue_Component : Base_Level_Component
 
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0)
+        if (sentences.Count == 0)   
         {
             EndDialogue();
             return;
@@ -113,7 +113,9 @@ public class Level_Dialogue_Component : Base_Level_Component
         foreach(char letter in sentence_.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.07f);
+            GameManager.instance.GetSoundManager().SetSFXVolume(0.1f);
+            GameManager.instance.GetSoundManager().PlaySFXClip("Retro Beeep 20");
+            yield return new WaitForSeconds(0.09f);
         }
     } 
 
@@ -124,6 +126,7 @@ public class Level_Dialogue_Component : Base_Level_Component
         //anim.SetBool("isDialogueBoxOpen", false);
         trigger.ResetTrigger();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(true);
+        GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
     }  
 
     public override void ResetComponent()

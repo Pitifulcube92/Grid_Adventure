@@ -48,22 +48,37 @@ public class Player_Tile : ISubject
                 if (Input.GetKeyDown(right))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), movePointRadius, unWalkable))
+                    {
                         movePoint.position += new Vector3(movePointDistance, 0f, 0f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                    }
                 }
                 else if (Input.GetKeyDown(left))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), movePointRadius, unWalkable))
+                    {
                         movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                    }
+                        
                 }
                 else if (Input.GetKeyDown(up))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), movePointRadius, unWalkable))
+                    {
                         movePoint.position += new Vector3(0f, movePointDistance, 0f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                    }
+                      
                 }
                 else if (Input.GetKeyDown(down))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), movePointRadius, unWalkable))
+                    {
                         movePoint.position += new Vector3(0f, -movePointDistance, 0f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                    }
+                       
                 }
             }
         }

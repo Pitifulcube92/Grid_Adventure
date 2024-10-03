@@ -15,10 +15,14 @@ public class UI_GameOver : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Restart Level":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName); });
+                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                    });
                     break;
                 case "Back to Menu":
-                     x.onClick.AddListener(delegate {GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu"); });
+                     x.onClick.AddListener(delegate {GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu");
+                         GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                     });
                     break;
             }
        }

@@ -113,6 +113,7 @@ public class UI_Gameplay : BaseUIScript
                     x.onClick.AddListener(delegate { CloseSettings(); });
                     break;
             }
+            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
         }
 
         foreach (Text x in gameplayTexts)
@@ -143,9 +144,13 @@ public class UI_Gameplay : BaseUIScript
         {
             switch (x.gameObject.name)
             {
-                case "Volume Slider":
-                    x.value = GameManager.instance.GetSoundManager().GetVolume();
-                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetSoundManager().SetMasterVolume(x.value); });
+                case "bgm Volume Slider":
+                    x.value = GameManager.instance.GetSoundManager().GetBGMVolume();
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetSoundManager().SetBGMVolume(x.value); });
+                    break;
+                case "sfx Volume Slider":
+                    x.value = GameManager.instance.GetSoundManager().GetSFXVolume();
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetSoundManager().SetSFXVolume(x.value); });
                     break;
             }
         }

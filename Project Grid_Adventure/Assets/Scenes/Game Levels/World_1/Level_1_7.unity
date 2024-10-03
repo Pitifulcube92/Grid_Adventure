@@ -26865,7 +26865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: If the happens dont be afraid to restart
+      value: If the happens dont be afraid to restart the level!
       objectReference: {fileID: 0}
     - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_Name

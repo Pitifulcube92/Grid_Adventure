@@ -23,37 +23,45 @@ public class Level_Observer : MonoBehaviour, IObserver
     //[SerializeField] private 
     private void Awake()
     {
-
-        //Get lvlObjects    
+        /**Get UI and player**/
         scanScene();
         GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
         GameManager.instance.GetSoundManager().PlayMusicClip("DungeonMusic");
         GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
         watchedSubject = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>();
         fadeCanvas = GameObject.FindGameObjectWithTag("UI").GetComponent<FadeScript>();
+        
+        /**Get all interactable Tiles**/
+        ScanObjectItems();
+        isKeySpawned = true;
+
+        /**Initiallize all level Components**/
         foreach (Base_Level_Component x in GameObject.FindObjectsOfType<Base_Level_Component>())
         {
             levelComponents.Add(x);
         }
-        foreach(Base_Level_Component x in levelComponents)
+       
+        foreach (Base_Level_Component x in levelComponents)
         {
             x.InitalizeComponent();
         }
-        GetObjectItems();
-        if (levelComponents.Count > 0)
-        {
-            if (levelComponents.Exists(x => x.GetComponent<Fragment_Key_Componenet>()))
-            {
-                levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
-                lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
-                isKeySpawned = false;
-            }
-            else
-            {
-                isKeySpawned = true;
-            }
-        }
+
+        //if (levelComponents.Count > 0)
+        //{
+        //    if (levelComponents.Exists(x => x.GetComponent<Fragment_Key_Componenet>()))
+        //    {
+        //        levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
+        //        lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
+        //        isKeySpawned = false;
+        //    }
+        //    else
+        //    {
+        //        isKeySpawned = true;
+        //    }
+        //}
+       
         
+
 
         if (!fadeCanvas)
         {
@@ -87,6 +95,10 @@ public class Level_Observer : MonoBehaviour, IObserver
         StartCoroutine(IntroIn());
         //Debug.Log("level Name: " + currentLevlInfo.levelName);
     }
+    public void SetIsKetSpawned(bool tmp_)
+    {
+        isKeySpawned = tmp_;
+    }
     private void OnObsEnable()
     {
         watchedSubject.AddObserver(this);
@@ -104,7 +116,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 currentLevlInfo.hasKey = true;
                 lvlObjects.Find(x => x.tag == "Key").gameObject.SetActive(false);
                 lvlObjects.Find(x => x.tag == "Door").gameObject.layer = 0;
-                GameManager.instance.GetSoundManager().PlaySFXClip("Collect");
+                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Success Melody 02 - choir soprano");
                 break;
 
             case PlayerState.Interact_Door:
@@ -121,7 +133,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 }
                 break;
 
-            case PlayerState.Taken_Damage:               
+            case PlayerState.Taken_Damage:
                 StartCoroutine(DamagePlayer());
                 break;
 
@@ -136,7 +148,7 @@ public class Level_Observer : MonoBehaviour, IObserver
 
         }
     }
-    public void GetObjectItems()
+    public void ScanObjectItems()
     {
         foreach (BaseInteractionTile x in GameObject.FindObjectsOfType<BaseInteractionTile>())
         {
@@ -161,6 +173,11 @@ public class Level_Observer : MonoBehaviour, IObserver
     public Level_Info GetLevel_Info()
     {
         return currentLevlInfo;
+    }
+
+    public List<BaseInteractionTile> GetLevelObjects()
+    {
+        return lvlObjects;
     }
     public void ResetLevelObjects()
     {

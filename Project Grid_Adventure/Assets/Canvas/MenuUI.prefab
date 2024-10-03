@@ -278,7 +278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8849221432856889935}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &612911515409703570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1078,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8571708770883879671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4353946601378978212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1211,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3321643936864597030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySFXClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Retro_Blop_18
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4645278924385505168
 GameObject:
   m_ObjectHideFlags: 0
