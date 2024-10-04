@@ -7,7 +7,10 @@ using UnityEngine.UI;
 public class UI_MainMenu : BaseUIScript
 {
     [SerializeField] private List<Button> menuButtons;
+    [SerializeField] private List<Toggle> menuToggles;
+    [SerializeField] private List<Slider> menuSliders;
     [SerializeField] private RawImage backgroundImg;
+
     [SerializeField] private float y, x;
     //[SerializeField] private GameObject GM;
     // Start is called before the first frame update
@@ -18,7 +21,15 @@ public class UI_MainMenu : BaseUIScript
         {
             menuButtons.Add(x);
         }
-        if(menuButtons == null)
+        foreach (Slider x in GameObject.FindObjectsOfType<Slider>())
+        {
+            menuSliders.Add(x);
+        }
+        foreach (Toggle x in GameObject.FindObjectsOfType<Toggle>())
+        {
+            menuToggles.Add(x);
+        }
+        if (menuButtons == null)
         {
             Debug.LogError("No UI buttons where found!");
         }
@@ -38,17 +49,13 @@ public class UI_MainMenu : BaseUIScript
                 case "Start btn":
                     x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName("Level_1_1");
                         GameManager.instance.GetSoundManager().PlayMusicClip("ŒÃ‰®•~‚Å‚Ì”ÓŽ`‰ï“I‚ÈBGM_2");
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
                     });
                     break;
                 case "Continue":
                     break;
                 case "Level Select btn":
                     x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("LevelSelectUI");
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
                     });
-                    break;
-                case "Options":
                     break;
                 case "Quit btn":
                     x.onClick.AddListener(delegate {Application.Quit();
@@ -57,7 +64,36 @@ public class UI_MainMenu : BaseUIScript
                     });
                     break;
             }
+            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
         }
+
+        foreach (Toggle x in menuToggles)
+        {
+            switch (x.gameObject.name)
+            {
+                case "Fullscreen Toggle":
+                    x.isOn = Screen.fullScreen;
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.ToggleFullScreen(x.isOn); });
+                    break;
+            }
+        }
+
+        foreach (Slider x in menuSliders)
+        {
+            switch (x.gameObject.name)
+            {
+                case "bgm Volume Slider":
+                    x.value = GameManager.instance.GetSoundManager().GetBGMVolume();
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetSoundManager().SetBGMVolume(x.value); });
+                    break;
+                case "sfx Volume Slider":
+                    x.value = GameManager.instance.GetSoundManager().GetSFXVolume();
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetSoundManager().SetSFXVolume(x.value); });
+                    break;
+            }
+        }
+
+        GameObject.Find("Options Panel").SetActive(false);
         //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
         gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
         //GameObject.FindAnyObjectByType<Camera>();

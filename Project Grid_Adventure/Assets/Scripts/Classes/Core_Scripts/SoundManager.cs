@@ -72,7 +72,14 @@ public class SoundManager : MonoBehaviour
             }
         }
     }
-
+    public AudioSource GetBGMSource()
+    {
+        return bgmSource;
+    }
+    public AudioSource GetSFXSource()
+    {
+        return sfxSource;
+    }
     public void SetLoopBGM(bool tmp_)
     {
         if (tmp_)
@@ -84,7 +91,6 @@ public class SoundManager : MonoBehaviour
             bgmSource.loop = tmp_;
         }
     }
-
     public void SetBGMVolume(float tmp_)
     {
         bgmSource.volume = tmp_;

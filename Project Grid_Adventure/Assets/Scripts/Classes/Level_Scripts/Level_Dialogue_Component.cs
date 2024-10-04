@@ -113,7 +113,7 @@ public class Level_Dialogue_Component : Base_Level_Component
         foreach(char letter in sentence_.ToCharArray())
         {
             dialogueText.text += letter;
-            GameManager.instance.GetSoundManager().SetSFXVolume(0.1f);
+            //GameManager.instance.GetSoundManager().SetSFXVolume(0.1f);
             GameManager.instance.GetSoundManager().PlaySFXClip("Retro Beeep 20");
             yield return new WaitForSeconds(0.09f);
         }
@@ -123,6 +123,8 @@ public class Level_Dialogue_Component : Base_Level_Component
     {
         Debug.Log("Dialogue has ended!");
         UI.DialogeUI.SetActive(false);
+        StopAllCoroutines();
+        //GameManager.instance.GetSoundManager().GetSFXSource().Stop();
         //anim.SetBool("isDialogueBoxOpen", false);
         trigger.ResetTrigger();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(true);
