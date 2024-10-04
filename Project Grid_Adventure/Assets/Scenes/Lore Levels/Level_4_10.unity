@@ -45486,6 +45486,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196619672707278484, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74906b520a1482547899b2a14605a781, type: 3}
     - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -45526,9 +45530,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7013008946459883320, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013008946459883320, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_Name
-      value: NPC_Prefab
+      value: Verde
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

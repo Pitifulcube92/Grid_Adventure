@@ -46,23 +46,6 @@ public class Level_Observer : MonoBehaviour, IObserver
             x.InitalizeComponent();
         }
 
-        //if (levelComponents.Count > 0)
-        //{
-        //    if (levelComponents.Exists(x => x.GetComponent<Fragment_Key_Componenet>()))
-        //    {
-        //        levelComponents.Find(x => x.GetComponent<Fragment_Key_Componenet>()).GetComponent<Fragment_Key_Componenet>().SetKey(lvlObjects.Find(x => x.tag == "Key").gameObject);
-        //        lvlObjects.Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(false);
-        //        isKeySpawned = false;
-        //    }
-        //    else
-        //    {
-        //        isKeySpawned = true;
-        //    }
-        //}
-       
-        
-
-
         if (!fadeCanvas)
         {
             //fadeCanvas = GameObject.Find("FadeCanvas").GetComponent<FadeScript>();
@@ -73,8 +56,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             Debug.LogWarning("subject not found!");
         }
 
-
-        //Get subject
+        //Get subjects
         OnObsEnable();
 
     }
@@ -145,6 +127,9 @@ public class Level_Observer : MonoBehaviour, IObserver
                 gameObject.GetComponent<Fragment_Key_Componenet>().GainFragmentKey();
                 GameManager.instance.GetSoundManager().PlaySFXClip("Collect");
                 break;
+            case PlayerState.Player_Dead:
+                StartCoroutine(Player_InstaKilled());
+                break;
 
         }
     }
@@ -190,15 +175,6 @@ public class Level_Observer : MonoBehaviour, IObserver
             comp.ResetComponent();
        }
     }
-
-    //public void RestFromCheckpoint()
-    //{
-    //    lvlObjects.Find(x => x.tag == "Key").RevertToInitialState();
-    //    if(gameObject.GetComponent<Fragment_Key_Componenet>())
-    //    {
-    //        gameObject.GetComponent<Fragment_Key_Componenet>().CheckFragmentRequirement();
-    //    }
-    //}
 
     private BaseInteractionTile GetInteractedTile()
     {
@@ -252,9 +228,18 @@ public class Level_Observer : MonoBehaviour, IObserver
         yield return StartCoroutine(fadeCanvas.FadeIn());
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(true);
     }
+    IEnumerator Player_InstaKilled()
+    {
+        StartCoroutine(Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f));
+        StartCoroutine(Explode());
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death");
+        yield return new WaitForSeconds(0.3f);
+
+        StartCoroutine(GameOver());
+    }
     IEnumerator GameOver()
     {
-        //watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
+        watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeOut());
         GameManager.instance.GetUIManager().ChangeUI("GameOverUI");
         //GameManager.instance.GetLevelManager().LoadScene("Main Menu");

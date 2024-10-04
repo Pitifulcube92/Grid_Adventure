@@ -162,6 +162,7 @@ public class UI_Gameplay : BaseUIScript
         GameObject.FindGameObjectWithTag("PauseSettingGroup").SetActive(false);
         GameObject.FindGameObjectWithTag("PauseUI").SetActive(false);
         DialogeUI.SetActive(false);
+        GameObject.Find("Boss_Info_3").SetActive(false);
         GameObject.Find("Boss_Info_1").SetActive(false);
 
        //Check it boss lvl component is in lvl
@@ -171,6 +172,11 @@ public class UI_Gameplay : BaseUIScript
             {
                 Debug.Log("Boss Componenet Found!");
                 BossUIComponents.Find(x => x.name == "Boss_Info_1").SetActive(true);
+            }
+            if(x.GetComponent<Boss_3_Level_Component>() == true)
+            {
+                Debug.Log("Boss Componenet Found!");
+                BossUIComponents.Find(x => x.name == "Boss_Info_3").SetActive(true);
             }
        }
        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;

@@ -16,8 +16,8 @@ public class Boss_1_Level_Component : Base_Level_Component
     [SerializeField] private int bosshealth;
     [SerializeField] private float countdownSpeed;
     [SerializeField] private float remainingTime;
-    [SerializeField] private GameObject floorKey;
-    [SerializeField] private Transform floorKeyLocation;
+    //[SerializeField] private GameObject floorKey;
+    //[SerializeField] private Transform floorKeyLocation;
     [SerializeField] private GameObject currentChallengeSwitch;
     [SerializeField] private UI_Gameplay uI_Gameplay;
 
@@ -30,7 +30,8 @@ public class Boss_1_Level_Component : Base_Level_Component
     {
         bosshealth = 3;
         baseInterval = 1;
-        uI_Gameplay = FindObjectOfType<UI_Gameplay>();     
+        uI_Gameplay = FindObjectOfType<UI_Gameplay>();
+       
     }
 
     public override void ResetComponent()
@@ -43,6 +44,7 @@ public class Boss_1_Level_Component : Base_Level_Component
     void Start()
     {
         GameManager.instance.GetSoundManager().PlayMusicClip("モノクロライブラリー");
+        gameObject.GetComponentInParent<Level_Observer>().SetIsKetSpawned(false);
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 HP").text = bosshealth.ToString();
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(0);
     }
@@ -83,6 +85,7 @@ public class Boss_1_Level_Component : Base_Level_Component
         if (bosshealth == 0)
         {
             //Instantiate(floorKey, floorKeyLocation);
+            gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").gameObject.SetActive(true);
             GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell");
         }
     }

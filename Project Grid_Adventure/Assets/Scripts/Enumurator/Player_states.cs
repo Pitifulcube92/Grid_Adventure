@@ -5,5 +5,6 @@ public enum PlayerState
     Interact_Key,
     Interact_Door,
     Interact_Fragment_Key,
-    Interact_Checkpoint
+    Interact_Checkpoint,
+    Player_Dead
 }
