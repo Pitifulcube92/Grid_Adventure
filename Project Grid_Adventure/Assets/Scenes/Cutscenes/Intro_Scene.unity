@@ -950,6 +950,10 @@ PrefabInstance:
       propertyPath: SFXvolume
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7274674635364323611, guid: c8596da886f702d4fb2685a607276331, type: 3}
+      propertyPath: sfxClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: c2c97721d0675e34782a9cf53abd846a, type: 3}
     - target: {fileID: 7551717350076393344, guid: c8596da886f702d4fb2685a607276331, type: 3}
       propertyPath: uiCanvas.Array.size
       value: 5

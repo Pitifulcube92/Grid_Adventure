@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5374796953091390320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 196619672707278484, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2044837157, guid: e89faedfb80b52c4fa4c9263f7ed31af, type: 3}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.name
+      value: In-Loved Scarling
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hey, move out of the way.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Your blocking my view of Viole.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Ohh Viole, you are the most beautiful enchantress in the whole shadowrealm.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Just being in the same room as her gives me butterflies.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Name
+      value: In-loved Scarling  Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}

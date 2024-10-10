@@ -45,7 +45,7 @@ public class Player_Tile : ISubject
         {
             if (Vector3.Distance(transform.position, movePoint.position) <= 0.5f && transform.position == movePoint.position)
             {
-                if (Input.GetKeyDown(right))
+                if (Input.GetKeyDown(right)|| Input.GetKey(right))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                     {
@@ -53,7 +53,7 @@ public class Player_Tile : ISubject
                         GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
                     }
                 }
-                else if (Input.GetKeyDown(left))
+                else if (Input.GetKeyDown(left) || Input.GetKey(left))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                     {
@@ -62,7 +62,7 @@ public class Player_Tile : ISubject
                     }
                         
                 }
-                else if (Input.GetKeyDown(up))
+                else if (Input.GetKeyDown(up) || Input.GetKey(up))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), movePointRadius, unWalkable))
                     {
@@ -71,7 +71,7 @@ public class Player_Tile : ISubject
                     }
                       
                 }
-                else if (Input.GetKeyDown(down))
+                else if (Input.GetKeyDown(down) || Input.GetKey(down))
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), movePointRadius, unWalkable))
                     {

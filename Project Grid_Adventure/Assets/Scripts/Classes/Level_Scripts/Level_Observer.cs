@@ -199,25 +199,27 @@ public class Level_Observer : MonoBehaviour, IObserver
         {
             Debug.Log("Player is dead... Game Over");
             StartCoroutine(GameOver());
+            yield return null;
         }
         //level restarts then take player life!
-
-        currentLevlInfo.isLevelDone = false;
-        //currentLevlInfo.hasKey = false;
+        watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
+        watchedSubject.GetComponent<SpriteRenderer>().enabled = false;
         currentLevlInfo.playerLives -= 1;
         GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
 
-        StartCoroutine(Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f));
         StartCoroutine(Explode());
-        yield return new WaitForSeconds(0.3f);
+        //StartCoroutine(Explode());
+        yield return new WaitForSeconds(0.7f);
        
         watchedSubject.GetComponent<Player_Tile>().ChangePosition(currentCheckpoint);
-        GameManager.instance.GetSoundManager().PlaySFXClip("Death");
-
+        watchedSubject.GetComponent<Player_Tile>().SetIsMoving(true);
+        watchedSubject.GetComponent<SpriteRenderer>().enabled = true;
     }
     IEnumerator Explode()
     {
         watchedSubject.GetComponent<Player_Tile>().GetAnimator().Play("Explosion");
+        Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f);
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death");
         yield return new WaitForSeconds(watchedSubject.GetComponent<Player_Tile>().GetAnimator().GetCurrentAnimatorStateInfo(0).length - 0.01f);
       
 
@@ -240,6 +242,9 @@ public class Level_Observer : MonoBehaviour, IObserver
     IEnumerator GameOver()
     {
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
+        watchedSubject.GetComponent<Player_Tile>().GetAnimator().Play("Explosion");
+        Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f);
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death");    
         yield return StartCoroutine(fadeCanvas.FadeOut());
         GameManager.instance.GetUIManager().ChangeUI("GameOverUI");
         //GameManager.instance.GetLevelManager().LoadScene("Main Menu");

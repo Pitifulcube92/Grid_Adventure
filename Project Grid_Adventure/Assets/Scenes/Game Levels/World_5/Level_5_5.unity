@@ -3215,6 +3215,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
       value: 4
       objectReference: {fileID: 0}
@@ -60194,8 +60198,8 @@ MonoBehaviour:
   MaxFragments: 0
   currentFragments: 0
   fragmentLocations: []
-  mainKey: {fileID: 5585892975021143482, guid: 031e8c3d99fe80548a75738d1035909c, type: 3}
   fragmentKey: {fileID: 2556194092339132970, guid: 95a6d1ce94c231b4789bc0df7ee02b40, type: 3}
+  GameUI: {fileID: 0}
 --- !u!1001 &818367106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60606,6 +60610,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
       value: 4
@@ -61253,7 +61261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3109505924110228833, guid: 652ff0b9633e32f46be4a2a88f9e6cd7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 3355521499685073872, guid: 652ff0b9633e32f46be4a2a88f9e6cd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61505,6 +61513,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
       value: 4
@@ -62576,6 +62588,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
       value: 4
@@ -63702,6 +63718,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
       value: 4
       objectReference: {fileID: 0}
@@ -63774,6 +63794,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
+      propertyPath: maxTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
       value: 4

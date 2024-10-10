@@ -19,6 +19,7 @@ public class UI_Gameplay : BaseUIScript
     [SerializeField] public List<Image> gameplayImages;
     [SerializeField] public List<Sprite> playerHealthIcons;
     [SerializeField] public GameObject DialogeUI;
+    [SerializeField] public GameObject keyFragUI;
     [SerializeField] public List<GameObject> BossUIComponents;
 
     //[Header("Delagetes")]
@@ -162,23 +163,30 @@ public class UI_Gameplay : BaseUIScript
         GameObject.FindGameObjectWithTag("PauseSettingGroup").SetActive(false);
         GameObject.FindGameObjectWithTag("PauseUI").SetActive(false);
         DialogeUI.SetActive(false);
+        keyFragUI.SetActive(false);
         GameObject.Find("Boss_Info_3").SetActive(false);
         GameObject.Find("Boss_Info_1").SetActive(false);
+        //GameObject.Find("key_Fragment_Panel").SetActive(false);
 
-       //Check it boss lvl component is in lvl
-       foreach(Base_Level_Component x in GameObject.FindObjectOfType<Level_Observer>().GetLevel_Components())
-       {
-            if(x.GetComponent<Boss_1_Level_Component>() == true)
+        //Check it boss lvl component is in lvl
+        foreach (Base_Level_Component x in GameObject.FindObjectOfType<Level_Observer>().GetLevel_Components())
+        {
+            if (x.GetComponent<Boss_1_Level_Component>() == true)
             {
                 Debug.Log("Boss Componenet Found!");
                 BossUIComponents.Find(x => x.name == "Boss_Info_1").SetActive(true);
             }
-            if(x.GetComponent<Boss_3_Level_Component>() == true)
+            if (x.GetComponent<Boss_3_Level_Component>() == true)
             {
                 Debug.Log("Boss Componenet Found!");
                 BossUIComponents.Find(x => x.name == "Boss_Info_3").SetActive(true);
             }
-       }
+            if (x.GetComponent<Fragment_Key_Componenet>() == true)
+            {
+                keyFragUI.SetActive(true);
+            }
+
+        }
        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
       
     }

@@ -12,4 +12,5 @@ public struct Dialogue_Info
     public string[] sentences;
     public bool hasImage;
     public Sprite targetImage;
+    public Vector2 imageDimension;
 }

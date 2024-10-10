@@ -11,6 +11,7 @@ public class Level_Dialogue_Component : Base_Level_Component
     [SerializeField] private Text dialogueName;
     [SerializeField] private Text dialogueText;
     [SerializeField] private Image dialogImage;
+
     [SerializeField] private KeyCode continueBtn;
     [SerializeField] private bool initalConvo;
     [SerializeField] private bool canTriggerDialog;
@@ -76,6 +77,7 @@ public class Level_Dialogue_Component : Base_Level_Component
         {
 
             dialogImage.sprite = dialogue_.targetImage;
+            dialogImage.rectTransform.sizeDelta = dialogue_.imageDimension;
             dialogImage.enabled = true;
         }
 
@@ -113,9 +115,11 @@ public class Level_Dialogue_Component : Base_Level_Component
         foreach(char letter in sentence_.ToCharArray())
         {
             dialogueText.text += letter;
-            //GameManager.instance.GetSoundManager().SetSFXVolume(0.1f);
-            GameManager.instance.GetSoundManager().PlaySFXClip("Retro Beeep 20");
-            yield return new WaitForSeconds(0.09f);
+            if (dialogueText.text.Length % 2 == 0)
+            {
+                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Beeep 20");
+            }
+            yield return new WaitForSeconds(0.05f);
         }
     } 
 
@@ -124,11 +128,9 @@ public class Level_Dialogue_Component : Base_Level_Component
         Debug.Log("Dialogue has ended!");
         UI.DialogeUI.SetActive(false);
         StopAllCoroutines();
-        //GameManager.instance.GetSoundManager().GetSFXSource().Stop();
-        //anim.SetBool("isDialogueBoxOpen", false);
         trigger.ResetTrigger();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(true);
-        GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
+        //GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
     }  
 
     public override void ResetComponent()

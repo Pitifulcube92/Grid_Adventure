@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: maxTimer
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
@@ -59846,7 +59846,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: maxTimer
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
@@ -60050,7 +60050,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: maxTimer
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed
@@ -60319,7 +60319,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: maxTimer
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3990857814534533511, guid: 50e23e47d4f05fa48bb4983af1d5d502, type: 3}
       propertyPath: turretSpeed

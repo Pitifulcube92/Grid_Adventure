@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edec11c5c8685644ab9962b7e2323c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 5
+  maxDistance: 4
   centerPoint: {fileID: 1863739133711761143}
   player: {fileID: 0}
   canMove: 1

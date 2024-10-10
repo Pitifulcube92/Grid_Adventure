@@ -26856,12 +26856,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: dialogue.name
+      value: Scrapped Note
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: "Some levels can get you stuck in hard places\n\t\t"
+      value: Some levels can get you stuck in hard places.
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]

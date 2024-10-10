@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5234438073985605741
+--- !u!1001 &624708418139428541
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,14 +11,14 @@ PrefabInstance:
     - target: {fileID: 196619672707278484, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 93505aad8a1d70646bfb6307a6b4583f, type: 3}
+      objectReference: {fileID: 2083255079, guid: e89faedfb80b52c4fa4c9263f7ed31af, type: 3}
     - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 521192695184927149, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52,45 +52,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5238016315254877429, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5238016315254877429, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
-      propertyPath: isTriggered
-      value: 0
+      propertyPath: dialogue.name
+      value: Crying Scarling
       objectReference: {fileID: 0}
-    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
-      propertyPath: dialogue.hasImage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
-      propertyPath: dialogue.targetImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 24a374ba6c1a22c44902a6c9280d4056, type: 3}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: 'Art by: rororo_onyo'
+      value: '*Sniffling* I''m scared....'
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: test 2
+      value: It's so scary here.
       objectReference: {fileID: 0}
     - target: {fileID: 5927617089497683706, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: test 3
+      value: I miss Scarle *Sniffling*
       objectReference: {fileID: 0}
     - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_Name
-      value: NPC_Prefab Variant
+      value: Crying Scarling Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
