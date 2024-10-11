@@ -34,6 +34,7 @@ public class UI_LevelSelect : BaseUIScript
             WorldPanels.Add(x);          
             Debug.Log(x.name);
       }
+      unlockedLevels = GameManager.instance.GetCurrentLevel();
       //Detect what levels are available
       //foreach(Button x in levelBtns)
       //{ 
@@ -43,25 +44,25 @@ public class UI_LevelSelect : BaseUIScript
       //  }
       //}
 
-      foreach(GameObject x in GameObject.FindGameObjectsWithTag("FloorUIbtn"))
+        foreach (GameObject x in GameObject.FindGameObjectsWithTag("FloorUIbtn"))
       {
             x.SetActive(false);
             switch (x.name)
             {
                 case"Floor_btn_1":
-                    if (unlockedLevels > 11)
+                    if (unlockedLevels >= 10)
                         x.SetActive(true);
                     break;
                 case "Floor_btn_2":
-                    if (unlockedLevels > 21)
+                    if (unlockedLevels >= 20)
                         x.SetActive(true);
                     break;
                 case "Floor_btn_3":
-                    if (unlockedLevels > 31)
+                    if (unlockedLevels >= 30)
                         x.SetActive(true);
                     break;
                 case "Floor_btn_4":
-                    if (unlockedLevels > 41)
+                    if (unlockedLevels >= 40)
                         x.SetActive(true);
                     break;
                 case "Floor_btn_5":

@@ -2300,7 +2300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6338785560426325177, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 25
+      value: 38.59
       objectReference: {fileID: 0}
     - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55948,8 +55948,8 @@ MonoBehaviour:
   MaxFragments: 0
   currentFragments: 0
   fragmentLocations: []
-  mainKey: {fileID: 5585892975021143482, guid: 031e8c3d99fe80548a75738d1035909c, type: 3}
   fragmentKey: {fileID: 2556194092339132970, guid: 95a6d1ce94c231b4789bc0df7ee02b40, type: 3}
+  GameUI: {fileID: 0}
 --- !u!1001 &1005003606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56568,11 +56568,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5143539406131623801, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.98
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5143539406131623801, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.96
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 5143539406131623801, guid: 0c66806f57d8d404196c993fcd234ffb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57404,7 +57404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6338785560426325177, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 25
+      value: 33.4
       objectReference: {fileID: 0}
     - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57636,7 +57636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6338785560426325177, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 25
+      value: 39.8
       objectReference: {fileID: 0}
     - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57714,7 +57714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6338785560426325177, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 25
+      value: 32.2
       objectReference: {fileID: 0}
     - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
       propertyPath: m_LocalPosition.x

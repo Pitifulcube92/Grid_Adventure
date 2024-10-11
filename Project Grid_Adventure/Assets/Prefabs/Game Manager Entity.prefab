@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 7274674635364323611}
   - component: {fileID: 3759371420889901790}
   - component: {fileID: 7551717350076393344}
+  - component: {fileID: 2502351269125009127}
   m_Layer: 0
   m_Name: Game Manager Entity
   m_TagString: Game Manager
@@ -309,6 +310,8 @@ MonoBehaviour:
   audioSys: {fileID: 7274674635364323611}
   uiSys: {fileID: 7551717350076393344}
   lvlSys: {fileID: 3759371420889901790}
+  SaveSys: {fileID: 2502351269125009127}
+  CurrentLevel: 0
 --- !u!114 &7274674635364323611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +385,18 @@ MonoBehaviour:
   - {fileID: 8748034366732966709, guid: 32c9d6fb5c663154f85a8f7d032c7b7c, type: 3}
   - {fileID: 8748034366732966709, guid: 0fba95986a4b22d488b9a5f43daacc97, type: 3}
   currentCanvas: {fileID: 8748034366732966709, guid: be979b686892f58488aa6de5298af2d6, type: 3}
+--- !u!114 &2502351269125009127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129070071565006793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f08fb48fcfcb545b3f5b8420a01e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &24771787307699319
 PrefabInstance:
   m_ObjectHideFlags: 0

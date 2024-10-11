@@ -5,6 +5,11 @@ using System;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 
+public enum Gamemode
+{
+    Story,
+    LevelSelect
+}
 
 public class Level_Observer : MonoBehaviour, IObserver
 {
@@ -20,6 +25,7 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private Level_Info currentLevlInfo;
     [SerializeField] private FadeScript fadeCanvas;
     [SerializeField] private Vector3 currentCheckpoint;
+    [SerializeField] private Gamemode currentGM;
     //[SerializeField] private 
     private void Awake()
     {
@@ -253,13 +259,31 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         yield return StartCoroutine(fadeCanvas.FadeOut());
-        if (currentLevlInfo.nextSceneIndex.Equals(0))
+        if (GameManager.instance.GetGamemode() == Gamemode_State.Story)
         {
-            GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu");
-            //EditorApplication.ExitPlaymode();
-            //Application.Quit();
+            if (GameManager.instance.GetCurrentLevel() <= 50)
+            {
+                GameManager.instance.SetCurrnetLevel(GameManager.instance.GetCurrentLevel() + 1);
+                GameManager.instance.GetSaveManager().SaveProgress(GameManager.instance.GetCurrentLevel());
+                GameManager.instance.GetLevelManager().LoadSceneByIndex(currentLevlInfo.nextSceneIndex);
+            }
+            else
+            {
+                GameManager.instance.GetSaveManager().SaveProgress(GameManager.instance.GetCurrentLevel());
+                GameManager.instance.GetLevelManager().LoadSceneByIndex(currentLevlInfo.nextSceneIndex);
+            }
         }
-        GameManager.instance.GetLevelManager().LoadSceneByIndex(currentLevlInfo.nextSceneIndex);
+        if(GameManager.instance.GetGamemode() == Gamemode_State.LevelSelect)
+        {
+            GameManager.instance.GetLevelManager().LoadMainMenu();
+        }
+        //if (currentLevlInfo.nextSceneIndex.Equals(0))
+        //{
+        //    GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu");
+        //    //EditorApplication.ExitPlaymode();
+        //    //Application.Quit();
+        //}
+      
         //SceneManager.LoadScene(currentLevlInfo.nextLevelName);
         //EditorApplication.ExitPlaymode();
     }
