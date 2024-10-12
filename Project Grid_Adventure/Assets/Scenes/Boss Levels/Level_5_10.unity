@@ -2110,7 +2110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -32.93
       objectReference: {fileID: 0}
     - target: {fileID: 1863739133711761143, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2146,7 +2146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2125997883028991890, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: orthographic size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8355163334641499188, guid: 70d29a819e47a784c9fd80df1be83dcb, type: 3}
       propertyPath: m_Name
@@ -4786,6 +4786,10 @@ PrefabInstance:
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: lvlObjects.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: currentLevlInfo.levelName
+      value: Level 50
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextLevelName

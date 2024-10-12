@@ -18,6 +18,7 @@ public class Boss_3_Level_Component : Base_Level_Component
 
     public override void ResetComponent()
     {
+        StopAllCoroutines();
     }
     IEnumerator ChallengeTimer(float time)
     {

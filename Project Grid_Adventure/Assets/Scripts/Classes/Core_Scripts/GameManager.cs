@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UIManager uiSys;
     [SerializeField] private LevelManager lvlSys;
     [SerializeField] private SaveManager SaveSys;
+    [SerializeField] private GameObject CRT_process;
     [Header("Info")]
     [SerializeField] private int CurrentLevel;
     [SerializeField] private Gamemode_State currentGM;
@@ -41,7 +42,7 @@ public class GameManager : MonoBehaviour
         audioSys.SetBGMVolume(audioSys.GetBGMVolume());
         audioSys.SetSFXVolume(audioSys.GetSFXVolume());
         audioSys.SetLoopBGM(true);
-    
+        //PlayerPrefs.SetInt("CurrentLevel", 40);
         //Get or Initalize Save Data;
         if(PlayerPrefs.HasKey("CurrentLevel") == true && PlayerPrefs.GetInt("CurrentLevel") > 1)
         {
@@ -73,15 +74,20 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    //Constant Resolution 960 X 720
     public void ToggleFullScreen(bool tmp_)
     {
         Debug.Log(tmp_);
         if (tmp_)
         {
-            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+            Screen.fullScreen = true;
+            Screen.SetResolution(960, 720, true);
+            
+            //Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
         }
         else
         {
+            Screen.fullScreen = false;
             Screen.fullScreenMode = FullScreenMode.Windowed;
         }
     }
@@ -93,6 +99,7 @@ public class GameManager : MonoBehaviour
     public int GetCurrentLevel() { return CurrentLevel; }
     public void SetCurrnetLevel(int tmp_) { CurrentLevel = tmp_; }
     public Gamemode_State GetGamemode() { return currentGM; }
+    public GameObject GetCRTProcess() { return CRT_process; }
     public void SetGamemode(int tmp_)
     {
         switch (tmp_) {
@@ -105,4 +112,6 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
+    
 }

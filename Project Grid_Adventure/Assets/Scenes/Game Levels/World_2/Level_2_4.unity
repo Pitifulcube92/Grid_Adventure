@@ -624,6 +624,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: currentLevlInfo.levelName
+      value: Level 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextLevelName
       value: Level_1_7
       objectReference: {fileID: 0}
@@ -23544,8 +23548,8 @@ MonoBehaviour:
   MaxFragments: 0
   currentFragments: 0
   fragmentLocations: []
-  mainKey: {fileID: 5585892975021143482, guid: 031e8c3d99fe80548a75738d1035909c, type: 3}
   fragmentKey: {fileID: 2556194092339132970, guid: 95a6d1ce94c231b4789bc0df7ee02b40, type: 3}
+  GameUI: {fileID: 0}
 --- !u!1001 &1037876272
 PrefabInstance:
   m_ObjectHideFlags: 0

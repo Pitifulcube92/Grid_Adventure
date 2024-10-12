@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI_GameOver : BaseUIScript
 {
@@ -15,7 +16,7 @@ public class UI_GameOver : BaseUIScript
             switch (x.gameObject.name)
             {
                 case "Restart Level":
-                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);
+                    x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(SceneManager.GetActiveScene().name);
                         GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
                     });
                     break;

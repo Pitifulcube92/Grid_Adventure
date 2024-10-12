@@ -311,7 +311,9 @@ MonoBehaviour:
   uiSys: {fileID: 7551717350076393344}
   lvlSys: {fileID: 3759371420889901790}
   SaveSys: {fileID: 2502351269125009127}
+  CRT_process: {fileID: 1461334732671961043}
   CurrentLevel: 0
+  currentGM: 0
 --- !u!114 &7274674635364323611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +456,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81cb034cdb24bf94d82d61022e170123, type: 3}
+--- !u!1 &1461334732671961043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1450077704479509412, guid: 81cb034cdb24bf94d82d61022e170123, type: 3}
+  m_PrefabInstance: {fileID: 24771787307699319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4097634532614904964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4072865030231544051, guid: 81cb034cdb24bf94d82d61022e170123, type: 3}

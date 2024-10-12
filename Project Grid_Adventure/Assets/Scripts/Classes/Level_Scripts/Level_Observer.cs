@@ -149,7 +149,7 @@ public class Level_Observer : MonoBehaviour, IObserver
     public void scanScene()
     {
         //Level_Info tmp = new Level_Info();
-        currentLevlInfo.levelName = SceneManager.GetActiveScene().name;
+        //currentLevlInfo.levelName = SceneManager.GetActiveScene().name;
         currentLevlInfo.playerLives = 3;
         if (GameObject.FindGameObjectWithTag("Key"))
             currentLevlInfo.hasKey = false;
@@ -247,6 +247,10 @@ public class Level_Observer : MonoBehaviour, IObserver
     }
     IEnumerator GameOver()
     {
+        foreach(Base_Level_Component x in levelComponents)
+        {
+            x.ResetComponent();
+        }
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         watchedSubject.GetComponent<Player_Tile>().GetAnimator().Play("Explosion");
         Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f);
@@ -261,7 +265,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         yield return StartCoroutine(fadeCanvas.FadeOut());
         if (GameManager.instance.GetGamemode() == Gamemode_State.Story)
         {
-            if (GameManager.instance.GetCurrentLevel() <= 50)
+            if (GameManager.instance.GetCurrentLevel() < 50)
             {
                 GameManager.instance.SetCurrnetLevel(GameManager.instance.GetCurrentLevel() + 1);
                 GameManager.instance.GetSaveManager().SaveProgress(GameManager.instance.GetCurrentLevel());

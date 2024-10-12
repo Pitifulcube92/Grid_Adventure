@@ -2809,6 +2809,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: currentLevlInfo.levelName
+      value: Level 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: currentLevlInfo.nextLevelName
       value: Level_1_7
       objectReference: {fileID: 0}
@@ -59784,7 +59788,7 @@ Transform:
   m_GameObject: {fileID: 1939465124}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14, y: -4, z: 0}
+  m_LocalPosition: {x: -14, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

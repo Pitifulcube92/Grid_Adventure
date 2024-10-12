@@ -38,6 +38,7 @@ public class Boss_1_Level_Component : Base_Level_Component
     {
         bosshealth = 3;
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 HP").text = bosshealth.ToString();
+        StopAllCoroutines();
     }
 
     // Start is called before the first frame update

@@ -14,7 +14,7 @@ public class Fragment_Key_Componenet : Base_Level_Component
     //[SerializeField] private GameObject mainKey;
     [SerializeField] private GameObject fragmentKey;
     [SerializeField] private UI_Gameplay GameUI;
-    [SerializeField] private Gamemode_State currentGM;
+
     //private Text CurrentKeys;
     //private Text MaxKeys;
     // Start is called before the first frame update

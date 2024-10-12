@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI_Gameplay : BaseUIScript
@@ -96,7 +96,7 @@ public class UI_Gameplay : BaseUIScript
             switch (x.gameObject.name)
             {
                case "Button Restart":             
-                   x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(lvlObs.GetLevel_Info().levelName);});
+                   x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(SceneManager.GetActiveScene().name);});
                    break;
                case "Button Pause":
                    x.onClick.AddListener(delegate { PauseGameplay(); });

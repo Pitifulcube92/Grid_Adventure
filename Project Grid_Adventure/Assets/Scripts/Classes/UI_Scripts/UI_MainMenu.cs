@@ -114,6 +114,10 @@ public class UI_MainMenu : BaseUIScript
                     x.isOn = Screen.fullScreen;
                     x.onValueChanged.AddListener(delegate { GameManager.instance.ToggleFullScreen(x.isOn); });
                     break;
+                case "CRT Toggle":
+                    x.isOn = GameManager.instance.GetCRTProcess().activeSelf;
+                    x.onValueChanged.AddListener(delegate { GameManager.instance.GetCRTProcess().SetActive(x.isOn); });
+                    break;
             }
         }
 

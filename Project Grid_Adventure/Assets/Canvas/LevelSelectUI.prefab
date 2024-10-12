@@ -653,7 +653,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Floor 2
+  m_Text: 'Section 2
 
 '
 --- !u!1 &503756419533854599
@@ -813,7 +813,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Floor 3
+  m_Text: 'Section 3
 
 '
 --- !u!1 &651755637037322537
@@ -1170,7 +1170,7 @@ RectTransform:
   m_GameObject: {fileID: 720591508953646364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 2}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1433439403413241111}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Floor 5
+  m_Text: Section 5
 --- !u!1 &778199518299098908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2489,7 @@ RectTransform:
   m_GameObject: {fileID: 1507053482694819274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 2}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5723951974398211060}
@@ -2540,7 +2540,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Floor 2
+  m_Text: Section 2
 --- !u!1 &1595761062921599522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,7 +4556,7 @@ RectTransform:
   m_GameObject: {fileID: 2482632060339462496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 2}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4269254597832199345}
@@ -4607,7 +4607,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Floor 1
+  m_Text: Section 1
 --- !u!1 &2557198495904167790
 GameObject:
   m_ObjectHideFlags: 0
@@ -9847,7 +9847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Floor 4
+  m_Text: 'Section 4
 
 '
 --- !u!1 &5455405007187899670
@@ -11837,7 +11837,7 @@ RectTransform:
   m_GameObject: {fileID: 6787620225459699883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 2}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7344576370045636098}
@@ -11888,7 +11888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Floor 4
+  m_Text: Section 4
 --- !u!1 &6925357680055067756
 GameObject:
   m_ObjectHideFlags: 0
@@ -12619,7 +12619,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Floor 1
+  m_Text: 'Section 1
 
 '
 --- !u!1 &7433268057115114220
@@ -14282,7 +14282,7 @@ RectTransform:
   m_GameObject: {fileID: 8891162323207393928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 2}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1317477564776005053}
@@ -14333,7 +14333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Floor 3
+  m_Text: Section 3
 --- !u!1 &8946032358873860331
 GameObject:
   m_ObjectHideFlags: 0
@@ -14725,7 +14725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Floor 5
+  m_Text: 'Section 5
 
 '
 --- !u!1 &9113665746545641610
