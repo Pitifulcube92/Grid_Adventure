@@ -204,6 +204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (3)
@@ -335,6 +339,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 43da731cf01036545b81233ded01565e, type: 3}
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.imageDimension.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.imageDimension.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'Art by: minipuccachu'
+      objectReference: {fileID: 0}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (8)
@@ -718,6 +738,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (13)
@@ -775,6 +799,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (15)
@@ -1001,6 +1029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (12)
@@ -1058,6 +1090,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (6)
@@ -44485,6 +44521,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (9)
@@ -44542,6 +44582,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (4)
@@ -44869,6 +44913,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (14)
@@ -45036,6 +45084,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (2)
@@ -45093,6 +45145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (1)
@@ -45472,6 +45528,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 37f159f264a62cc4f9fac12b4971c5f8, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art
@@ -45769,6 +45829,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (11)
@@ -45961,6 +46025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (7)
@@ -46018,6 +46086,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.targetImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d40b4ee39cba261478c5f9f80663e06e, type: 3}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name
       value: NPC_Prefab_Art (5)

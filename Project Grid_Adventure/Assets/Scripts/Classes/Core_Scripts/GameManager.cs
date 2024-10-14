@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         audioSys.SetBGMVolume(audioSys.GetBGMVolume());
         audioSys.SetSFXVolume(audioSys.GetSFXVolume());
         audioSys.SetLoopBGM(true);
-        //PlayerPrefs.SetInt("CurrentLevel", 40);
+        PlayerPrefs.SetInt("CurrentLevel", 40);
         //Get or Initalize Save Data;
         if(PlayerPrefs.HasKey("CurrentLevel") == true && PlayerPrefs.GetInt("CurrentLevel") > 1)
         {
