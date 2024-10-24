@@ -88,6 +88,12 @@ public class UI_MainMenu : BaseUIScript
                         //EditorApplication.ExitPlaymode();
                     });
                     break;
+                case "Credits btn":
+                    x.onClick.AddListener(delegate {
+                        GameManager.instance.GetLevelManager().LoadSceneByName("Credits_Scene");
+                        GameManager.instance.GetSoundManager().PlayMusicClip("starry_sky_memory");
+                    });
+                    break;
                 case "Delete_Save_Btn":
                     if(GameManager.instance.GetCurrentLevel() > 0)
                     {
@@ -149,7 +155,7 @@ public class UI_MainMenu : BaseUIScript
         if (GameManager.instance.GetCurrentLevel() == 1) {
            menuText.Find(x => x.name == "Start_Text").text = "Start";
            Button tmp = menuButtons.Find(x => x.gameObject.name == "Start btn");
-           tmp.onClick.AddListener(delegate {GameManager.instance.GetLevelManager().LoadSceneByIndex(1);
+           tmp.onClick.AddListener(delegate {GameManager.instance.GetLevelManager().LoadSceneByName("OPENING_Scene");
                                              GameManager.instance.SetGamemode(0);
            });
            CheckIfLevelSelectOpen(menuButtons.Find(x => x.name == "Level Select btn"));

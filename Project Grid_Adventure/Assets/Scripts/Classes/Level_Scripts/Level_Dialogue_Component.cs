@@ -128,6 +128,7 @@ public class Level_Dialogue_Component : Base_Level_Component
         Debug.Log("Dialogue has ended!");
         UI.DialogeUI.SetActive(false);
         StopAllCoroutines();
+        //canTriggerDialog = false;
         trigger.ResetTrigger();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(true);
         //GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());

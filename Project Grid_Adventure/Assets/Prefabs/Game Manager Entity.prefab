@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 3759371420889901790}
   - component: {fileID: 7551717350076393344}
   - component: {fileID: 2502351269125009127}
+  - component: {fileID: 3483301429446334215}
   m_Layer: 0
   m_Name: Game Manager Entity
   m_TagString: Game Manager
@@ -344,7 +345,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c2c97721d0675e34782a9cf53abd846a, type: 3}
   - {fileID: 8300000, guid: 39a020ae506421141ad8fc718f50fbde, type: 3}
   - {fileID: 8300000, guid: 2327935308dd02a4b952aabb064e36c9, type: 3}
-  - {fileID: 8300000, guid: 632b6cbeb542fbe4e8c6eb2c9c22e331, type: 3}
+  - {fileID: 8300000, guid: 6dd8ff6ff846a8640ab3074a91fe1cf3, type: 3}
+  - {fileID: 8300000, guid: db87849927978ab4b911408dedc84c91, type: 3}
+  - {fileID: 8300000, guid: 4307ff11bec9fc245b0a66e8f4939246, type: 3}
   musicClips:
   - {fileID: 8300000, guid: a98ba29c68c5b394e8439eff3b259558, type: 3}
   - {fileID: 8300000, guid: 1055be36b957efc4d8f97daf78239ba1, type: 3}
@@ -353,6 +356,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 73312c9237b4fb5409108cb8b07afb14, type: 3}
   - {fileID: 8300000, guid: 409712515eef58b4b9c1b1f96cca83d7, type: 3}
   - {fileID: 8300000, guid: c4bb0787ea29c4d44a824972166fce92, type: 3}
+  - {fileID: 8300000, guid: 9669e0b417c42354c8a4aef627d3cd7a, type: 3}
   sfxSource: {fileID: 3588324846383894197}
   bgmSource: {fileID: 998789373698189302}
 --- !u!114 &3759371420889901790
@@ -399,6 +403,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52f08fb48fcfcb545b3f5b8420a01e5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3483301429446334215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129070071565006793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 8df5f7844c7a0a046af1538f1b063c1c, type: 2}
+    - {fileID: 11400000, guid: 56ec0f81ec29eed46b85c075c08292e7, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3759371420889901790}
+          m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+          m_MethodName: LoadSceneByName
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Main Menu
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3759371420889901790}
+          m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+          m_MethodName: LoadSceneByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &24771787307699319
 PrefabInstance:
   m_ObjectHideFlags: 0

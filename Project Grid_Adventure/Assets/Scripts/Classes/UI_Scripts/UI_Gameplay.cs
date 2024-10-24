@@ -10,6 +10,7 @@ public class UI_Gameplay : BaseUIScript
     [SerializeField] public Level_Observer lvlObs;
     [SerializeField] private GameObject pauseContext;
     [SerializeField] private GameObject settingContext;
+    [SerializeField] private Camera_Follow_Component cameraRef;
 
     [Header("UI Components")]
     [SerializeField] public List<Button> gameplayButtons;
@@ -84,6 +85,7 @@ public class UI_Gameplay : BaseUIScript
 
         gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
         gameObject.GetComponent<Canvas>().sortingLayerName = "UI";
+        cameraRef = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera_Follow_Component>();
 
        SetUIConfigure();
 
@@ -112,6 +114,9 @@ public class UI_Gameplay : BaseUIScript
                     break;
                 case "Button SettingBack":
                     x.onClick.AddListener(delegate { CloseSettings(); });
+                    break;
+                case "Button Recenter":
+                    x.onClick.AddListener(delegate { cameraRef.RecenterCamera(); });
                     break;
             }
             x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
@@ -187,8 +192,13 @@ public class UI_Gameplay : BaseUIScript
             }
 
         }
+
+        if(cameraRef.GetCanMove() == false)
+        {
+            gameplayButtons.Find(x => x.name == "Button Recenter").interactable = false;
+        }
        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
-      
+
     }
     public void UpdatePlayerLives(int tmp_)
     {

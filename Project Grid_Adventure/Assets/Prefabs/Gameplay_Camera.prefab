@@ -302,4 +302,5 @@ MonoBehaviour:
   centerPoint: {fileID: 1863739133711761143}
   player: {fileID: 0}
   canMove: 1
+  recenterBind: 122
   smoothingSpeed: 1

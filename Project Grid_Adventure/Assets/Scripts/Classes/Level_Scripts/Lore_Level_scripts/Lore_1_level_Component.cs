@@ -6,11 +6,11 @@ public class Lore_1_level_Component : Base_Level_Component
 {
     public override void InitalizeComponent()
     {
-        GameManager.instance.GetSoundManager().PlayMusicClip("Memory_of_stars");
+        GameManager.instance.GetSoundManager().PlayMusicClip("Remnants_of_summer_2");
     }
     public override void ResetComponent()
     {
-        GameManager.instance.GetSoundManager().PlayMusicClip("Memory_of_stars");
+        GameManager.instance.GetSoundManager().PlayMusicClip("Remnants_of_summer_2");
     }
 
     // Start is called before the first frame update

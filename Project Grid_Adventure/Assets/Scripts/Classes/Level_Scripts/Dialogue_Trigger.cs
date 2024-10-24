@@ -39,6 +39,14 @@ public class Dialogue_Trigger : MonoBehaviour
         }
           
     }
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player")
+    //    {
+    //        //speakIcon.enabled = false;
+    //        dialogue_Comp.SetcanTriggerDialog(true);
+    //    }
+    //}
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")

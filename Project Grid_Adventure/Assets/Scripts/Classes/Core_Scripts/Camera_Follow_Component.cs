@@ -7,7 +7,8 @@ public class Camera_Follow_Component : MonoBehaviour
     [SerializeField] private float maxDistance;
     [SerializeField] private Transform centerPoint;
     [SerializeField] private Transform player;
-    [SerializeField] bool canMove;
+    [SerializeField] private bool canMove;
+    [SerializeField] private KeyCode recenterBind;
     [SerializeField,Range(0,1)] private float smoothingSpeed;
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,12 @@ public class Camera_Follow_Component : MonoBehaviour
     {
         Gizmos.DrawWireSphere(centerPoint.position, maxDistance);
     }
+
+    public void RecenterCamera()
+    {
+        gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(player.position.x, player.position.y, gameObject.transform.position.z), smoothingSpeed);
+        //Vector3.Lerp(gameObject.transform.position, player.position, smoothingSpeed);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -65,6 +72,17 @@ public class Camera_Follow_Component : MonoBehaviour
                 StartCoroutine(MoveCamera());
                 StopCoroutine(MoveCamera());
             }
+
+            if (Input.GetKeyDown(recenterBind))
+            {
+                RecenterCamera();
+            }
         }
+      
+    }
+
+    public bool GetCanMove()
+    {
+        return canMove;
     }
 }

@@ -96,6 +96,14 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[2]
       value: test 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5936042638857142652, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936042638857142652, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8221754449366930525, guid: 5ddd8306ff7c5b14db547edda1aca67c, type: 3}
       propertyPath: m_Name
       value: Prefab_Art_Interaction
