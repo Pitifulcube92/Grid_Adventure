@@ -9,7 +9,7 @@ public class Camera_Follow_Component : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private bool canMove;
     [SerializeField] private KeyCode recenterBind;
-    [SerializeField,Range(0,1)] private float smoothingSpeed;
+    [SerializeField,Range(0,4)] private float smoothingSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,8 +58,12 @@ public class Camera_Follow_Component : MonoBehaviour
 
     public void RecenterCamera()
     {
-        gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(player.position.x, player.position.y, gameObject.transform.position.z), smoothingSpeed);
-        //Vector3.Lerp(gameObject.transform.position, player.position, smoothingSpeed);
+        if (canMove)
+            gameObject.transform.position = new Vector3(player.position.x, player.position.y, gameObject.transform.position.z);
+
+            //Vector3.MoveTowards(gameObject.transform.position, new Vector3(player.position.x, player.position.y, gameObject.transform.position.z), smoothingSpeed);
+            //Vector3.Lerp(gameObject.transform.position, new Vector3(player.position.x, player.position.y, gameObject.transform.position.z), smoothingSpeed);
+            //Vector3.Lerp(gameObject.transform.position, player.position, smoothingSpeed);
     }
     // Update is called once per frame
     void Update()

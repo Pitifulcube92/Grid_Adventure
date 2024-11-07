@@ -65,7 +65,10 @@ public class Level_Dialogue_Component : Base_Level_Component
     public void StartDialogue(Dialogue_Info dialogue_, Dialogue_Trigger trigger_)
     {
         //Debug.Log("A conversation has started with " + dialogue_.name);
-      
+        if(trigger_ == null)
+        {
+            return;
+        }
         sentences.Clear();
         trigger = null;
         dialogueName.text = "";
@@ -129,7 +132,10 @@ public class Level_Dialogue_Component : Base_Level_Component
         UI.DialogeUI.SetActive(false);
         StopAllCoroutines();
         //canTriggerDialog = false;
-        trigger.ResetTrigger();
+        if (trigger != null)
+        {
+            trigger.ResetTrigger();
+        }
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().SetIsMoving(true);
         //GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
     }  

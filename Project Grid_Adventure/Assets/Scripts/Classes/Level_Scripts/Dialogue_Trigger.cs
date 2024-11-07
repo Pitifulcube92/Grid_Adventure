@@ -51,12 +51,27 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            speakIcon.enabled = false;
+            if (speakIcon == true)
+            {
+                speakIcon.enabled = false;
+            }
             dialogue_Comp.SetcanTriggerDialog(false);
+            dialogue_Comp.EndDialogue();
         }
         //GameObject.FindObjectOfType<Level_Dialogue_Component>().StartDialogue(new Dialogue_Info(), this);
     }
-
+    private void checkOverlapOfPlayer()
+    {
+        //if (!Physics2D.OverlapCircle(gameObject.transform.position, 1f))
+        //{
+        //    //if (speakIcon == true)
+        //    //{
+        //    //    speakIcon.enabled = false;
+        //    //}
+        //    dialogue_Comp.SetcanTriggerDialog(false);
+        //    dialogue_Comp.EndDialogue();
+        //}
+    }
     public void ResetTrigger()
     {
         TriggerDialogue();
@@ -66,5 +81,9 @@ public class Dialogue_Trigger : MonoBehaviour
     public bool GetTriggerFlag()
     {
         return isTriggered;
+    }
+    private void Update()
+    {
+        checkOverlapOfPlayer();
     }
 }

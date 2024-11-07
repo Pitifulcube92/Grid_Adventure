@@ -348,7 +348,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Banglog\n\nBanglog\nMaxie\nSquishy Tomato\n\nBanglog\n\nBanglog\nLyndon
-    Kwan \n\t- lyndonkwansound.com\n\nBanglog\n\nBanglog\n\nLyndon Kwan \n\t- lyndonkwansound.com\n\nBanglog\nShadow
+    Kwan \n\t- lyndonkwansound.com\n\nBanglog\n\nBanglog\n\nLyndon Kwan \n\t- lyndonkwansound.com\n\nLys\n\n\nBanglog\nShadow
     Soldier\nCraAtlantic7\n\nBanglog\n\nRoro - @rororo_onyo\nPucca - @minipuccachu\nMyth1cArts
     - @Myth1cArts\nsmr - @arsmgs_sy\nCatnipArt - @art_catnip \nHarleyOron - @HarleyOron\nTommie
     - @thetommietomm\nNightline - @nightlinestar\nEnki - @Enkiriin\r\nBaxie2 - @baxei2\r\nIsariSensei
@@ -1568,7 +1568,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Project Manager\n \nGraphics Artist\n\n\n\nUI Artist\n\nAudio Designer\n\n\n\nLead
-    Programmer\n\nLead Level Designer\n\nMusic Composer\n\n\nWriters\n\n\n\nLead
+    Programmer\n\nLead Level Designer\n\nMusic Composer\n\n\nPlay Testers\n\n\nWriters\n\n\n\nLead
     Game Designer\n\nFeatured Artist\n\n\n"
 --- !u!222 &1252091084
 CanvasRenderer:

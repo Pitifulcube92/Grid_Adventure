@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Checkpoint_Object : BaseInteractionTile
 {
     // Update is called once per frame
     [Header("Info")]
+    [SerializeField] private GameObject checkpointLight;
     [SerializeField] private Collider2D collidor;
     [SerializeField] private SpriteRenderer render;
     [SerializeField] private Sprite checkPointActive;
+ 
+
     private void Start()
     {
         collidor = gameObject.GetComponent<BoxCollider2D>();
@@ -27,6 +31,7 @@ public class Checkpoint_Object : BaseInteractionTile
             //collision.GetComponent<Player_Tile>().ChangePosition(gameObject.transform.position);
             GameManager.instance.GetSoundManager().PlaySFXClip("Retro Charge Magic 11");
             FindObjectOfType<Level_Observer>().ChangePlayerSpawnPos(gameObject.transform);
+            checkpointLight.GetComponent<Light2D>().color = new Color(39f, 98f, 5f, 0.1f);
             render.sprite = checkPointActive;
             collidor.enabled = false;
             //Destroy(gameObject);

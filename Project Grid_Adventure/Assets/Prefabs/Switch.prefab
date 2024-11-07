@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f774a049fc4e6974d9dd3faee6959503, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 363017333
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -644731732, guid: 6307f6abbd8eb204997786a0f8c3a1dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePosition: {fileID: 0}
   baseSpriteRender: {fileID: 0}
-  gate: {fileID: 0}
-  initActiveSelf: 0
+  gates: []
+  isFliped: 0
 --- !u!61 &1706643407127636723
 BoxCollider2D:
   m_ObjectHideFlags: 0

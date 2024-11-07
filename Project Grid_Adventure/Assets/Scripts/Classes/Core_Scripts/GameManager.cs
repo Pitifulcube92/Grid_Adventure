@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GameManager has hit a critical error!");
             Application.Quit();
         }
+        ToggleFullScreen(true);
         IntializeApplication();
     }
     private void IntializeApplication()
