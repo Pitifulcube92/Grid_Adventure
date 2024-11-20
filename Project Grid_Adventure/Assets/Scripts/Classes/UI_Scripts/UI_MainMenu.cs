@@ -88,11 +88,9 @@ public class UI_MainMenu : BaseUIScript
                         //EditorApplication.ExitPlaymode();
                     });
                     break;
-                case "Credits btn":
-                    x.onClick.AddListener(delegate {
-                        GameManager.instance.GetLevelManager().LoadSceneByName("Credits_Scene");
-                        GameManager.instance.GetSoundManager().PlayMusicClip("starry_sky_memory");
-                    });
+                case "Extra btn":
+                    x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("ExtraContentUI"); });
+                    GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
                     break;
                 case "Delete_Save_Btn":
                     if(GameManager.instance.GetCurrentLevel() > 0)

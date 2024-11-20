@@ -54754,7 +54754,7 @@ PrefabInstance:
     - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: dialogue.targetImage
       value: 
-      objectReference: {fileID: 21300000, guid: e46bd133f80b95346be7cd319f6f38df, type: 3}
+      objectReference: {fileID: 21300000, guid: 823b008b5b96147499c9c99de037f38e, type: 3}
     - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: dialogue.imageDimension.x
       value: 500
@@ -54829,7 +54829,7 @@ PrefabInstance:
     - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: dialogue.targetImage
       value: 
-      objectReference: {fileID: 21300000, guid: c372c6480c9874b429b933bc06caf524, type: 3}
+      objectReference: {fileID: 21300000, guid: 823b008b5b96147499c9c99de037f38e, type: 3}
     - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: dialogue.imageDimension.x
       value: 500
@@ -54837,6 +54837,12 @@ PrefabInstance:
     - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: dialogue.imageDimension.y
       value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938612618029332119, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'Art by: Baxei2
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4232820345569145904, guid: d4d69cc10cab2e640b70e7561a74e1d8, type: 3}
       propertyPath: m_Name

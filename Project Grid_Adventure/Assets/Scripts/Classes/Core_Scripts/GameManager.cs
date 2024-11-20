@@ -111,6 +111,9 @@ public class GameManager : MonoBehaviour
             case 1:
                 currentGM = Gamemode_State.LevelSelect;
                 break;
+            case 2:
+                currentGM = Gamemode_State.Cutscene;
+                break;
         }
     }
 
