@@ -15,11 +15,26 @@ public class Player_Tile : ISubject
     [SerializeField] private KeyCode right;
     [SerializeField] private KeyCode left;
     [SerializeField] private Animator animExplosion;
+    [SerializeField] private Sprite evilSkin;
+    [SerializeField] private Sprite scarleSkin;
+    [SerializeField] private Material defaultMaterial;
 
     [SerializeField] private LayerMask unWalkable;
     // Start is called before the first frame update
     void Start()
     {
+        //cheatcode skins
+
+        if(GameManager.instance.GetCheatInfo().EvilScarlingSkin == true)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = evilSkin;
+            gameObject.GetComponent<SpriteRenderer>().material = defaultMaterial;
+        }
+        if (GameManager.instance.GetCheatInfo().ScarleSkin == true)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = scarleSkin;
+            gameObject.GetComponent<SpriteRenderer>().material = defaultMaterial;
+        }
         movePoint.parent = null;
     }
 
@@ -50,7 +65,9 @@ public class Player_Tile : ISubject
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                     {
                         movePoint.position += new Vector3(movePointDistance, 0f, 0f);
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                        GameManager.instance.GetSoundManager().GetSFXSource(2).pitch = UnityEngine.Random.Range(1f, 1.25f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03", true, GameManager.instance.GetSoundManager().GetSFXSource(2));
+                        //GameManager.instance.GetSoundManager().GetSFXSource().pitch = 1f;
                     }
                 }
                 else if (Input.GetKeyDown(left) || Input.GetKey(left))
@@ -58,7 +75,9 @@ public class Player_Tile : ISubject
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-movePointDistance, 0f, 0f), movePointRadius, unWalkable))
                     {
                         movePoint.position += new Vector3(-movePointDistance, 0f, 0f);
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                        GameManager.instance.GetSoundManager().GetSFXSource(2).pitch = UnityEngine.Random.Range(1f, 1.25f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03", true,GameManager.instance.GetSoundManager().GetSFXSource(2));
+                        //GameManager.instance.GetSoundManager().GetSFXSource().pitch = 1f;
                     }
                         
                 }
@@ -67,7 +86,9 @@ public class Player_Tile : ISubject
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movePointDistance, 0f), movePointRadius, unWalkable))
                     {
                         movePoint.position += new Vector3(0f, movePointDistance, 0f);
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                        GameManager.instance.GetSoundManager().GetSFXSource(2).pitch = UnityEngine.Random.Range(1f, 1.25f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03", true, GameManager.instance.GetSoundManager().GetSFXSource(2));
+                        //GameManager.instance.GetSoundManager().GetSFXSource().pitch = 1f;
                     }
                       
                 }
@@ -76,10 +97,13 @@ public class Player_Tile : ISubject
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -movePointDistance, 0f), movePointRadius, unWalkable))
                     {
                         movePoint.position += new Vector3(0f, -movePointDistance, 0f);
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03");
+                        GameManager.instance.GetSoundManager().GetSFXSource(2).pitch = UnityEngine.Random.Range(1f, 1.25f);
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro FootStep 03", true, GameManager.instance.GetSoundManager().GetSFXSource(2));
+                        //GameManager.instance.GetSoundManager().GetSFXSource().pitch = 1f;
                     }
                        
                 }
+              
             }
         }
     }

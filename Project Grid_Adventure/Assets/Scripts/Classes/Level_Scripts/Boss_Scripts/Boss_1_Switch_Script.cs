@@ -24,7 +24,7 @@ public class Boss_1_Switch_Script : BaseInteractionTile
         Debug.Log(collision.name);
         if (collision.tag == "Player")
         {
-            GameManager.instance.GetSoundManager().PlaySFXClip("lever_metal");
+            GameManager.instance.GetSoundManager().PlaySFXClip("lever_metal",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
             if (isFliped)
                 baseSpriteRender.transform.Rotate(0.0f, -180.0f, 0.0f);
             else

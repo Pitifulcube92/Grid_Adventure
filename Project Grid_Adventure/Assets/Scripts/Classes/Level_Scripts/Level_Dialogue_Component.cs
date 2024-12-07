@@ -120,7 +120,7 @@ public class Level_Dialogue_Component : Base_Level_Component
             dialogueText.text += letter;
             if (dialogueText.text.Length % 2 == 0)
             {
-                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Beeep 20");
+                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Beeep 20",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
             }
             yield return new WaitForSeconds(0.05f);
         }

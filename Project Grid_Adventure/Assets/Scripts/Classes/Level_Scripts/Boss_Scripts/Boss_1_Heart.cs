@@ -16,6 +16,7 @@ public class Boss_1_Heart : BaseInteractionTile
         if (collision.tag == "Player")
         {
             bossRef.DamageBoss();
+            GameManager.instance.GetSoundManager().PlaySFXClip("retro explode", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
             gameObject.SetActive(false);
         }
     }

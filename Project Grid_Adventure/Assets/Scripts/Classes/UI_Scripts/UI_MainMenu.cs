@@ -84,13 +84,13 @@ public class UI_MainMenu : BaseUIScript
                     break;
                 case "Quit btn":
                     x.onClick.AddListener(delegate {Application.Quit();
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                         //EditorApplication.ExitPlaymode();
                     });
                     break;
                 case "Extra btn":
                     x.onClick.AddListener(delegate { GameManager.instance.GetUIManager().ChangeUI("ExtraContentUI"); });
-                    GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                    GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                     break;
                 case "Delete_Save_Btn":
                     if(GameManager.instance.GetCurrentLevel() > 0)
@@ -107,7 +107,7 @@ public class UI_MainMenu : BaseUIScript
                     }
                     break;
             }
-            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
+            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
         }
 
         foreach (Toggle x in menuToggles)

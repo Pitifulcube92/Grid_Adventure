@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SaveManager SaveSys;
     [SerializeField] private GameObject CRT_process;
     [Header("Info")]
+    [SerializeField] private CheatCode_Info CheatInfo;
     [SerializeField] private int CurrentLevel;
     [SerializeField] private Gamemode_State currentGM;
     public static GameManager instance
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         audioSys.SetBGMVolume(audioSys.GetBGMVolume());
         audioSys.SetSFXVolume(audioSys.GetSFXVolume());
         audioSys.SetLoopBGM(true);
-        PlayerPrefs.SetInt("CurrentLevel", 40);
+        //PlayerPrefs.SetInt("CurrentLevel", 40);
         //Get or Initalize Save Data;
         if(PlayerPrefs.HasKey("CurrentLevel") == true && PlayerPrefs.GetInt("CurrentLevel") > 1)
         {
@@ -54,8 +54,18 @@ public class GameManager : MonoBehaviour
             CurrentLevel = 1;
             SaveSys.SaveProgress(CurrentLevel);
         }
-       
+        InitializeCheatCodeInfo();
     }
+
+    private void InitializeCheatCodeInfo()
+    {
+        CheatInfo = new CheatCode_Info();
+        CheatInfo.InfiniteLives = false;
+        CheatInfo.EvilScarlingSkin = false;
+        CheatInfo.ScarleSkin = false;
+        CheatInfo.unlockAll = false;
+    }
+
     private bool SetUpManagers()
     {
         if(!audioSys)
@@ -101,6 +111,7 @@ public class GameManager : MonoBehaviour
     public void SetCurrnetLevel(int tmp_) { CurrentLevel = tmp_; }
     public Gamemode_State GetGamemode() { return currentGM; }
     public GameObject GetCRTProcess() { return CRT_process; }
+    public CheatCode_Info GetCheatInfo() { return CheatInfo; }
     public void SetGamemode(int tmp_)
     {
         switch (tmp_) {
@@ -117,5 +128,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ActivateCheat(string tmp_)
+    {
+        switch (tmp_)
+        {
+            case "scarlingforever":
+                CheatInfo.InfiniteLives = true;
+                break;
+            case "evilscarling":
+                CheatInfo.EvilScarlingSkin = true;
+                break;
+            case "scarlingscarle":
+                CheatInfo.ScarleSkin = true;
+                break;
+            case "freescarling":
+                CheatInfo.unlockAll = true;
+                SetCurrnetLevel(50);
+                break;
+        }
+    }
     
 }

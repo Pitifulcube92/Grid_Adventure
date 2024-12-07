@@ -93,7 +93,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 852600217
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -265,7 +265,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 852600217
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1580434d16189c84e9b7b3a33a119c6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -372,6 +372,9 @@ MonoBehaviour:
   right: 275
   left: 276
   animExplosion: {fileID: 6817570086963169998}
+  evilSkin: {fileID: 21300000, guid: 78374ffbdbfbda54c83de8243b6f91ea, type: 3}
+  scarleSkin: {fileID: 679207200, guid: 338439d5c7997554a8a24c1594f3de2a, type: 3}
+  defaultMaterial: {fileID: 2100000, guid: 3b8d5b3092fddd644bc25b64be213f1a, type: 2}
   unWalkable:
     serializedVersion: 2
     m_Bits: 64

@@ -21,7 +21,8 @@ public class UI_LevelSelect : BaseUIScript
             if (x.GetComponent<Button>())
             {
                 levelBtns.Add(x.GetComponent<Button>());
-                x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
+                x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
+                x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.SetGamemode(1); });
             }
         }
 
@@ -70,10 +71,10 @@ public class UI_LevelSelect : BaseUIScript
                         x.SetActive(true);
                     break;
             }
-            x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
+            x.GetComponent<Button>().onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
         }
         backBtn = GameObject.Find("Back btn").GetComponent<Button>();
-        backBtn.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
+        backBtn.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18", false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
         SelectWorldPanel(1);
         //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
         gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();

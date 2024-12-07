@@ -104,14 +104,14 @@ public class Level_Observer : MonoBehaviour, IObserver
                 currentLevlInfo.hasKey = true;
                 lvlObjects.Find(x => x.tag == "Key").gameObject.SetActive(false);
                 lvlObjects.Find(x => x.tag == "Door").gameObject.layer = 0;
-                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Success Melody 02 - choir soprano");
+                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Success Melody 02 - choir soprano", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                 break;
 
             case PlayerState.Interact_Door:
                 if (currentLevlInfo.hasKey == true)
                 {
                     currentLevlInfo.isLevelDone = true;
-                    GameManager.instance.GetSoundManager().PlaySFXClip("dooropened");
+                    GameManager.instance.GetSoundManager().PlaySFXClip("dooropened", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                     //Debugging 
                     StartCoroutine(CompleteLevel());
                 }
@@ -131,7 +131,7 @@ public class Level_Observer : MonoBehaviour, IObserver
                 break;
             case PlayerState.Interact_Fragment_Key:
                 gameObject.GetComponent<Fragment_Key_Componenet>().GainFragmentKey();
-                GameManager.instance.GetSoundManager().PlaySFXClip("Collect");
+                GameManager.instance.GetSoundManager().PlaySFXClip("Collect", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                 break;
             case PlayerState.Player_Dead:
                 StartCoroutine(Player_InstaKilled());
@@ -210,9 +210,12 @@ public class Level_Observer : MonoBehaviour, IObserver
         //level restarts then take player life!
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         watchedSubject.GetComponent<SpriteRenderer>().enabled = false;
-        currentLevlInfo.playerLives -= 1;
-        GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
-
+        //Check Cheat (Infinite Lives)
+        if(GameManager.instance.GetCheatInfo().InfiniteLives == false)
+        {
+            currentLevlInfo.playerLives -= 1;
+            GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
+        }
         StartCoroutine(Explode());
         //StartCoroutine(Explode());
         yield return new WaitForSeconds(0.7f);
@@ -225,7 +228,7 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         watchedSubject.GetComponent<Player_Tile>().GetAnimator().Play("Explosion");
         Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f);
-        GameManager.instance.GetSoundManager().PlaySFXClip("Death");
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         yield return new WaitForSeconds(watchedSubject.GetComponent<Player_Tile>().GetAnimator().GetCurrentAnimatorStateInfo(0).length - 0.01f);
       
 
@@ -240,7 +243,7 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         StartCoroutine(Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f));
         StartCoroutine(Explode());
-        GameManager.instance.GetSoundManager().PlaySFXClip("Death");
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         yield return new WaitForSeconds(0.3f);
 
         StartCoroutine(GameOver());
@@ -254,7 +257,7 @@ public class Level_Observer : MonoBehaviour, IObserver
         watchedSubject.GetComponent<Player_Tile>().SetIsMoving(false);
         watchedSubject.GetComponent<Player_Tile>().GetAnimator().Play("Explosion");
         Camera.main.GetComponent<Camera_Shake_Component>().ShakeCamera(0.21f, 0.15f);
-        GameManager.instance.GetSoundManager().PlaySFXClip("Death");    
+        GameManager.instance.GetSoundManager().PlaySFXClip("Death", false,GameManager.instance.GetSoundManager().GetSFXSource(1));    
         yield return StartCoroutine(fadeCanvas.FadeOut());
         GameManager.instance.GetUIManager().ChangeUI("GameOverUI");
         //GameManager.instance.GetLevelManager().LoadScene("Main Menu");

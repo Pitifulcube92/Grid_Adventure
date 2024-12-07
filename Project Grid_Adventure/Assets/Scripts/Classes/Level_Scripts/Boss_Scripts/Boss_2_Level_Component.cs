@@ -32,6 +32,7 @@ public class Boss_2_Level_Component : Base_Level_Component
        {
             Debug.Log("Correct sequence has been inputed!");
             gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").gameObject.SetActive(true);
+            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Short",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
             //Instantiate(floorKey,floorKeyLocation);
        }
        else
@@ -51,7 +52,7 @@ public class Boss_2_Level_Component : Base_Level_Component
     {
         currentSequence = "";
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Tile>().ChangePosition(respawnLocation.position);
-        GameManager.instance.GetSoundManager().PlaySFXClip("Retro Event Wrong Echo 03");
+        GameManager.instance.GetSoundManager().PlaySFXClip("Retro Event Wrong Echo 03",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         yield return new WaitForSeconds(0.5f);
     }
     public void ResetBossSwitches()

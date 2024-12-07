@@ -8,6 +8,7 @@ public class Switch_Tile : BaseInteractionTile
     //[SerializeField] private Gate_Tile gate_2;
     [SerializeField] private List<Gate_Tile> gates;
     [SerializeField] private bool isFliped;
+    [SerializeField] private bool isSuccessLever;
 
     // Start is called before the first frame update
     void Start()
@@ -35,11 +36,16 @@ public class Switch_Tile : BaseInteractionTile
         Debug.Log(collision.name);
         if (collision.tag == "Player")
         {
-            GameManager.instance.GetSoundManager().PlaySFXClip("lever_metal");
+            GameManager.instance.GetSoundManager().PlaySFXClip("lever_metal",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
             if(isFliped)
                 baseSpriteRender.transform.Rotate(0.0f, -180.0f, 0.0f);
             else
                 baseSpriteRender.transform.Rotate(0.0f, 180.0f, 0.0f);
+
+            if(isSuccessLever == true)
+            {
+                GameManager.instance.GetSoundManager().PlaySFXClip("Retro Success Melody 02 - choir soprano", false, GameManager.instance.GetSoundManager().GetSFXSource(1));    ;
+            }
 
             foreach(Gate_Tile x in gates)   
             {

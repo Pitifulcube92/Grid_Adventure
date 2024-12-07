@@ -119,7 +119,7 @@ public class UI_Gameplay : BaseUIScript
                     x.onClick.AddListener(delegate { cameraRef.RecenterCamera(); });
                     break;
             }
-            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18"); });
+            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18", false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
         }
 
         foreach (Text x in gameplayTexts)

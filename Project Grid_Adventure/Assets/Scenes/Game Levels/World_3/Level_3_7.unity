@@ -626,6 +626,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 652ff0b9633e32f46be4a2a88f9e6cd7, type: 3}
+--- !u!1001 &205160142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1193486286264594913, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_Name
+      value: Text_Dialog_Poster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: dialogue.name
+      value: Scribbled Notes
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: The only right way is left.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0502eae876d95f144869d80266590298, type: 3}
 --- !u!1 &210729145
 GameObject:
   m_ObjectHideFlags: 0
@@ -59639,3 +59712,4 @@ SceneRoots:
   - {fileID: 2084881045}
   - {fileID: 1084033368}
   - {fileID: 1657367717}
+  - {fileID: 205160142}

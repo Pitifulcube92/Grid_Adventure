@@ -10,7 +10,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private float maxVolume;
     [SerializeField] private List<AudioClip> sfxClips;
     [SerializeField] private List<AudioClip> musicClips;
-    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource sfxSource1;
+    [SerializeField] private AudioSource sfxSource2;
     [SerializeField] private AudioSource bgmSource;
 
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class SoundManager : MonoBehaviour
     }
     public bool SetUpDefaultConfig()
     {
-        if (sfxSource == null || bgmSource == null)
+        if (sfxSource1 == null || bgmSource == null || sfxSource2 == null)
         {
             Debug.LogWarning("sfx source or music source is not assigned!");
             return false;
@@ -32,14 +33,15 @@ public class SoundManager : MonoBehaviour
             return false;
         }
 
-        sfxSource.maxDistance = maxVolume;
+        sfxSource1.maxDistance = maxVolume;
+        sfxSource2.maxDistance = maxVolume;
         bgmSource.maxDistance = maxVolume;
-        sfxSource.volume = SFXvolume;
+        sfxSource2.volume = SFXvolume;
         bgmSource.volume = BGMvolume;
         return true;
     }
 
-    public void PlaySFXClip(string name_)
+    public void PlaySFXClip(string name_, bool isPitched_, AudioSource audioSource_)
     {
         foreach(AudioClip x in sfxClips)
         {
@@ -51,7 +53,15 @@ public class SoundManager : MonoBehaviour
                     return;
                 }
                 //sfxSource.clip = x;
-                sfxSource.PlayOneShot(x);
+                if(isPitched_ == true)
+                {
+                    audioSource_.pitch = UnityEngine.Random.Range(1f, 1.25f);
+                }
+                else
+                {
+                    audioSource_.pitch = 1f;
+                }
+                audioSource_.PlayOneShot(x);
             }
         }      
     }
@@ -76,9 +86,20 @@ public class SoundManager : MonoBehaviour
     {
         return bgmSource;
     }
-    public AudioSource GetSFXSource()
+    public AudioSource GetSFXSource(int audioSource_)
     {
-        return sfxSource;
+        if(audioSource_ == 1)
+        {
+            return sfxSource1;
+        } else if (audioSource_ == 2)
+        {
+            return sfxSource2;
+        }
+        else
+        {
+            Debug.LogError("Could not find audioSource");
+        }
+        return null;
     }
     public void SetLoopBGM(bool tmp_)
     {
@@ -97,7 +118,8 @@ public class SoundManager : MonoBehaviour
     }
     public void SetSFXVolume(float tmp_)
     {
-        sfxSource.volume = tmp_;
+        sfxSource1.volume = tmp_;
+        sfxSource2.volume = tmp_;
     }
     public float GetBGMVolume()
     {

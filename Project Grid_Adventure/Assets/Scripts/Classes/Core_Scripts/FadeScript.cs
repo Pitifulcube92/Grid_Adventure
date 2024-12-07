@@ -14,7 +14,7 @@ public class FadeScript : MonoBehaviour
     [SerializeField] private float imgAlpha;
     private void Awake()
     {
-        targetImage = gameObject.GetComponentInChildren<Image>();
+        targetImage = GameObject.Find("FadeImage").GetComponent<Image>();
         targetCanvas = GameObject.Find("FadeCanvas").GetComponent<Canvas>();
         if (!targetCanvas)
         {

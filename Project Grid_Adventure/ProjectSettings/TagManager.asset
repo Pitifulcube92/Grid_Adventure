@@ -27,6 +27,7 @@ TagManager:
   - FloorUIbtn
   - CamUI
   - Boss_2_Switch
+  - CutScenebtn
   layers:
   - Default
   - TransparentFX

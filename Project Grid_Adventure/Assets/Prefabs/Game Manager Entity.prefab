@@ -1,5 +1,133 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &51668167010339036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6281320151512832343}
+  - component: {fileID: 7176738591921688382}
+  m_Layer: 0
+  m_Name: SFXSource2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6281320151512832343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51668167010339036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2522997119654069842}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7176738591921688382
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51668167010339036}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1557523780471001023
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +139,7 @@ GameObject:
   - component: {fileID: 5721957308696737235}
   - component: {fileID: 3588324846383894197}
   m_Layer: 0
-  m_Name: SFXSource
+  m_Name: SFXSource1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,6 +421,7 @@ Transform:
   m_Children:
   - {fileID: 8786173202101676543}
   - {fileID: 5721957308696737235}
+  - {fileID: 6281320151512832343}
   - {fileID: 4097634532614904964}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -313,6 +442,11 @@ MonoBehaviour:
   lvlSys: {fileID: 3759371420889901790}
   SaveSys: {fileID: 2502351269125009127}
   CRT_process: {fileID: 1461334732671961043}
+  CheatInfo:
+    InfiniteLives: 0
+    EvilScarlingSkin: 0
+    ScarleSkin: 0
+    unlockAll: 0
   CurrentLevel: 0
   currentGM: 0
 --- !u!114 &7274674635364323611
@@ -348,6 +482,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6dd8ff6ff846a8640ab3074a91fe1cf3, type: 3}
   - {fileID: 8300000, guid: db87849927978ab4b911408dedc84c91, type: 3}
   - {fileID: 8300000, guid: 4307ff11bec9fc245b0a66e8f4939246, type: 3}
+  - {fileID: 8300000, guid: 4307ff11bec9fc245b0a66e8f4939246, type: 3}
   musicClips:
   - {fileID: 8300000, guid: a98ba29c68c5b394e8439eff3b259558, type: 3}
   - {fileID: 8300000, guid: 1055be36b957efc4d8f97daf78239ba1, type: 3}
@@ -357,7 +492,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 409712515eef58b4b9c1b1f96cca83d7, type: 3}
   - {fileID: 8300000, guid: c4bb0787ea29c4d44a824972166fce92, type: 3}
   - {fileID: 8300000, guid: 9669e0b417c42354c8a4aef627d3cd7a, type: 3}
-  sfxSource: {fileID: 3588324846383894197}
+  sfxSource1: {fileID: 3588324846383894197}
+  sfxSource2: {fileID: 7176738591921688382}
   bgmSource: {fileID: 998789373698189302}
 --- !u!114 &3759371420889901790
 MonoBehaviour:

@@ -87,7 +87,7 @@ public class Boss_1_Level_Component : Base_Level_Component
         {
             //Instantiate(floorKey, floorKeyLocation);
             gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").gameObject.SetActive(true);
-            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell");
+            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         }
     }
     public void StartChallege(float tmp_,GameObject currentswitch_)

@@ -17,12 +17,12 @@ public class UI_GameOver : BaseUIScript
             {
                 case "Restart Level":
                     x.onClick.AddListener(delegate { GameManager.instance.GetLevelManager().LoadSceneByName(SceneManager.GetActiveScene().name);
-                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                        GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                     });
                     break;
                 case "Back to Menu":
                      x.onClick.AddListener(delegate {GameManager.instance.GetLevelManager().LoadSceneByName("Main Menu");
-                         GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18");
+                         GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                      });
                     break;
             }

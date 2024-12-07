@@ -37,8 +37,8 @@ public class Fragment_Key_Componenet : Base_Level_Component
             //mainKey.SetActive(true);
             gameObject.GetComponentInParent<Level_Observer>().GetLevelObjects().Find(x => x.tag == "Key").GetComponent<KeyTile>().SetInitialActivity(true);
             //GameManager.instance.GetSoundManager().SetSFXVolume(0.5f);
-            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell");
-            GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
+            GameManager.instance.GetSoundManager().PlaySFXClip("Success_Bell", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
+            //GameManager.instance.GetSoundManager().SetSFXVolume(GameManager.instance.GetSoundManager().GetBGMVolume());
         }
     }
     public void GainFragmentKey()
