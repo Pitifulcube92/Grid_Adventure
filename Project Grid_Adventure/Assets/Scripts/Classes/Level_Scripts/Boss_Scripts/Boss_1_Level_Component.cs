@@ -44,7 +44,8 @@ public class Boss_1_Level_Component : Base_Level_Component
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.GetSoundManager().PlayMusicClip("モノクロライブラリー");
+        GameManager.instance.GetSoundManager().PlayMusicClip("Nic8bit");
+ 
         gameObject.GetComponentInParent<Level_Observer>().SetIsKetSpawned(false);
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 HP").text = bosshealth.ToString();
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B1 Timer").text = displayTimer(0);

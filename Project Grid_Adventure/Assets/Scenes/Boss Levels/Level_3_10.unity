@@ -7323,7 +7323,7 @@ PrefabInstance:
     - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
       value: This core controls majority of the security system within the whole
-        shadow realm.
+        shadowrealm.
       objectReference: {fileID: 0}
     - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
@@ -7335,13 +7335,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: 'After, you need to the code and correctly flip the switches in order.
+      value: 'After, you need to find the code and correctly flip the switches in
+        order.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
       propertyPath: dialogue.sentences.Array.data[5]
-      value: I've left some slabs notes that will help you decypfer the shut down
+      value: I've left some slab notes that will help you decipher the shut down
         code.
       objectReference: {fileID: 0}
     - target: {fileID: 3515823936435811142, guid: 0502eae876d95f144869d80266590298, type: 3}
@@ -7816,7 +7817,7 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 0.17281374
   m_PointLightOuterRadius: 1
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -7974,6 +7975,14 @@ PrefabInstance:
     - target: {fileID: 1906605508074501376, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: isBossMusic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
+      propertyPath: pitchChange
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2129699778576603889, guid: 36c98f585245c8b45b272e2406e05e76, type: 3}
       propertyPath: isKeySpawned
@@ -65441,6 +65450,133 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+--- !u!1001 &957941469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1187932696071237849, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: dialogue.name
+      value: Broken Slab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1187932696071237849, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1187932696071237849, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: _ 4 _ _ _ _ _ _ _
+      objectReference: {fileID: 0}
+    - target: {fileID: 3469680689126732414, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_Name
+      value: Boss_Hint Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973354798161596302, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3469680689126732414, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 957941471}
+  m_SourcePrefab: {fileID: 100100000, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+--- !u!1 &957941470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3469680689126732414, guid: a82b710ddd968384db9cbf41f6166c56, type: 3}
+  m_PrefabInstance: {fileID: 957941469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &957941471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957941470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.255
+  m_Color: {r: 0.34849223, g: 0.9811321, b: 0.31007475, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 00000000e128dc2d4f63d4aa7534a31599a5d132c3b721fd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.17281374
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1001 &974885211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74332,6 +74468,7 @@ SceneRoots:
   - {fileID: 1409918431}
   - {fileID: 975116510}
   - {fileID: 787314137}
+  - {fileID: 957941469}
   - {fileID: 1277976202}
   - {fileID: 141345408}
   - {fileID: 714353228}

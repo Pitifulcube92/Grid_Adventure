@@ -1038,7 +1038,7 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[2]
       value: 'A. Mr.Tomato B. Mr.Cucumber
 
-        C. Mr.Pickle    D. Mr.Banana'
+        C. Mr.Pickle D. Mr.Banana'
       objectReference: {fileID: 0}
     - target: {fileID: 7327975167271865361, guid: 0502eae876d95f144869d80266590298, type: 3}
       propertyPath: m_LocalPosition.x

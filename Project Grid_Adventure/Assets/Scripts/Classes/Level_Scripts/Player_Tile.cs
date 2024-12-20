@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Tile : ISubject
 {
@@ -18,6 +19,7 @@ public class Player_Tile : ISubject
     [SerializeField] private Sprite evilSkin;
     [SerializeField] private Sprite scarleSkin;
     [SerializeField] private Material defaultMaterial;
+    [SerializeField] private Text activateText;
 
     [SerializeField] private LayerMask unWalkable;
     // Start is called before the first frame update
@@ -146,5 +148,19 @@ public class Player_Tile : ISubject
     public bool GetIsMoving() 
     { return isMoving; }
 
+    public void CallPopuptext(string text_)
+    {
+        Debug.Log("Popup" + text_);
+        StopCoroutine(popupText(text_));
+        StartCoroutine(popupText(text_));
+    }
+    public IEnumerator popupText(string tmp_)
+    {
+        activateText.text = tmp_;
+        activateText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        activateText.gameObject.SetActive(false);
+        activateText.text = "";
+    }
 }
     

@@ -148,4 +148,13 @@ public class GameManager : MonoBehaviour
         }
     }
     
+    public void ResetCheats()
+    {
+        CheatInfo.EvilScarlingSkin = false;
+        CheatInfo.InfiniteLives = false;
+        CheatInfo.ScarleSkin = false;
+        CheatInfo.unlockAll = false;
+        SetCurrnetLevel(PlayerPrefs.GetInt("CurrentLevel"));
+    }   
+    
 }

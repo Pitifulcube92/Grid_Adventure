@@ -302,6 +302,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+--- !u!1001 &160338102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 470502894367724525, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_Name
+      value: Default_Spotlight (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602530792626986902, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 63fa5c3cc87923b45aeea69794b4da6b, type: 3}
 --- !u!1001 &167599401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24639,6 +24696,10 @@ PrefabInstance:
       value: Switch_3
       objectReference: {fileID: 0}
     - target: {fileID: 8042993754877551791, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
+      propertyPath: isSuccessLever
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042993754877551791, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
       propertyPath: gates.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -26094,6 +26155,10 @@ PrefabInstance:
       value: Switch_4
       objectReference: {fileID: 0}
     - target: {fileID: 8042993754877551791, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
+      propertyPath: isSuccessLever
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042993754877551791, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
       propertyPath: gates.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -26157,6 +26222,10 @@ PrefabInstance:
     - target: {fileID: 4258882735178661215, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
       propertyPath: m_Name
       value: Switch_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042993754877551791, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
+      propertyPath: isSuccessLever
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8042993754877551791, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
       propertyPath: gates.Array.size
@@ -26481,4 +26550,5 @@ SceneRoots:
   - {fileID: 1047544663}
   - {fileID: 417937433}
   - {fileID: 306914278}
+  - {fileID: 160338102}
   - {fileID: 1365142407}

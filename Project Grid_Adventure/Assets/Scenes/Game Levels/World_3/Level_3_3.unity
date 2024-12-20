@@ -154,6 +154,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1953301708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &75302508
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1789122075078061450, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789122075078061450, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Oh my lovely Scarle.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789122075078061450, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: How smart of you to create these traps to fight back the evil.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789122075078061450, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Oh how I miss you, lovely, beautiful and sexy enchantress!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075361041630752557, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_Name
+      value: In-loved Scarling  Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597051454261793501, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d853b8aa7165dc4bac9586c4bb433b0, type: 3}
 --- !u!1001 &75303835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59234,3 +59307,4 @@ SceneRoots:
   - {fileID: 1919265839}
   - {fileID: 175556253}
   - {fileID: 365876750}
+  - {fileID: 75302508}

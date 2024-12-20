@@ -16,14 +16,50 @@ public class UI_ExtraContent : BaseUIScript
         GameObject.Find("Back btn").GetComponent<Button>();
         backBtn.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
         gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
-        
-        foreach(Button x in ContentBtns)
+       
+        foreach (Button x in ContentBtns)
         {
-            x.onClick.AddListener(delegate { GameManager.instance.SetGamemode(2); });   
+            x.onClick.AddListener(delegate { GameManager.instance.SetGamemode(2); });
         }
+        foreach (Button x in ContentBtns)
+        {
+            switch (x.name)
+            {
+                case "Boss_1_btn":
+                    if (GameManager.instance.GetCurrentLevel() <= 20)
+                    {
+                        x.GetComponentInChildren<Text>().text = "????";
+                        x.interactable = false;
+                    }                       
+                    break;
+                case "Boss_2_btn":
+                    if (GameManager.instance.GetCurrentLevel() <= 30)
+                    {
+                        x.GetComponentInChildren<Text>().text = "????";
+                        x.interactable = false;
+                    }
+                    break;
+                case "Boss_3_btn":
+                    if (GameManager.instance.GetCurrentLevel() <= 40)
+                    {
+                        x.GetComponentInChildren<Text>().text = "????";
+                        x.interactable = false; 
+                    }
+                    break;
+                case "Ending_btn":
+                    if (GameManager.instance.GetCurrentLevel() != 50)
+                    {
+                        x.GetComponentInChildren<Text>().text = "????";
+                        x.interactable = false;
+                    }
+                    break;
+            }
+        }
+
+      
     }
         // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
         foreach(GameObject x in GameObject.FindGameObjectsWithTag("CutScenebtn"))

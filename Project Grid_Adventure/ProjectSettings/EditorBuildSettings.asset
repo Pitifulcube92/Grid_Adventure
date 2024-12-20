@@ -171,6 +171,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/WORLD_1_BOSS_Scene.unity
     guid: 0d87a5305625a9d4d8c17d7f450c4447
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/WORLD_2_BOSS_Scene.unity
+    guid: b8a258613d871304d8dfe5cdb45d9d96
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/WORLD_3_BOSS_Scene.unity
+    guid: 11bb41d92adb1f54e9c9f1644789667c
+  - enabled: 1
     path: Assets/Scenes/Thanks for playing!.unity
     guid: ac000b62bb2c9f3488a574cdbc77b6a0
   m_configObjects: {}

@@ -31749,6 +31749,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 809922394259047898, guid: 3a661fe7701aad84bafb53c8f79a5d5c, type: 3}
+      propertyPath: dialogue.name
+      value: Normal Scarling
+      objectReference: {fileID: 0}
     - target: {fileID: 3127686626889320317, guid: 3a661fe7701aad84bafb53c8f79a5d5c, type: 3}
       propertyPath: m_Name
       value: Normal Scarling

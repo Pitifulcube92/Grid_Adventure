@@ -485,7 +485,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3992359594104725709, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -532,6 +532,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b7d50b06e81e3447a176d6ae7f28542, type: 3}
+--- !u!1001 &231821781
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1456182844632519161, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456182844632519161, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Just follow them... and you'll find the key...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456182844632519161, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: zzz...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778463869989376862, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_Name
+      value: Sleeping Scarling Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705667032616218286, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e246a92aae8b36f40b11cdb41cf91ffa, type: 3}
 --- !u!1 &246004204
 GameObject:
   m_ObjectHideFlags: 0
@@ -59900,3 +59969,4 @@ SceneRoots:
   - {fileID: 1263031635}
   - {fileID: 912453134}
   - {fileID: 441944411}
+  - {fileID: 231821781}

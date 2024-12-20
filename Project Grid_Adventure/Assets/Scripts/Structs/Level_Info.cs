@@ -10,15 +10,17 @@ public struct Level_Info
     public bool isLevelDone;
     public string levelName;
     public int nextSceneIndex;
-    public int playerLives;
+    public int playerLivesMax;
+    public int currentPlayerLives;
     public Vector3 startPos;
 
-    public Level_Info(bool hasKey_, bool isLevelDone_, string levelName_, int playerLives_, Vector3 startPos_, int nextSceneIndex_)
+    public Level_Info(bool hasKey_, bool isLevelDone_, string levelName_, int playerLivesMax_, Vector3 startPos_, int nextSceneIndex_)
     {
         hasKey = hasKey_;
         isLevelDone = isLevelDone_;
-        levelName = levelName_; 
-        playerLives = playerLives_;
+        levelName = levelName_;
+        playerLivesMax = playerLivesMax_;
+        currentPlayerLives = playerLivesMax;
         nextSceneIndex = nextSceneIndex_;
         startPos = startPos_;
     }
@@ -27,7 +29,8 @@ public struct Level_Info
         hasKey = tmp_.hasKey;
         isLevelDone = tmp_.isLevelDone;
         levelName = tmp_.levelName;
-        playerLives = tmp_.playerLives;
+        playerLivesMax = tmp_.playerLivesMax;
+        currentPlayerLives = tmp_.currentPlayerLives;
         startPos = tmp_.startPos;
         nextSceneIndex = tmp_.nextSceneIndex;
     }

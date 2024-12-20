@@ -3081,6 +3081,84 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8839e5f390d81344ad2e2871e6fd6a8, type: 3}
+--- !u!1001 &630162700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121621714202214160, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550565550298153031, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550565550298153031, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: When Will this place ever end...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550565550298153031, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: I'm getting tired of going through each room. *sniff*
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550565550298153031, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Scarle... *sniff* If you can here me, please, I sorry for calling you
+        stinky
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550565550298153031, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: waaaa *sniff*
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841378485187724000, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
+      propertyPath: m_Name
+      value: Crying Scarling Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b874ca6675cd6314ab97d004c942ae84, type: 3}
 --- !u!1001 &676174187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63323,3 +63401,4 @@ SceneRoots:
   - {fileID: 1552262534}
   - {fileID: 2052895992}
   - {fileID: 419729876}
+  - {fileID: 630162700}

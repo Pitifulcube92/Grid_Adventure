@@ -347,13 +347,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Banglog\n\nBanglog\nMaxie\nSquishy Tomato\n\nBanglog\n\nBanglog\nLyndon
-    Kwan \n\t- lyndonkwansound.com\n\nBanglog\n\nBanglog\n\nLyndon Kwan \n\t- lyndonkwansound.com\n\nLys\n\n\nBanglog\nShadow
-    Soldier\nCraAtlantic7\n\nBanglog\n\nRoro - @rororo_onyo\nPucca - @minipuccachu\nMyth1cArts
+  m_Text: "Banglog\n\nBanglog\nMaxie\nSquishy Tomato\nenjl - enjl.itch.io\nGooblDoodl
+    - \n\tgoobldoodl.carrd.co\nCardinalZebra - \n\tcardinalzebra.itch.io\nansimuz
+    - \n\tansimuz.itch.io\n\n\nBanglog\n\nBanglog\nLyndon Kwan \n\t- lyndonkwansound.com\n\nBanglog\n\nBanglog\n\nLyndon
+    Kwan \n\t- lyndonkwansound.com\n\nLys\n\n\nBanglog\nShadow Soldier\nCraAtlantic7\n\nBanglog\n\nDova
+    Syndrome - dova-s.jp\nitchi - itchi.io\n\n\nRoro - @rororo_onyo\nPucca - @minipuccachu\nMyth1cArts
     - @Myth1cArts\nsmr - @arsmgs_sy\nCatnipArt - @art_catnip \nHarleyOron - @HarleyOron\nTommie
     - @thetommietomm\nNightline - @nightlinestar\nEnki - @Enkiriin\r\nBaxie2 - @baxei2\r\nIsariSensei
     - @Isari_art\n\u9234\u5E73\u3072\u308D - @suzuhirahiro666\nSunsetlcc - @sunsetlcc\nLandacdeus
-    - @landacdeus\nsoumerinne & NortNort - @soumerinne, @NortNort \n\n\n\n\n\n"
+    - @landacdeus\nsoumerinne & NortNort - \n\t\t@soumerinne, @NortNort \n\n\n\n\n\n"
 --- !u!222 &411805600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -533,7 +535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1100}
+  m_AnchoredPosition: {x: 0, y: -1426}
   m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499981522
@@ -781,7 +783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1000}
+  m_AnchoredPosition: {x: 0, y: -1326}
   m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747810290
@@ -1567,9 +1569,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Project Manager\n \nGraphics Artist\n\n\n\nUI Artist\n\nAudio Designer\n\n\n\nLead
-    Programmer\n\nLead Level Designer\n\nMusic Composer\n\n\nPlay Testers\n\n\nWriters\n\n\n\nLead
-    Game Designer\n\nFeatured Artist\n\n\n"
+  m_Text: "Project Manager\n \nGraphics Artist\n\n\n\n\n\n\n\n\n\nUI Artist\n\nAudio
+    Designer\n\n\n\nLead Programmer\n\nLead Level Designer\n\nMusic Composer\n\n\nPlay
+    Testers\n\n\nWriters\n\n\n\nLead Game Designer\n\nAsset Sources\n\n\n\nFeatured
+    Artist\n\n\n"
 --- !u!222 &1252091084
 CanvasRenderer:
   m_ObjectHideFlags: 0

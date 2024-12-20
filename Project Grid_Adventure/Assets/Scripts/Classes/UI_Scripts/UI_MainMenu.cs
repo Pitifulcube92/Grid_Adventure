@@ -9,6 +9,8 @@ public class UI_MainMenu : BaseUIScript
     [SerializeField] private List<Button> menuButtons;
     [SerializeField] private List<Toggle> menuToggles;
     [SerializeField] private List<Slider> menuSliders;
+    [SerializeField] private RectTransform imageRectTransformScarling;
+    [SerializeField] private float rotationspeed;
     [SerializeField] private List<Text> menuText;
     [SerializeField] private RawImage backgroundImg;
     [SerializeField] private GameObject Delete_Panel;
@@ -18,6 +20,8 @@ public class UI_MainMenu : BaseUIScript
     // Start is called before the first frame update
     void Start()
     {
+        //I'm lazy to find a proper section for pitch change...
+        GameManager.instance.GetSoundManager().GetBGMSource().pitch = 1;
         //GM = GameObject.FindGameObjectWithTag("Game Manager");
         foreach(Button x in GameObject.FindObjectsOfType<Button>())
         {
@@ -48,6 +52,9 @@ public class UI_MainMenu : BaseUIScript
     private void Update()
     {
         backgroundImg.uvRect = new Rect(backgroundImg.uvRect.position + new Vector2(x,y) * Time.deltaTime,backgroundImg.uvRect.size);
+        Vector3 angles = imageRectTransformScarling.eulerAngles;
+        angles.y = angles.y - rotationspeed * Time.deltaTime; // + rotationSpeed for right button
+        imageRectTransformScarling.eulerAngles = angles;
     }
     public override void SetUIConfigure()
     {
@@ -103,7 +110,7 @@ public class UI_MainMenu : BaseUIScript
                             Delete_Panel.SetActive(true);
 
                         } );
-                     
+                    
                     }
                     break;
             }

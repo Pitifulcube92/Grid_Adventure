@@ -51,7 +51,8 @@ public class Boss_3_Level_Component : Base_Level_Component
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.GetSoundManager().PlayMusicClip("モノクロライブラリー");
+       GameManager.instance.GetSoundManager().PlayMusicClip("Nic8bit");
+
         uI_Gameplay.gameplayTexts.Find(x => x.name == "B3_Timer_left").text = displayTimer(0);
     }
     public void StartChallege(float tmp_, GameObject currentswitch_)

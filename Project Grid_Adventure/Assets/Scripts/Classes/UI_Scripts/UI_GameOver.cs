@@ -43,7 +43,8 @@ public class UI_GameOver : BaseUIScript
         {
             buttons.Add(x);
         }
-
+        GameManager.instance.GetSoundManager().GetBGMSource().pitch = 1f;
+        GameManager.instance.GetSoundManager().PlayMusicClip("Game_Over_BGM");
         SetUIConfigure();
     }
 }

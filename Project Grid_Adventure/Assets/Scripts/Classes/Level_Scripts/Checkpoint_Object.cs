@@ -31,6 +31,7 @@ public class Checkpoint_Object : BaseInteractionTile
             //collision.GetComponent<Player_Tile>().ChangePosition(gameObject.transform.position);
             GameManager.instance.GetSoundManager().PlaySFXClip("Retro Charge Magic 11",false, GameManager.instance.GetSoundManager().GetSFXSource(1));
             FindObjectOfType<Level_Observer>().ChangePlayerSpawnPos(gameObject.transform);
+            collision.GetComponent<Player_Tile>().NotifyObserver(PlayerState.Interact_Checkpoint);
             checkpointLight.GetComponent<Light2D>().color = new Color(39f, 98f, 5f, 0.1f);
             render.sprite = checkPointActive;
             collidor.enabled = false;

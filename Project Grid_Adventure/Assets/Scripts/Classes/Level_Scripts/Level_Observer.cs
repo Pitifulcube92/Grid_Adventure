@@ -26,11 +26,22 @@ public class Level_Observer : MonoBehaviour, IObserver
     [SerializeField] private FadeScript fadeCanvas;
     [SerializeField] private Vector3 currentCheckpoint;
     [SerializeField] private Gamemode currentGM;
+    [SerializeField] private bool isBossMusic;
+    [SerializeField, Range(0, 1)] private float pitchChange;
     //[SerializeField] private 
     private void Awake()
     {
         /**Get UI and player**/
         scanScene();
+        //Change Music pitch for boss level
+        if (isBossMusic)
+        {
+            GameManager.instance.GetSoundManager().GetBGMSource().pitch = pitchChange;
+        }
+        else
+        {
+            GameManager.instance.GetSoundManager().GetBGMSource().pitch = 1;
+        }
         GameManager.instance.GetUIManager().ChangeUI("GameplayUI");
         GameManager.instance.GetSoundManager().PlayMusicClip("DungeonMusic");
         GamePlayUI = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<UI_Gameplay>();      
@@ -102,6 +113,7 @@ public class Level_Observer : MonoBehaviour, IObserver
             case PlayerState.Interact_Key:
                 //Debug.Log("Player has taken key");
                 currentLevlInfo.hasKey = true;
+                watchedSubject.GetComponent<Player_Tile>().CallPopuptext("Gate key obtained!");
                 lvlObjects.Find(x => x.tag == "Key").gameObject.SetActive(false);
                 lvlObjects.Find(x => x.tag == "Door").gameObject.layer = 0;
                 GameManager.instance.GetSoundManager().PlaySFXClip("Retro Success Melody 02 - choir soprano", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
@@ -128,9 +140,12 @@ public class Level_Observer : MonoBehaviour, IObserver
             case PlayerState.Interact_Checkpoint:
                 //Call in UI
                 currentCheckpoint = GetInteractedTile().transform.position;
+                CheckpointReached();
+                watchedSubject.GetComponent<Player_Tile>().CallPopuptext("Checkpoint Reached!");
                 break;
             case PlayerState.Interact_Fragment_Key:
                 gameObject.GetComponent<Fragment_Key_Componenet>().GainFragmentKey();
+                watchedSubject.GetComponent<Player_Tile>().CallPopuptext("Fragment key obtained!");
                 GameManager.instance.GetSoundManager().PlaySFXClip("Collect", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
                 break;
             case PlayerState.Player_Dead:
@@ -150,7 +165,8 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         //Level_Info tmp = new Level_Info();
         //currentLevlInfo.levelName = SceneManager.GetActiveScene().name;
-        currentLevlInfo.playerLives = 3;
+        currentLevlInfo.playerLivesMax = 3;
+        currentLevlInfo.currentPlayerLives = currentLevlInfo.playerLivesMax;
         if (GameObject.FindGameObjectWithTag("Key"))
             currentLevlInfo.hasKey = false;
         if (GameObject.FindGameObjectWithTag("Door"))
@@ -198,10 +214,15 @@ public class Level_Observer : MonoBehaviour, IObserver
     {
         return levelComponents;
     }
+    public void CheckpointReached()
+    {
+        currentLevlInfo.currentPlayerLives = currentLevlInfo.playerLivesMax;
+        GamePlayUI.UpdatePlayerLives(currentLevlInfo.currentPlayerLives);
+    }
     //Level Events
     IEnumerator DamagePlayer()
     {
-        if (currentLevlInfo.playerLives == 0)
+        if (currentLevlInfo.currentPlayerLives == 0)
         {
             Debug.Log("Player is dead... Game Over");
             StartCoroutine(GameOver());
@@ -213,8 +234,8 @@ public class Level_Observer : MonoBehaviour, IObserver
         //Check Cheat (Infinite Lives)
         if(GameManager.instance.GetCheatInfo().InfiniteLives == false)
         {
-            currentLevlInfo.playerLives -= 1;
-            GamePlayUI.UpdatePlayerLives(currentLevlInfo.playerLives);
+            currentLevlInfo.currentPlayerLives -= 1;
+            GamePlayUI.UpdatePlayerLives(currentLevlInfo.currentPlayerLives);
         }
         StartCoroutine(Explode());
         //StartCoroutine(Explode());

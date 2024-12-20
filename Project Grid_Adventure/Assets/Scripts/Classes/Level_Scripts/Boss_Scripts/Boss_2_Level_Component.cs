@@ -12,7 +12,8 @@ public class Boss_2_Level_Component : Base_Level_Component
     {
         KeySequence = "347158296";
         currentSequence = "";
-        GameManager.instance.GetSoundManager().PlayMusicClip("モノクロライブラリー");
+        GameManager.instance.GetSoundManager().PlayMusicClip("Nic8bit");
+
         gameObject.GetComponentInParent<Level_Observer>().SetIsKetSpawned(false);
         foreach (Boss_2_Switch_Script x in GameObject.FindObjectsOfType<Boss_2_Switch_Script>())
         {

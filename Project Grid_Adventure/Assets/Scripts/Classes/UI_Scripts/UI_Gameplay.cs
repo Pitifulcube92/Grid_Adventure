@@ -130,7 +130,7 @@ public class UI_Gameplay : BaseUIScript
                     x.text = lvlObs.GetLevel_Info().levelName;
                     break;
                 case "NumberOfLives":
-                    x.text = lvlObs.GetLevel_Info().playerLives.ToString() + "X";
+                    x.text = lvlObs.GetLevel_Info().currentPlayerLives.ToString() + "X";
                     break;
             }
         }
